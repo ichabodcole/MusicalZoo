@@ -25,8 +25,61 @@ module.exports = function (grunt) {
             dist: 'dist'
         },
 
+        // BEGIN CUSTOM TASK ADDITIONS
+        // Remove the require script from the index, and replace with a
+        // reference to the compiled app.min.js
+        dom_munger: {
+          dist: {
+            options: {
+              remove:'script[src="bower_components/requirejs/require.js"]',
+              append: {
+                selector: 'body', html:'<script src="scripts/app.min.js"></script>'
+              }
+            },
+            src:'<%= yeoman.dist %>/index.html',
+            dest:'<%= yeoman.dist %>/index.html'
+          }
+        },
+
+        coffee: {
+          files: {
+            flatten: true,
+            expand: true,
+            cwd: '<%= yeoman.app %>/scripts',
+            src: '*.coffee',
+            dest: '.tmp/scripts',
+            ext: '.js'
+          }
+        },
+
+        requirejs: {
+          options: {
+            baseUrl:'.tmp',
+            deps: ['scripts/app'],
+            insertRequire: ['scripts/app'],
+            mainConfigFile: '.tmp/config.js',
+            name: '../app/bower_components/almond/almond',
+            out: '<%= yeoman.dist %>/scripts/app.min.js',
+            wrap: true
+          },
+
+          dist: {
+            options: {
+              optimize: 'uglify2'
+            }
+          }
+        },
+        // END CUSTOM TASK ADDITIONS
+
         // Watches files for changes and runs tasks based on the changed files
         watch: {
+            coffee: {
+              files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
+                tasks: ['coffee'],
+                options: {
+                    livereload: true
+              }
+            },
             js: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
                 tasks: ['jshint'],
@@ -198,7 +251,9 @@ module.exports = function (grunt) {
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
                         '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
-                        '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
+                        '<%= yeoman.dist %>/styles/fonts/{,*/}*.*',
+                        '!<%= yeoman.dist %>/scripts/app.min.js'
+
                     ]
                 }
             }
@@ -308,6 +363,28 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
+            // Need to move all js files to tmp for require to work
+            // with coffeescript
+            scripts: {
+              files: [
+                {
+                  expand: true,
+                  dot: true,
+                  cwd: '<%= yeoman.app %>/scripts',
+                  dest: '.tmp/scripts/',
+                  src: '{,*/}*.js'
+                },
+                {
+                  '.tmp/config.js': '<%= yeoman.app %>/config.js'
+                },
+                {
+                  expand: true,
+                  cwd: '<%= yeoman.app %>',
+                  dest:'.tmp/',
+                  src: 'bower_components/**/*'
+                }
+              ]
+            },
             styles: {
                 expand: true,
                 dot: true,
@@ -334,6 +411,7 @@ module.exports = function (grunt) {
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
+                'coffee',
                 'compass:server',
                 'copy:styles'
             ],
@@ -341,6 +419,8 @@ module.exports = function (grunt) {
                 'copy:styles'
             ],
             dist: [
+                'coffee',
+                'requirejs',
                 'compass',
                 'copy:styles',
                 'imagemin',
@@ -396,7 +476,8 @@ module.exports = function (grunt) {
         'modernizr',
         'rev',
         'usemin',
-        'htmlmin'
+        // 'htmlmin'
+        'dom_munger'
     ]);
 
     grunt.registerTask('default', [

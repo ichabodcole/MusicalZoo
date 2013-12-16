@@ -1,9 +1,32 @@
 {
-  "name": "production",
+  "name": "Musical Zoo",
   "private": true,
   "dependencies": {
     "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "easeljs": "*",
+    "preloadjs": "git@github.com:CreateJS/PreloadJS.git",
+    "soundjs": "git@github.com:CreateJS/SoundJS.git",
+    "tweenjs": "git@github.com:CreateJS/TweenJS.git",
+    "greensock": "~1.11.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "almond": "~0.2.7",
+    "requirejs": "~2.1.9"
+  },
+  "version": "0.0.1",
+  "authors": [
+    "ichabodcole <ichabodcole@gmail.com>"
+  ],
+  "main": "scripts/app.js",
+  "license": "MIT",
+  "homepage": "http://musicforautism.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
 }
