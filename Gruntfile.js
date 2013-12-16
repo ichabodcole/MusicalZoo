@@ -45,8 +45,8 @@ module.exports = function (grunt) {
           files: {
             flatten: true,
             expand: true,
-            cwd: '<%= yeoman.app %>/scripts',
-            src: '*.coffee',
+            cwd: '<%= yeoman.app %>/scripts/',
+            src: '**/*.coffee',
             dest: '.tmp/scripts',
             ext: '.js'
           }
@@ -54,11 +54,11 @@ module.exports = function (grunt) {
 
         requirejs: {
           options: {
-            baseUrl:'.tmp',
-            deps: ['scripts/app'],
-            insertRequire: ['scripts/app'],
+            baseUrl:'.tmp/scripts',
+            deps: ['app'],
+            insertRequire: ['app'],
             mainConfigFile: '.tmp/config.js',
-            name: '../app/bower_components/almond/almond',
+            name: '../bower_components/almond/almond',
             out: '<%= yeoman.dist %>/scripts/app.min.js',
             wrap: true
           },
@@ -74,7 +74,7 @@ module.exports = function (grunt) {
         // Watches files for changes and runs tasks based on the changed files
         watch: {
             coffee: {
-              files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
+              files: ['<%= yeoman.app %>/scripts/**/*.coffee'],
                 tasks: ['coffee'],
                 options: {
                     livereload: true
@@ -412,6 +412,7 @@ module.exports = function (grunt) {
         concurrent: {
             server: [
                 'coffee',
+                'copy:scripts',
                 'compass:server',
                 'copy:styles'
             ],
@@ -467,6 +468,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'useminPrepare',
+        'copy:scripts',
         'concurrent:dist',
         'autoprefixer',
         'concat',
