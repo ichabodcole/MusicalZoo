@@ -8,7 +8,8 @@ requirejs.config({
     tween:    '../bower_components/tweenjs/lib/tweenjs-0.5.1.min',
     tweenMax: '../bower_components/greensock/src/minified/TweenMax.min',
     easing:   '../bower_components/greensock/src/minified/EasePack.min',
-    easelPlugin: '../bower_components/greensock/src/minified/EaselPlugin.min'
+    easelPlugin: '../bower_components/greensock/src/minified/EaselPlugin.min',
+    underscore : '../bower_components/underscore/underscore-min.js'
   },
 
   shim: {
@@ -26,6 +27,9 @@ requirejs.config({
     preload: {
       deps: ['easel'],
       exports: 'Preload'
+    },
+    underscore: {
+      exports: '_'
     }
   }
 });

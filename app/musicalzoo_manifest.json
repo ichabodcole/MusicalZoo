@@ -1,0 +1,56 @@
+{
+  "drums": {
+    "imagePath": "../images/drums/",
+    "soundPath": "../sounds/drums/kit_01/",
+    "imageExt": ".png",
+    "soundExt": ".wav",
+    "drumList": [
+      {
+        "id":"bassDrum",
+        "imgSrc": "bass_drum",
+        "soundSrc": "Kick"
+      },
+      {
+        "id":"snareDrum",
+        "imgSrc": "snare_drum",
+        "soundSrc": "Sample_1"
+      },
+      {
+        "id":"floorTomTom",
+        "imgSrc": "floor_tom-tom",
+        "soundSrc": "Floor_Tom"
+      },
+      {
+        "id":"middleTomTom",
+        "imgSrc": "middle_tom-tom",
+        "soundSrc": "Mid_Tom"
+      },
+      {
+        "id":"highTomTom",
+        "imgSrc": "high_tom-tom",
+        "soundSrc": "Sample_2"
+      },
+      {
+        "id":"hiHatCymbals",
+        "imgSrc": "hi-hat_cymbal",
+        "soundSrc": "Open_Hat_1"
+      },
+      {
+        "id":"crashCymbals",
+        "imgSrc": "crash_cymbal",
+        "soundSrc": "Crash_Cymbals"
+      },
+      {
+        "id":"rideCymbals",
+        "imgSrc": "ride_cymbal",
+        "soundSrc": "Ride_Cymbal"
+      }
+    ]
+  },
+
+  "piano": {
+    "imgPath": "",
+    "soundPath": "",
+    "keys":[]
+  }
+}

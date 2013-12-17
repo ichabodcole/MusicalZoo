@@ -1,12 +1,11 @@
 define ['easel', 'sound' ,'Drum'], (createjs, Sound, Drum)->
 
   audioPath = 'sounds/drums/kit_01/'
-  manifest = [{ id:'bassDrum', src: audioPath + 'Kick.wav' }]
+  manifest = [{ id:'rideCymbal', src: audioPath + 'Ride_Cymbal.wav' }]
 
-  class BassDrum extends Drum
+  class RideCymbal extends Drum
     constructor: ->
-      imagePath = 'images/drums/bass_drum.png'
+      imagePath = 'images/drums/ride_cymbal.png'
       soundPath = manifest[0].src
 
       super(imagePath, soundPath)
-

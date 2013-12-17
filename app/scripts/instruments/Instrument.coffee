@@ -1,6 +1,10 @@
 define ['easel'], (createjs)->
-  class Instrument extends createjs.Container
+  class Instrument
     constructor: ->
-      console.log('I\'m an Instrument')
+      @container = new createjs.Container()
+      @container.cursor = "pointer"
+      # console.log('I\'m an Instrument')
 
-  return Instrument
+
+    getDisplayObj: ->
+      return @container

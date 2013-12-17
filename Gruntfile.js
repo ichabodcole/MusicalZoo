@@ -59,8 +59,8 @@ module.exports = function (grunt) {
             insertRequire: ['app'],
             mainConfigFile: '.tmp/config.js',
             name: '../bower_components/almond/almond',
-            out: '<%= yeoman.dist %>/scripts/app.min.js',
-            wrap: true
+            out: '<%= yeoman.dist %>/scripts/app.min.js'
+            // wrap: true
           },
 
           dist: {
@@ -252,7 +252,8 @@ module.exports = function (grunt) {
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
                         '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
                         '<%= yeoman.dist %>/styles/fonts/{,*/}*.*',
-                        '!<%= yeoman.dist %>/scripts/app.min.js'
+                        '!<%= yeoman.dist %>/scripts/app.min.js',
+                        '!<%= yeoman.dist %>/drums/**/*'
 
                     ]
                 }
