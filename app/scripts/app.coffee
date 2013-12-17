@@ -4,11 +4,14 @@ define ['easel', 'preload', 'DrumKit'], (createjs, Preload, DrumKit)->
     constructor: ->
       @stage = new createjs.Stage('musicalzoo-stage');
       @stage.enableMouseOver(55)
+      @stageWidth = @stage.canvas.width
+      @stageHeight = @stage.canvas.height
 
       @queue = new createjs.LoadQueue(true)
 
-      # @drumKit = new DrumKit()
-      # @stage.addChild(@drumKit.getDisplayObj());
+      @drumKit = new DrumKit()
+      @drumKit.getDisplayObj().x = @stageWidth / 2 - 580 / 2
+      @stage.addChild(@drumKit.getDisplayObj());
       @loadManifest()
 
     loadManifest: ->
@@ -19,43 +22,9 @@ define ['easel', 'preload', 'DrumKit'], (createjs, Preload, DrumKit)->
     onManifestLoad: (e)=>
       @manifest = @queue.getResult('manifest')
 
-      drumManifest = @parseDrumManifest(@manifest.drums)
-      console.log(drumManifest)
-      @loadDrums(drumManifest.imageManifest, drumManifest.soundManifest)
+      @drumKit.loadManifestAssets(@manifest.drums)
       # Remove the initial event listener
       @queue.removeEventListener('fileload', @onManifestLoad)
-
-    # Parses the raw drums manifest and returns an object
-    # containing two manifest objects, one for images and one for sounds.
-    parseDrumManifest: (manifest)->
-      imagePath = manifest.imagePath
-      soundPath = manifest.soundPath
-      imageExt = manifest.imageExt
-      soundExt = manifest.soundExt
-      drumList  = manifest.drumList
-
-      imageManifest = []
-      soundManifest = []
-      drumList.forEach (element, array, index)->
-        imageId = element.id + '_img'
-        fullImagePath = imagePath + element.imgSrc + imageExt
-        #
-        soundId = element.id + '_snd'
-        fullSoundPath = soundPath + element.soundSrc + soundExt
-        # Add the parsed data to the new image manifest
-        imageManifest.push {id:imageId, src:fullImagePath}
-        soundManifest.push {id:soundId, src:fullSoundPath}
-
-      return {imageManifest: imageManifest, soundManifest: soundManifest}
-
-    loadDrums: (drumImageManifest, drumSoundManifest)->
-      @queue.addEventListener('fileload', @handleFileLoad)
-      @queue.addEventListener('complete', @loadComplete)
-      @queue.loadManifest(drumImageManifest)
-
-    handleFileLoad: (e)=>
-
-    loadComplete: (e)=>
 
 
   app = new App();

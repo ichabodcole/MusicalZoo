@@ -5,6 +5,15 @@ define ['easel'], (createjs)->
       @container.cursor = "pointer"
       # console.log('I\'m an Instrument')
 
+    parseManifest: (manifest)->
+
+    loadAssets: (imageManifest, soundManifest)->
+
+    setCoords: (coordsManifest)->
+
+    handleFileLoad: (e)=>
+
+    loadComplete: (e)=>
 
     getDisplayObj: ->
       return @container

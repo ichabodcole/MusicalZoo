@@ -7,43 +7,75 @@
     "drumList": [
       {
         "id":"bassDrum",
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":8
+        },
         "imgSrc": "bass_drum",
-        "soundSrc": "Kick"
+        "soundSrc": "kick"
       },
       {
         "id":"snareDrum",
+        "coords": {
+          "width":156, "height":156,
+          "x":158, "y":350, "z":7
+        },
         "imgSrc": "snare_drum",
-        "soundSrc": "Sample_1"
+        "soundSrc": "sample_1"
       },
       {
         "id":"floorTomTom",
+        "coords": {
+          "width":204, "height":194,
+          "x":456, "y":336, "z":6
+        },
         "imgSrc": "floor_tom-tom",
-        "soundSrc": "Floor_Tom"
+        "soundSrc": "floor_tom"
       },
       {
         "id":"middleTomTom",
+        "coords": {
+          "width":120, "height":122,
+          "x":342, "y":217, "z":5
+        },
         "imgSrc": "middle_tom-tom",
-        "soundSrc": "Mid_Tom"
+        "soundSrc": "mid_tom"
       },
       {
         "id":"highTomTom",
+        "coords": {
+          "width":102, "height":102,
+          "x":228, "y":226, "z":4
+        },
         "imgSrc": "high_tom-tom",
-        "soundSrc": "Sample_2"
+        "soundSrc": "sample_2"
       },
       {
         "id":"hiHatCymbals",
+        "coords": {
+          "width":129, "height":126,
+          "x":94, "y":252, "z":3
+        },
         "imgSrc": "hi-hat_cymbal",
-        "soundSrc": "Open_Hat_1"
+        "soundSrc": "open_hat_1"
       },
       {
         "id":"crashCymbals",
+        "coords": {
+          "width":198, "height":193,
+          "x":113, "y":112, "z":2
+        },
         "imgSrc": "crash_cymbal",
-        "soundSrc": "Crash_Cymbals"
+        "soundSrc": "crash_cymbal"
       },
       {
         "id":"rideCymbals",
+        "coords": {
+          "width":201, "height":189,
+          "x":462, "y":152, "z":1
+        },
         "imgSrc": "ride_cymbal",
-        "soundSrc": "Ride_Cymbal"
+        "soundSrc": "ride_cymbal"
       }
     ]
   },
