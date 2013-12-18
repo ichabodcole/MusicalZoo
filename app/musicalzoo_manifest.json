@@ -83,6 +83,477 @@
   "piano": {
     "imgPath": "",
     "soundPath": "",
-    "keys":[]
+    "bgImage": "body.png",
+    "components": [
+      {
+        "id":"k01",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":1
+        },
+        "imgSrc": "k01",
+        "soundSrc": "k01"
+      },{
+        "id":"k02",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":2
+        },
+        "imgSrc": "k02",
+        "soundSrc": "k02"
+      },{
+        "id":"k03",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":3
+        },
+        "imgSrc": "k03",
+        "soundSrc": "k03"
+      },{
+        "id":"k04",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":4
+        },
+        "imgSrc": "k04",
+        "soundSrc": "k04"
+      },{
+        "id":"k05",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":5
+        },
+        "imgSrc": "k05",
+        "soundSrc": "k05"
+      },{
+        "id":"k06",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":6
+        },
+        "imgSrc": "k06",
+        "soundSrc": "k06"
+      },{
+        "id":"k07",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":7
+        },
+        "imgSrc": "k07",
+        "soundSrc": "k07"
+      },{
+        "id":"k08",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":8
+        },
+        "imgSrc": "k08",
+        "soundSrc": "k08"
+      },{
+        "id":"k09",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":9
+        },
+        "imgSrc": "k09",
+        "soundSrc": "k09"
+      },{
+        "id":"k10",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":10
+        },
+        "imgSrc": "k10",
+        "soundSrc": "k10"
+      },{
+        "id":"k11",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":11
+        },
+        "imgSrc": "k11",
+        "soundSrc": "k11"
+      },{
+        "id":"k12",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":12
+        },
+        "imgSrc": "k12",
+        "soundSrc": "k12"
+      },{
+        "id":"k13",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":13
+        },
+        "imgSrc": "k13",
+        "soundSrc": "k13"
+      },{
+        "id":"k14",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":14
+        },
+        "imgSrc": "k14",
+        "soundSrc": "k14"
+      },{
+        "id":"k15",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":15
+        },
+        "imgSrc": "k15",
+        "soundSrc": "k15"
+      },{
+        "id":"k16",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":16
+        },
+        "imgSrc": "k16",
+        "soundSrc": "k16"
+      },{
+        "id":"k17",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":17
+        },
+        "imgSrc": "k17",
+        "soundSrc": "k17"
+      },{
+        "id":"k18",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":18
+        },
+        "imgSrc": "k18",
+        "soundSrc": "k18"
+      },{
+        "id":"k19",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":19
+        },
+        "imgSrc": "k19",
+        "soundSrc": "k19"
+      },{
+        "id":"k20",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":20
+        },
+        "imgSrc": "k20",
+        "soundSrc": "k20"
+      },{
+        "id":"k21",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":21
+        },
+        "imgSrc": "k21",
+        "soundSrc": "k21"
+      },{
+        "id":"k22",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":22
+        },
+        "imgSrc": "k22",
+        "soundSrc": "k22"
+      },{
+        "id":"k23",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":23
+        },
+        "imgSrc": "k23",
+        "soundSrc": "k23"
+      },{
+        "id":"k24",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":24
+        },
+        "imgSrc": "k24",
+        "soundSrc": "k24"
+      },{
+        "id":"k25",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":25
+        },
+        "imgSrc": "k25",
+        "soundSrc": "k25"
+      },{
+        "id":"k26",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":26
+        },
+        "imgSrc": "k26",
+        "soundSrc": "k26"
+      },{
+        "id":"k27",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":27
+        },
+        "imgSrc": "k27",
+        "soundSrc": "k27"
+      },{
+        "id":"k28",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":28
+        },
+        "imgSrc": "k28",
+        "soundSrc": "k28"
+      },{
+        "id":"k29",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":29
+        },
+        "imgSrc": "k29",
+        "soundSrc": "k29"
+      },{
+        "id":"k30",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":30
+        },
+        "imgSrc": "k30",
+        "soundSrc": "k30"
+      },{
+        "id":"k31",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":31
+        },
+        "imgSrc": "k31",
+        "soundSrc": "k31"
+      },{
+        "id":"k32",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":32
+        },
+        "imgSrc": "k32",
+        "soundSrc": "k32"
+      },{
+        "id":"k33",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":33
+        },
+        "imgSrc": "k33",
+        "soundSrc": "k33"
+      },{
+        "id":"k34",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":34
+        },
+        "imgSrc": "k34",
+        "soundSrc": "k34"
+      },{
+        "id":"k35",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":35
+        },
+        "imgSrc": "k35",
+        "soundSrc": "k35"
+      },{
+        "id":"k36",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":36
+        },
+        "imgSrc": "k36",
+        "soundSrc": "k36"
+      },{
+        "id":"k37",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":37
+        },
+        "imgSrc": "k37",
+        "soundSrc": "k37"
+      },{
+        "id":"k38",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":38
+        },
+        "imgSrc": "k38",
+        "soundSrc": "k38"
+      },{
+        "id":"k39",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":39
+        },
+        "imgSrc": "k39",
+        "soundSrc": "k39"
+      },{
+        "id":"k40",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":40
+        },
+        "imgSrc": "k40",
+        "soundSrc": "k40"
+      },{
+        "id":"k41",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":41
+        },
+        "imgSrc": "k41",
+        "soundSrc": "k41"
+      },{
+        "id":"k42",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":42
+        },
+        "imgSrc": "k42",
+        "soundSrc": "k42"
+      },{
+        "id":"k43",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":43
+        },
+        "imgSrc": "k43",
+        "soundSrc": "k43"
+      },{
+        "id":"k44",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":44
+        },
+        "imgSrc": "k44",
+        "soundSrc": "k44"
+      },{
+        "id":"k45",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":45
+        },
+        "imgSrc": "k45",
+        "soundSrc": "k45"
+      },{
+        "id":"k46",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":46
+        },
+        "imgSrc": "k46",
+        "soundSrc": "k46"
+      },{
+        "id":"k47",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":47
+        },
+        "imgSrc": "k47",
+        "soundSrc": "k47"
+      },{
+        "id":"k48",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":48
+        },
+        "imgSrc": "k48",
+        "soundSrc": "k48"
+      },{
+        "id":"k49",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":49
+        },
+        "imgSrc": "k49",
+        "soundSrc": "k49"
+      },{
+        "id":"k50",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":50
+        },
+        "imgSrc": "k50",
+        "soundSrc": "k50"
+      },{
+        "id":"k51",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":51
+        },
+        "imgSrc": "k51",
+        "soundSrc": "k51"
+      },{
+        "id":"k52",
+        "keyInput": 32,
+        "coords": {
+          "width":239, "height":226,
+          "x":286, "y":209, "z":52
+        },
+        "imgSrc": "k52",
+        "soundSrc": "k52"
+      }
+    ]
   }
 }
