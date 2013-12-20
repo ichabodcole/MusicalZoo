@@ -1,26 +1,11 @@
-define ['easel', 'sound', 'tween'], (creatjs, Sound, Tween)->
+define ['InstrumentComponent'], (InstrumentComponent)->
 
-  audioPath = 'sounds/drums/kit_01/'
-  manifest = [{ id:'bassDrum', src: audioPath + 'Kick.wav' }]
-
-  class Drum
+  class Drum extends InstrumentComponent
     constructor: (data)->
-      @id     = data.id
-      @image  = data.image
-      @coords = data.coords
+      super data
+      @setRegistrationCenter()
 
-      @soundId = @id + "_snd"
-      @container = new createjs.Container()
-      # @container.cursor = "pointer"
-
-      @bitmap = new createjs.Bitmap(@image)
-      @setPosition(@coords.x, @coords.y)
-      @setRegistration()
-
-      @container.addEventListener 'click', @drumHit
-      @container.addChild(@bitmap)
-
-    drumHit: (e)=>
+    animate: ->
       obj = @getDisplayObj()
       obj.scaleX = .95
       obj.scaleY = .95
@@ -29,23 +14,3 @@ define ['easel', 'sound', 'tween'], (creatjs, Sound, Tween)->
         obj.scaleX = 1
         obj.scaleY = 1
       , 50
-
-      # obj.scaleX += (1 - obj.scaleX)/2
-
-      console.log("You hit the", @id)
-
-
-      createjs.Sound.play(@soundId)
-
-    setPosition: (x, y)->
-      obj = @getDisplayObj();
-      obj.x = x
-      obj.y = y
-
-    setRegistration: ()->
-      obj = @getDisplayObj()
-      obj.regX = @coords.width/2
-      obj.regY = @coords.height/2
-
-    getDisplayObj: ->
-      return @container

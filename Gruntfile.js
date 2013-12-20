@@ -253,7 +253,8 @@ module.exports = function (grunt) {
                         '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
                         '<%= yeoman.dist %>/styles/fonts/{,*/}*.*',
                         '!<%= yeoman.dist %>/scripts/app.min.js',
-                        '!<%= yeoman.dist %>/drums/**/*'
+                        '!<%= yeoman.dist %>/sounds/**/*',
+                        '!<%= yeoman.dist %>/images/**/*'
 
                     ]
                 }
@@ -360,7 +361,9 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*'
+                        'styles/fonts/{,*/}*.*',
+                        'sounds/{,**/}*.*',
+                        '*.json'
                     ]
                 }]
             },
@@ -392,6 +395,13 @@ module.exports = function (grunt) {
                 cwd: '<%= yeoman.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
+            },
+            sounds: {
+                expand: true,
+                dot: true,
+                cwd: '<%= yeoman.app %>/sounds',
+                dest: '.tmp/sounds/',
+                src: '{,*/}*.mp3'
             }
         },
 
@@ -421,7 +431,6 @@ module.exports = function (grunt) {
                 'copy:styles'
             ],
             dist: [
-                'coffee',
                 'requirejs',
                 'compass',
                 'copy:styles',
@@ -469,6 +478,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'useminPrepare',
+        'coffee',
         'copy:scripts',
         'concurrent:dist',
         'autoprefixer',

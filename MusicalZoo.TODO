@@ -1,3 +1,7 @@
- ☐ Get a drum on the stage
+ ✔ Get a drum on the stage @done (13-12-19 06:42)
  ✔ Move drum parser / loader to drumkit class @done (13-12-17 03:13)
  ☐ Add case for kick drum
+ ✔ Add keyboard input for drums @done (13-12-18 01:05)
+ ✔ Implement piano @done (13-12-19 06:42)
+ ✔ Add interface elements for instrument switching @done (13-12-19 06:42)
+ ☐ Remove EventListeners when an instrument is hidden
