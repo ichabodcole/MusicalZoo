@@ -1,7 +1,17 @@
  ✔ Get a drum on the stage @done (13-12-19 06:42)
  ✔ Move drum parser / loader to drumkit class @done (13-12-17 03:13)
- ☐ Add case for kick drum
  ✔ Add keyboard input for drums @done (13-12-18 01:05)
  ✔ Implement piano @done (13-12-19 06:42)
  ✔ Add interface elements for instrument switching @done (13-12-19 06:42)
+ ☐ Instruments should inherit from Container class
+   ☐ Remove references to container variable and get rid of getDisplayObj method
+ ☐ Rework instruments to take parse new data format
+   ☐ Reimplement Instrument class
+     ☐ Reimplement DrumKit class
+  ☐ Implement cello
+  ☐ Implement loaders
+  ☐ Create and export new samples from Logic
+  ☐ Add keyboard input for piano and cello
+  ☐ create ui element to show keyboard instructions for each instrument
  ☐ Remove EventListeners when an instrument is hidden
+ ☐ Add case for kick drum
