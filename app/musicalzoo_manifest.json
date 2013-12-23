@@ -1,1038 +1,224 @@
 {
-  "layout":{
-    "path": "./images/layout/",
-    "manifest": [
+  "ui":{
+    "components": [
       {
-        "id":"musicalZooTitle",
-        "src":"musical_zoo.png"
+        "id": "icons",
+        "assets": {
+          "images": {
+            "path": "./images/ui/",
+            "manifest": [
+              {
+                "id":"drumsIcon",
+                "src":"drums_icon.png",
+                "data": {
+                  "width": 151,
+                  "height": 206,
+                  "coords" : {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "link": "drumKit"
+                }
+              },
+              {
+                "id":"pianoIcon",
+                "src":"piano_icon.png",
+                "data": {
+                  "width": 166,
+                  "height": 173,
+                  "coords" : {
+                    "x": 250,
+                    "y": 0
+                  },
+                  "link": "piano"
+                }
+              },
+              {
+                "id":"celloIcon",
+                "src":"cello_icon.png",
+                "data": {
+                  "width": 201,
+                  "height": 159,
+                  "coords" : {
+                    "x": 450,
+                    "y": 0
+                  },
+                  "link": "cello"
+                }
+              }
+            ]
+          },
+          "sounds": {
+            "path": "./sounds/ui/",
+            "manifest": [
+              { "id": "drumsIconClick_snd", "src": "drums_click.mp3" },
+              { "id": "pianoIconClick_snd", "src": "piano_click.mp3" },
+              { "id": "celloIconClick_snd", "src": "cello_click.mp3" },
+              { "id": "drumsIconOver_snd", "src": "drums_over.mp3" },
+              { "id": "pianoIconOver_snd", "src": "piano_over.mp3" },
+              { "id": "celloIconOver_snd", "src": "cello_over.mp3" }
+            ]
+          }
+        }
       },
+
       {
-        "id":"drumsIcon",
-        "src":"drums_icon.png",
-        "link": "drums"
-      },
-      {
-        "id":"pianoIcon",
-        "src":"piano_icon.png",
-        "link": "piano"
-      },
-      {
-        "id":"celloIcon",
-        "src":"cello_icon.png",
-        "link": "cello"
+        "id": "title",
+        "assets": {
+          "images": {
+            "path": "./images/ui/",
+            "manifest": [
+              {
+                "id":"musicalZooTitle",
+                "src":"musical_zoo.png",
+                "data": {
+                  "width": 225,
+                  "height": 61,
+                  "coords": {
+                    "x": 0,
+                    "y": 50
+                  }
+                }
+              }
+            ]
+          }
+        }
       }
     ]
   },
-  "instruments": {
-    "drums": {
-      "type": "drums",
-      "width": 580,
-      "height": 0,
-      "imagePath": "./images/drums/",
-      "soundPath": "./sounds/drums/kit_01/mp3/",
-      "imageExt": ".png",
-      "soundExt": ".mp3",
-      "components": [
-        {
-          "id":"bassDrum",
-          "keyInput": 32,
-          "coords": {
-            "width":239, "height":226,
-            "x":286, "y":209, "z":8
-          },
-          "imgSrc": "bass_drum",
-          "soundSrc": "kick"
-        },
-        {
-          "id":"snareDrum",
-          "keyInput": 65,
-          "coords": {
-            "width":156, "height":156,
-            "x":158, "y":350, "z":7
-          },
-          "imgSrc": "snare_drum",
-          "soundSrc": "sample_1"
-        },
-        {
-          "id":"floorTomTom",
-          "keyInput": 70,
-          "coords": {
-            "width":204, "height":194,
-            "x":456, "y":336, "z":6
-          },
-          "imgSrc": "floor_tom-tom",
-          "soundSrc": "floor_tom"
-        },
-        {
-          "id":"middleTomTom",
-          "keyInput": 68,
-          "coords": {
-            "width":120, "height":122,
-            "x":342, "y":217, "z":5
-          },
-          "imgSrc": "middle_tom-tom",
-          "soundSrc": "mid_tom"
-        },
-        {
-          "id":"highTomTom",
-          "keyInput": 83,
-          "coords": {
-            "width":102, "height":102,
-            "x":228, "y":226, "z":4
-          },
-          "imgSrc": "high_tom-tom",
-          "soundSrc": "sample_2"
-        },
-        {
-          "id":"hiHatCymbals",
-          "keyInput": 81,
-          "coords": {
-            "width":129, "height":126,
-            "x":94, "y":252, "z":3
-          },
-          "imgSrc": "hi-hat_cymbal",
-          "soundSrc": "open_hat_1"
-        },
-        {
-          "id":"crashCymbals",
-          "keyInput": 87,
-          "coords": {
-            "width":198, "height":193,
-            "x":113, "y":112, "z":2
-          },
-          "imgSrc": "crash_cymbal",
-          "soundSrc": "crash_cymbal"
-        },
-        {
-          "id":"rideCymbals",
-          "keyInput": 82,
-          "coords": {
-            "width":201, "height":189,
-            "x":462, "y":152, "z":1
-          },
-          "imgSrc": "ride_cymbal",
-          "soundSrc": "ride_cymbal"
-        }
-      ]
-    },
 
-    "piano":{
-      "type": "piano",
-      "width": 600,
-      "height": 0,
-      "imagePath": "./images/piano/",
-      "soundPath": "./sounds/piano/mp3/",
-      "imageExt": ".png",
-      "soundExt": ".mp3",
-      "bgImage": "body.png",
-      "keyPressImage": "key_press.png",
+  "instruments": [
+    {
+      "id": "drumKit",
+      "data": {
+        "width": 570,
+        "height": 430,
+        "scaleX": 0.95,
+        "scaleY": 0.95,
+        "coords": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "backgroundImage": false,
       "components": [
         {
-          "id":"bk_01",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":0, "y":45.5, "z":1
-          },
-          "imgSrc": "bk_01",
-          "soundSrc": "k_01"
-          },{
-          "id":"bk_02",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":8.6, "y":45.5, "z":2
-          },
-          "imgSrc": "bk_02",
-          "soundSrc": "k_02"
-          },{
-          "id":"bk_03",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":17.2, "y":45.5, "z":3
-          },
-          "imgSrc": "bk_03",
-          "soundSrc": "k_03"
-          },{
-          "id":"bk_04",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":25.799999999999997, "y":45.5, "z":4
-          },
-          "imgSrc": "bk_04",
-          "soundSrc": "k_04"
-          },{
-          "id":"bk_05",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":34.4, "y":45.5, "z":5
-          },
-          "imgSrc": "bk_05",
-          "soundSrc": "k_05"
-          },{
-          "id":"bk_06",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":43, "y":45.5, "z":6
-          },
-          "imgSrc": "bk_06",
-          "soundSrc": "k_06"
-          },{
-          "id":"bk_07",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":51.599999999999994, "y":45.5, "z":7
-          },
-          "imgSrc": "bk_07",
-          "soundSrc": "k_07"
-          },{
-          "id":"bk_08",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":60.199999999999996, "y":45.5, "z":8
-          },
-          "imgSrc": "bk_08",
-          "soundSrc": "k_08"
-          },{
-          "id":"bk_09",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":68.8, "y":45.5, "z":9
-          },
-          "imgSrc": "bk_09",
-          "soundSrc": "k_09"
-          },{
-          "id":"bk_10",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":77.39999999999999, "y":45.5, "z":10
-          },
-          "imgSrc": "bk_10",
-          "soundSrc": "k_10"
-          },{
-          "id":"bk_11",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":86, "y":45.5, "z":11
-          },
-          "imgSrc": "bk_11",
-          "soundSrc": "k_11"
-          },{
-          "id":"bk_12",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":94.6, "y":45.5, "z":12
-          },
-          "imgSrc": "bk_12",
-          "soundSrc": "k_12"
-          },{
-          "id":"bk_13",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":103.19999999999999, "y":45.5, "z":13
-          },
-          "imgSrc": "bk_13",
-          "soundSrc": "k_13"
-          },{
-          "id":"bk_14",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":111.8, "y":45.5, "z":14
-          },
-          "imgSrc": "bk_14",
-          "soundSrc": "k_14"
-          },{
-          "id":"bk_15",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":120.39999999999999, "y":45.5, "z":15
-          },
-          "imgSrc": "bk_15",
-          "soundSrc": "k_15"
-          },{
-          "id":"bk_16",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":129, "y":45.5, "z":16
-          },
-          "imgSrc": "bk_16",
-          "soundSrc": "k_16"
-          },{
-          "id":"bk_17",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":137.6, "y":45.5, "z":17
-          },
-          "imgSrc": "bk_17",
-          "soundSrc": "k_17"
-          },{
-          "id":"bk_18",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":146.2, "y":45.5, "z":18
-          },
-          "imgSrc": "bk_18",
-          "soundSrc": "k_18"
-          },{
-          "id":"bk_19",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":154.79999999999998, "y":45.5, "z":19
-          },
-          "imgSrc": "bk_19",
-          "soundSrc": "k_19"
-          },{
-          "id":"bk_20",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":163.4, "y":45.5, "z":20
-          },
-          "imgSrc": "bk_20",
-          "soundSrc": "k_20"
-          },{
-          "id":"bk_21",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":172, "y":45.5, "z":21
-          },
-          "imgSrc": "bk_21",
-          "soundSrc": "k_21"
-          },{
-          "id":"bk_22",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":180.6, "y":45.5, "z":22
-          },
-          "imgSrc": "bk_22",
-          "soundSrc": "k_22"
-          },{
-          "id":"bk_23",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":189.2, "y":45.5, "z":23
-          },
-          "imgSrc": "bk_23",
-          "soundSrc": "k_23"
-          },{
-          "id":"bk_24",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":197.79999999999998, "y":45.5, "z":24
-          },
-          "imgSrc": "bk_24",
-          "soundSrc": "k_24"
-          },{
-          "id":"bk_25",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":206.39999999999998, "y":45.5, "z":25
-          },
-          "imgSrc": "bk_25",
-          "soundSrc": "k_25"
-          },{
-          "id":"bk_26",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":215, "y":45.5, "z":26
-          },
-          "imgSrc": "bk_26",
-          "soundSrc": "k_26"
-          },{
-          "id":"bk_27",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":223.6, "y":45.5, "z":27
-          },
-          "imgSrc": "bk_27",
-          "soundSrc": "k_27"
-          },{
-          "id":"bk_28",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":232.2, "y":45.5, "z":28
-          },
-          "imgSrc": "bk_28",
-          "soundSrc": "k_28"
-          },{
-          "id":"bk_29",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":240.79999999999998, "y":45.5, "z":29
-          },
-          "imgSrc": "bk_29",
-          "soundSrc": "k_29"
-          },{
-          "id":"bk_30",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":249.39999999999998, "y":45.5, "z":30
-          },
-          "imgSrc": "bk_30",
-          "soundSrc": "k_30"
-          },{
-          "id":"bk_31",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":258, "y":45.5, "z":31
-          },
-          "imgSrc": "bk_31",
-          "soundSrc": "k_31"
-          },{
-          "id":"bk_32",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":266.59999999999997, "y":45.5, "z":32
-          },
-          "imgSrc": "bk_32",
-          "soundSrc": "k_32"
-          },{
-          "id":"bk_33",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":275.2, "y":45.5, "z":33
-          },
-          "imgSrc": "bk_33",
-          "soundSrc": "k_33"
-          },{
-          "id":"bk_34",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":283.8, "y":45.5, "z":34
-          },
-          "imgSrc": "bk_34",
-          "soundSrc": "k_34"
-          },{
-          "id":"bk_35",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":292.4, "y":45.5, "z":35
-          },
-          "imgSrc": "bk_35",
-          "soundSrc": "k_35"
-          },{
-          "id":"bk_36",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":301, "y":45.5, "z":36
-          },
-          "imgSrc": "bk_36",
-          "soundSrc": "k_36"
-          },{
-          "id":"bk_37",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":309.59999999999997, "y":45.5, "z":37
-          },
-          "imgSrc": "bk_37",
-          "soundSrc": "k_37"
-          },{
-          "id":"bk_38",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":318.2, "y":45.5, "z":38
-          },
-          "imgSrc": "bk_38",
-          "soundSrc": "k_38"
-          },{
-          "id":"bk_39",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":326.8, "y":45.5, "z":39
-          },
-          "imgSrc": "bk_39",
-          "soundSrc": "k_39"
-          },{
-          "id":"bk_40",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":335.4, "y":45.5, "z":40
-          },
-          "imgSrc": "bk_40",
-          "soundSrc": "k_40"
-          },{
-          "id":"bk_41",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":344, "y":45.5, "z":41
-          },
-          "imgSrc": "bk_41",
-          "soundSrc": "k_41"
-          },{
-          "id":"bk_42",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":352.59999999999997, "y":45.5, "z":42
-          },
-          "imgSrc": "bk_42",
-          "soundSrc": "k_42"
-          },{
-          "id":"bk_43",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":361.2, "y":45.5, "z":43
-          },
-          "imgSrc": "bk_43",
-          "soundSrc": "k_43"
-          },{
-          "id":"bk_44",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":369.8, "y":45.5, "z":44
-          },
-          "imgSrc": "bk_44",
-          "soundSrc": "k_44"
-          },{
-          "id":"bk_45",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":378.4, "y":45.5, "z":45
-          },
-          "imgSrc": "bk_45",
-          "soundSrc": "k_45"
-          },{
-          "id":"bk_46",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":387, "y":45.5, "z":46
-          },
-          "imgSrc": "bk_46",
-          "soundSrc": "k_46"
-          },{
-          "id":"bk_47",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":395.59999999999997, "y":45.5, "z":47
-          },
-          "imgSrc": "bk_47",
-          "soundSrc": "k_47"
-          },{
-          "id":"bk_48",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":404.2, "y":45.5, "z":48
-          },
-          "imgSrc": "bk_48",
-          "soundSrc": "k_48"
-          },{
-          "id":"bk_49",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":412.79999999999995, "y":45.5, "z":49
-          },
-          "imgSrc": "bk_49",
-          "soundSrc": "k_49"
-          },{
-          "id":"bk_50",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":421.4, "y":45.5, "z":50
-          },
-          "imgSrc": "bk_50",
-          "soundSrc": "k_50"
-          },{
-          "id":"bk_51",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":430, "y":45.5, "z":51
-          },
-          "imgSrc": "bk_51",
-          "soundSrc": "k_51"
-          },{
-          "id":"bk_52",
-          "type": "bottom",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":438.59999999999997, "y":45.5, "z":52
-          },
-          "imgSrc": "bk_52",
-          "soundSrc": "k_52"
-          },{
-          "id":"tk_01",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":447.2, "y":45.5, "z":53
-          },
-          "imgSrc": "tk_01",
-          "soundSrc": "k_01"
-          },{
-          "id":"tk_02",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":455.79999999999995, "y":45.5, "z":54
-          },
-          "imgSrc": "tk_02",
-          "soundSrc": "k_02"
-          },{
-          "id":"tk_03",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":464.4, "y":45.5, "z":55
-          },
-          "imgSrc": "tk_03",
-          "soundSrc": "k_03"
-          },{
-          "id":"tk_04",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":473, "y":45.5, "z":56
-          },
-          "imgSrc": "tk_04",
-          "soundSrc": "k_04"
-          },{
-          "id":"tk_05",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":481.59999999999997, "y":45.5, "z":57
-          },
-          "imgSrc": "tk_05",
-          "soundSrc": "k_05"
-          },{
-          "id":"tk_06",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":490.2, "y":45.5, "z":58
-          },
-          "imgSrc": "tk_06",
-          "soundSrc": "k_06"
-          },{
-          "id":"tk_07",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":498.79999999999995, "y":45.5, "z":59
-          },
-          "imgSrc": "tk_07",
-          "soundSrc": "k_07"
-          },{
-          "id":"tk_08",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":507.4, "y":45.5, "z":60
-          },
-          "imgSrc": "tk_08",
-          "soundSrc": "k_08"
-          },{
-          "id":"tk_09",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":516, "y":45.5, "z":61
-          },
-          "imgSrc": "tk_09",
-          "soundSrc": "k_09"
-          },{
-          "id":"tk_10",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":524.6, "y":45.5, "z":62
-          },
-          "imgSrc": "tk_10",
-          "soundSrc": "k_10"
-          },{
-          "id":"tk_11",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":533.1999999999999, "y":45.5, "z":63
-          },
-          "imgSrc": "tk_11",
-          "soundSrc": "k_11"
-          },{
-          "id":"tk_12",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":541.8, "y":45.5, "z":64
-          },
-          "imgSrc": "tk_12",
-          "soundSrc": "k_12"
-          },{
-          "id":"tk_13",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":550.4, "y":45.5, "z":65
-          },
-          "imgSrc": "tk_13",
-          "soundSrc": "k_13"
-          },{
-          "id":"tk_14",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":559, "y":45.5, "z":66
-          },
-          "imgSrc": "tk_14",
-          "soundSrc": "k_14"
-          },{
-          "id":"tk_15",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":567.6, "y":45.5, "z":67
-          },
-          "imgSrc": "tk_15",
-          "soundSrc": "k_15"
-          },{
-          "id":"tk_16",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":576.1999999999999, "y":45.5, "z":68
-          },
-          "imgSrc": "tk_16",
-          "soundSrc": "k_16"
-          },{
-          "id":"tk_17",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":584.8, "y":45.5, "z":69
-          },
-          "imgSrc": "tk_17",
-          "soundSrc": "k_17"
-          },{
-          "id":"tk_18",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":593.4, "y":45.5, "z":70
-          },
-          "imgSrc": "tk_18",
-          "soundSrc": "k_18"
-          },{
-          "id":"tk_19",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":602, "y":45.5, "z":71
-          },
-          "imgSrc": "tk_19",
-          "soundSrc": "k_19"
-          },{
-          "id":"tk_20",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":610.6, "y":45.5, "z":72
-          },
-          "imgSrc": "tk_20",
-          "soundSrc": "k_20"
-          },{
-          "id":"tk_21",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":619.1999999999999, "y":45.5, "z":73
-          },
-          "imgSrc": "tk_21",
-          "soundSrc": "k_21"
-          },{
-          "id":"tk_22",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":627.8, "y":45.5, "z":74
-          },
-          "imgSrc": "tk_22",
-          "soundSrc": "k_22"
-          },{
-          "id":"tk_23",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":636.4, "y":45.5, "z":75
-          },
-          "imgSrc": "tk_23",
-          "soundSrc": "k_23"
-          },{
-          "id":"tk_24",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":645, "y":45.5, "z":76
-          },
-          "imgSrc": "tk_24",
-          "soundSrc": "k_24"
-          },{
-          "id":"tk_25",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":653.6, "y":45.5, "z":77
-          },
-          "imgSrc": "tk_25",
-          "soundSrc": "k_25"
-          },{
-          "id":"tk_26",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":662.1999999999999, "y":45.5, "z":78
-          },
-          "imgSrc": "tk_26",
-          "soundSrc": "k_26"
-          },{
-          "id":"tk_27",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":670.8, "y":45.5, "z":79
-          },
-          "imgSrc": "tk_27",
-          "soundSrc": "k_27"
-          },{
-          "id":"tk_28",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":679.4, "y":45.5, "z":80
-          },
-          "imgSrc": "tk_28",
-          "soundSrc": "k_28"
-          },{
-          "id":"tk_29",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":688, "y":45.5, "z":81
-          },
-          "imgSrc": "tk_29",
-          "soundSrc": "k_29"
-          },{
-          "id":"tk_30",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":696.6, "y":45.5, "z":82
-          },
-          "imgSrc": "tk_30",
-          "soundSrc": "k_30"
-          },{
-          "id":"tk_31",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":705.1999999999999, "y":45.5, "z":83
-          },
-          "imgSrc": "tk_31",
-          "soundSrc": "k_31"
-          },{
-          "id":"tk_32",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":713.8, "y":45.5, "z":84
-          },
-          "imgSrc": "tk_32",
-          "soundSrc": "k_32"
-          },{
-          "id":"tk_33",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":722.4, "y":45.5, "z":85
-          },
-          "imgSrc": "tk_33",
-          "soundSrc": "k_33"
-          },{
-          "id":"tk_34",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":731, "y":45.5, "z":86
-          },
-          "imgSrc": "tk_34",
-          "soundSrc": "k_34"
-          },{
-          "id":"tk_35",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":739.6, "y":45.5, "z":87
-          },
-          "imgSrc": "tk_35",
-          "soundSrc": "k_35"
-          },{
-          "id":"tk_36",
-          "type": "top",
-          "keyInput": 80,
-          "coords": {
-            "width":8, "height":20,
-            "x":748.1999999999999, "y":45.5, "z":88
-          },
-          "imgSrc": "tk_36",
-          "soundSrc": "k_36"
+          "id":"drums",
+          "assets": {
+            "images": {
+              "path":"./images/drums/",
+              "manifest": [
+                {
+                  "id": "kickDrum",
+                  "src": "kick_drum.png",
+                  "data": {
+                    "width":    239,
+                    "height":   226,
+                    "keyInput": 32,
+                    "x":286,
+                    "y":209
+                  }
+                },
+                {
+                  "id": "snareDrum",
+                  "src": "snare_drum.png",
+                  "data": {
+                    "width":    156,
+                    "height":   156,
+                    "keyInput": 65,
+                    "x":158,
+                    "y":350
+                  }
+                },
+                {
+                  "id": "floorTomTom",
+                  "src": "floor_tom.png",
+                  "data": {
+                    "width":    204,
+                    "height":   194,
+                    "keyInput": 70,
+                    "x":456,
+                    "y":336
+                  }
+                },
+                {
+                  "id": "middleTomTom",
+                  "src": "middle_tom.png",
+                  "data": {
+                    "width":    120,
+                    "height":   122,
+                    "keyInput": 68,
+                    "x":342,
+                    "y":217
+                  }
+                },
+                {
+                  "id": "highTomTom",
+                  "src": "high_tom.png",
+                  "data": {
+                    "width":    102,
+                    "height":   102,
+                    "keyInput": 83,
+                    "x":228,
+                    "y":226
+                  }
+                },
+                {
+                  "id": "hiHatCymbal",
+                  "src": "hihat_cymbal.png",
+                  "data": {
+                    "width": 129,
+                    "height": 126,
+                    "keyInput": 81,
+                    "x":94,
+                    "y":252
+                  }
+                },
+                {
+                  "id": "crashCymbal",
+                  "src": "crash_cymbal.png",
+                  "data": {
+                    "width": 198,
+                    "height": 193,
+                    "keyInput": 87,
+                    "x":113,
+                    "y":112
+                  }
+                },
+                {
+                  "id": "rideCymbal",
+                  "src": "ride_cymbal.png",
+                  "data": {
+                    "width": 201,
+                    "height": 189,
+                    "keyInput": 82,
+                    "x":462,
+                    "y":152
+                  }
+                }
+              ]
+            },
+            "sounds": {
+              "path":"./sounds/drums/kit_01/mp3/",
+              "manifest": [
+                { "id": "kickDrum_snd", "src": "kick_drum.mp3" },
+                { "id": "snareDrum_snd", "src": "sample_2.mp3" },
+                { "id": "floorTomTom_snd", "src": "floor_tom.mp3" },
+                { "id": "middleTomTom_snd", "src": "mid_tom.mp3" },
+                { "id": "highTomTom_snd", "src": "sample_1.mp3" },
+                { "id": "hiHatCymbal_snd", "src": "open_hat_1.mp3" },
+                { "id": "crashCymbal_snd", "src": "crash_cymbal.mp3" },
+                { "id": "rideCymbal_snd", "src": "ride_cymbal.mp3" }
+              ]
+            }
           }
-      ]
-    },
-
-    "cello": {
-      "type": "cello",
-      "width": 580,
-      "height": 0,
-      "imagePath": "./images/cello/",
-      "soundPath": "./sounds/cello/mp3/",
-      "imageExt": ".png",
-      "soundExt": ".mp3",
-      "bgImage": "cello_body.png",
-      "bow": "bow.png",
-      "components": [
-        {
-          "id":"cello_01",
-          "keyInput": 50,
-          "coords": {
-            "width":8, "height":20,
-            "x":748.1999999999999, "y":45.5, "z":88
-          },
-          "imgSrc": "undefined",
-          "soundSrc": "c_01"
         }
       ]
+
     }
-  }
+  ]
 }
+
+
+
+
