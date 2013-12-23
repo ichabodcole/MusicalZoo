@@ -1,16 +1,14 @@
-define ['InstrumentComponent'], (InstrumentComponent)->
+define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
 
-  class Drum extends InstrumentComponent
-    constructor: (data)->
-      super data
-      @setRegistrationCenter()
+  class Drum extends ComponentItem
+    constructor: (name, data, image)->
+      super(name, data, image)
 
     animate: ->
-      obj = @getDisplayObj()
-      obj.scaleX = .95
-      obj.scaleY = .95
+      @scaleX = .95
+      @scaleY = .95
 
       setTimeout =>
-        obj.scaleX = 1
-        obj.scaleY = 1
+        @scaleX = 1
+        @scaleY = 1
       , 50

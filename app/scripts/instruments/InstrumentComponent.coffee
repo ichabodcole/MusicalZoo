@@ -1,53 +1,60 @@
 define ['easel',
-        'sound'], (createjs, Sound)->
-  class InstrumentComponent
-    constructor: (data)->
-      @container = new createjs.Container()
-      @id       = data.id
-      @image    = data.image
-      @coords   = data.coords
-      @keyInput = data.keyInput
-      # console.log data
-      @soundId = @id + "_snd"
-      @container = new createjs.Container()
+        'preload',
+        'tween',
+        'sound',
+        'Utils'], (createjs, Preload, Tween, Sound, Utils)->
+
+  class InstrumentComponent extends createjs.Container
+    constructor: (name, @manifest)->
+      @initialize()
+      @name = name
+      @cursor = "pointer"
+      # @visible = false
+      @items = []
+      @assetManifests = null
+
+      createjs.EventDispatcher.initialize(@)
+      @setupLoadQueue()
+      @parseManifest(@manifest)
+
+    setupLoadQueue: ->
+      @queue = new createjs.LoadQueue(false)
+      @queue.installPlugin(createjs.Sound)
+      @queue.addEventListener('fileload', @handleFileLoad)
+      @queue.addEventListener('complete', @handleLoadComplete)
+
+    parseManifest: (manifest)->
+      if manifest.data?
+        @setData(manifest.data)
+
+      if manifest.assets?
+        if manifest.assets.images?
+          @queue.loadManifest(manifest.assets.images)
+
+        if manifest.assets.sounds?
+           @queue.loadManifest(manifest.assets.sounds)
+
+    load: ()->
+      @queue.load()
+
+    addItem: (name, data, image)=>
+      # Institut on child class
+      false
+
+    handleFileLoad: (e)=>
+      if e.item.type == "image"
+        name = e.item.id
+        data = e.item.data
+        image = e.result
+        @addItem(name, data, image)
+
+    handleLoadComplete: (e)=>
       @setup()
 
     setup: ->
-      bitmap = new createjs.Bitmap(@image)
-      @setPosition(@coords.x, @coords.y)
-      @getDisplayObj().addChild(bitmap)
 
-    register: ->
-      @container.on 'click', @playSound, false
-      document.addEventListener 'keydown', @handleKeyDown, false
+    setData: (data)->
+      for key, dataItem of data
+        @[key] = dataItem
 
-    deregister: ->
-      @container.off 'click', @playSound, false
-      document.removeEventListener 'keydown', @handleKeyDown, false
 
-    handleKeyDown: (e)=>
-      e.preventDefault()
-      console.log e.which
-      if e.which == @keyInput
-       @playSound(e)
-
-    playSound: (e)=>
-      # console.log("You hit the", @id)
-      createjs.Sound.play(@soundId)
-      @animate()
-
-    animate: ->
-      # Implement in child classes
-
-    setPosition: (x, y)->
-      obj = @getDisplayObj();
-      obj.x = x
-      obj.y = y
-
-    setRegistrationCenter: ()->
-      obj = @getDisplayObj()
-      obj.regX = @coords.width/2
-      obj.regY = @coords.height/2
-
-    getDisplayObj: ->
-      return @container

@@ -3,11 +3,11 @@ define ['InstrumentComponent'], (InstrumentComponent)->
   class PianoKey extends InstrumentComponent
     constructor: (data, @keyboard)->
       super data
-      @getDisplayObj().mouseEnabled = true
+      @mouseEnabled = true
 
     register: ->
       super
-      @getDisplayObj().on 'mouseover', @handleMouseOver
+      @on 'mouseover', @handleMouseOver
 
     handleMouseOver: =>
       if @keyboard.mouseDown == true
@@ -15,5 +15,5 @@ define ['InstrumentComponent'], (InstrumentComponent)->
 
     deregister: ->
       super
-      @getDisplayObj().off 'mouseover', @handleMouseOver
+      @off 'mouseover', @handleMouseOver
 

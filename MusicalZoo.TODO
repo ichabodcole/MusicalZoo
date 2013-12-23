@@ -3,11 +3,12 @@
  ✔ Add keyboard input for drums @done (13-12-18 01:05)
  ✔ Implement piano @done (13-12-19 06:42)
  ✔ Add interface elements for instrument switching @done (13-12-19 06:42)
- ☐ Instruments should inherit from Container class
-   ☐ Remove references to container variable and get rid of getDisplayObj method
+ ✔ Instruments should inherit from Container class @done (13-12-23 03:39)
+   ✔ Remove references to container variable and get rid of getDisplayObj method @done (13-12-23 03:39)
  ☐ Rework instruments to take parse new data format
-   ☐ Reimplement Instrument class
-     ☐ Reimplement DrumKit class
+   ✔ Reimplement Instrument class @done (13-12-23 03:40)
+     ✔ Reimplement DrumKit class @done (13-12-23 03:40)
+       ☐ Reimplement Piano Classes
   ☐ Implement cello
   ☐ Implement loaders
   ☐ Create and export new samples from Logic

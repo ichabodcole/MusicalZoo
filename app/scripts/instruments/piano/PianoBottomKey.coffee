@@ -11,7 +11,7 @@ define ['PianoKey'], (PianoKey)->
     setup: ->
       @addKeyLine(@coords.x, @coords.y)
       hitArea = new createjs.Bitmap(@image)
-      @getDisplayObj().hitArea = hitArea
+      @hitArea = hitArea
 
     animate: ->
       @keyLine.y += 4
@@ -25,4 +25,4 @@ define ['PianoKey'], (PianoKey)->
       @keyLine.y = @keyLineStartY
       @keyLine.graphics.beginStroke('#ffffff')
       @keyLine.graphics.moveTo(x, 0).lineTo(x+@keyLineLength, 0)
-      @getDisplayObj().addChild(@keyLine)
+      @addChild(@keyLine)

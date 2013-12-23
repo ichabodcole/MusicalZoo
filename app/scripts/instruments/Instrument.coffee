@@ -1,95 +1,110 @@
 define ['easel',
         'preload',
         'tween',
-        'sound'], (createjs, Preload, Tween, Sound)->
+        'Utils'], (createjs, Preload, Tween, Utils)->
 
-  class Instrument
-    constructor: ()->
-      @id = 'instrument'
-      @container = new createjs.Container()
-      @container.cursor = "pointer"
-      @queue = new createjs.LoadQueue(true)
-      @queue.installPlugin(createjs.Sound)
-      @componentClass = null
+  class Instrument extends createjs.Container
+    constructor: (name, @manifest)->
+      @initialize()
+      @name = name
+      @cursor = "pointer"
+      @visible = false
+      @components = []
+      @assetManifests = null
 
-      @assetManifest  = []
-      @componentData  = []
-
-      @getDisplayObj().visible = false
       createjs.EventDispatcher.initialize(@)
+      @setupLoadQueue()
+      @parseManifest(@manifest)
 
-    # Interface methods
+    setupLoadQueue: ->
+      @queue = new createjs.LoadQueue(false)
+      @queue.addEventListener('fileload', @handleFileLoad)
+      @queue.addEventListener('complete', @handleLoadComplete)
 
     parseManifest: (manifest)->
+      if manifest.data
+        @setData(manifest.data)
 
-    load: (manifest)->
-      @parseManifest(manifest)
-      @queue.addEventListener('fileload', @handleFileLoad)
-      @queue.addEventListener('complete', @loadComplete)
-      @queue.loadManifest(@assetManifest)
+      if manifest.backgroundImage?
+        path = manifest.backgroundImage.path
+        src  = manifest.backgroundImage.src
+        @queue.loadFile(src, false, path)
 
-    handleFileLoad: (e)=>
+      if manifest.components?
+        components = manifest.components
+        @addComponents(components)
 
-    loadComplete: (e)=>
+    load: ()->
+      # @queue.load()
+      @showProgressLoader()
+      @handleLoadComplete()
+
+    addComponents: (components)->
+      components.forEach (element, index)=>
+        @addComponent(element)
+
+    addComponent: (component)=>
+      # institute on child classes
+      false
+
+    addBackgroundImage: (image)->
+      bitmap = new createjs.Bitmap(image)
+      @addChild(bitmap)
+
+    showProgressLoader: ->
+      @loader = new createjs.Shape()
+      @loader.graphics.beginFill("#ff0000").drawRect(0, 0, 250, 250)
+      @addChild(@loader)
+
+    handleFileLoad: (e, data)=>
+      @addBackgroundImage(e.result, e.item.data)
+
+    handleLoadComplete: (e)=>
       @setup()
-
-    setup: =>
-      @componentData.forEach (element, array, index)=>
-        @addComponent(element).register()
+      @loader.visible = false
       @show()
 
-    tearDown: ->
-      @componentData.forEach (element, array, index)=>
-        @addComponent(element).deregister()
+    setup: =>
+      @setScale()
+      stage = @getStage()
+      Utils.centerOnStage(stage, @, @width)
+      Utils.centerRegistration(@, @width, @height, true)
 
-    addComponent: (data)->
-      if @componentClass != null
-        image = @getImage(data.id)
-        data.image = image
-
-        component = new @componentClass(data)
-        @container.addChild(component.getDisplayObj())
-        return component
-
-    getImage: (imgId)->
-      image = @queue.getResult(imgId + '_img')
-
-    getDisplayObj: ->
-      return @container
+    setData: (data)->
+      for key, dataItem of data
+        @[key] = dataItem
 
     show: ->
+      @visible = true
       ease = createjs.Ease.elasticOut
       transitionTime = 1500
       endScale = @scaleX
 
-      obj = @getDisplayObj()
-      obj.visible = true
-
       # setScale(0.1)
-      obj.scaleX = obj.scaleY = 0.1
-      createjs.Tween.get(obj).to({scaleX:endScale, scaleY:endScale}, transitionTime, ease)
-
+      @scaleX = @scaleY = 0.1
+      createjs.Tween.get(@).to({scaleX:endScale, scaleY:endScale}, transitionTime, ease)
 
     hide: ->
       ease = createjs.Ease.cubicIn
       transitionTime = 500
       endScale = 0.01
 
-      obj = @getDisplayObj()
-
       # setScale(0.1)
-      createjs.Tween.get(obj).to({scaleX:endScale, scaleY:endScale}, transitionTime, ease).call(@hideComplete)
+      createjs.Tween.get(@).to({scaleX:endScale, scaleY:endScale}, transitionTime, ease).call(@hideComplete)
 
     hideComplete: =>
-      @getDisplayObj().visible = false
-      @dispatchEvent(new Event('hideComplete'))
+      @visible = false
+      @dispatchEvent(new Event('hideComplete', true))
 
     setScale:(scale)->
-      obj = @getDisplayObj()
-      @scaleX = @scaleY = scale
-      obj.scaleX = obj.scaleY = scale
       if @width && @height
-        @width  *= scale
-        @height *= scale
+        @width  *= @scaleX
+        @height *= @scaleY
+        console.log @width
+
+    instrumentHideComplete: =>
+      @show()
+
+    instrumentShowComplete: ->
 
 

@@ -2,7 +2,7 @@ define ['Instrument',
         'PianoKeyFactory'], (Instrument, PianoKeyFactory)->
 
   class Piano extends Instrument
-    constructor: ()->
+    constructor: (id)->
       @bgImage    = null
       @bgBitmap   = null
       @keyboard   = new createjs.Container()
@@ -11,10 +11,10 @@ define ['Instrument',
       @keyboard.mouseDown = false
       @width = 539
       @height = 533
-      super
+      super(id)
       @id = 'piano'
 
-      @getDisplayObj().addChild(@keyboard)
+      @addChild(@keyboard)
       @keyboard.addChild(@bottomKeys)
       @keyboard.addChild(@topKeys)
       @setKeyBoardPosition()
@@ -35,9 +35,8 @@ define ['Instrument',
       @keyboard.y = 418
 
     addBgImage: ->
-      obj = @getDisplayObj()
       @bgBitmap = new createjs.Bitmap(@bgImage)
-      obj.addChildAt(@bgBitmap, @getDisplayObj().getChildIndex(@keyboard))
+      obj.addChildAt(@bgBitmap, @getChildIndex(@keyboard))
 
     addComponent: (data)->
         keyType = data.type
@@ -47,9 +46,9 @@ define ['Instrument',
         component = PianoKeyFactory.create(keyType, data, @keyboard)
 
         if keyType == 'top'
-          @topKeys.addChild(component.getDisplayObj())
+          @topKeys.addChild(component)
         else
-          @bottomKeys.addChild(component.getDisplayObj())
+          @bottomKeys.addChild(component)
         return component
 
     parseManifest: (manifest)->

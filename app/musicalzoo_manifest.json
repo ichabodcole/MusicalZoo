@@ -72,7 +72,7 @@
                 "id":"musicalZooTitle",
                 "src":"musical_zoo.png",
                 "data": {
-                  "width": 225,
+                  "width": 218,
                   "height": 61,
                   "coords": {
                     "x": 0,
@@ -91,19 +91,23 @@
     {
       "id": "drumKit",
       "data": {
-        "width": 570,
-        "height": 430,
-        "scaleX": 0.95,
-        "scaleY": 0.95,
-        "coords": {
-          "x": 0,
-          "y": 0
-        }
+        "width": 583,
+        "height": 450,
+        "scaleX": 1,
+        "scaleY": 1,
+        "x": 0,
+        "y": 30
       },
       "backgroundImage": false,
       "components": [
         {
           "id":"drums",
+          "data": {
+            "width": 583,
+            "height": 450,
+            "x": -15,
+            "y": 0
+          },
           "assets": {
             "images": {
               "path":"./images/drums/",
@@ -115,8 +119,8 @@
                     "width":    239,
                     "height":   226,
                     "keyInput": 32,
-                    "x":286,
-                    "y":209
+                    "x":167,
+                    "y":96
                   }
                 },
                 {
@@ -126,8 +130,8 @@
                     "width":    156,
                     "height":   156,
                     "keyInput": 65,
-                    "x":158,
-                    "y":350
+                    "x":80,
+                    "y":272
                   }
                 },
                 {
@@ -137,8 +141,8 @@
                     "width":    204,
                     "height":   194,
                     "keyInput": 70,
-                    "x":456,
-                    "y":336
+                    "x":354,
+                    "y":239
                   }
                 },
                 {
@@ -148,8 +152,8 @@
                     "width":    120,
                     "height":   122,
                     "keyInput": 68,
-                    "x":342,
-                    "y":217
+                    "x":282,
+                    "y":156
                   }
                 },
                 {
@@ -159,8 +163,8 @@
                     "width":    102,
                     "height":   102,
                     "keyInput": 83,
-                    "x":228,
-                    "y":226
+                    "x":177,
+                    "y":175
                   }
                 },
                 {
@@ -170,8 +174,8 @@
                     "width": 129,
                     "height": 126,
                     "keyInput": 81,
-                    "x":94,
-                    "y":252
+                    "x":29,
+                    "y":189
                   }
                 },
                 {
@@ -181,8 +185,8 @@
                     "width": 198,
                     "height": 193,
                     "keyInput": 87,
-                    "x":113,
-                    "y":112
+                    "x":15,
+                    "y":15
                   }
                 },
                 {
@@ -192,8 +196,8 @@
                     "width": 201,
                     "height": 189,
                     "keyInput": 82,
-                    "x":462,
-                    "y":152
+                    "x":361,
+                    "y":58
                   }
                 }
               ]

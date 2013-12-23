@@ -4,14 +4,14 @@ define ['DrumKit',
 
   class InstrumentFactory
     @types: {
-      drums: DrumKit,
+      drumKit: DrumKit,
       piano: Piano,
       cello: Cello
     }
 
-    @create: (type)->
+    @create: (type, manifest)->
       if type
-        new @types[type]()
+        new @types[type](type, manifest)
       else
         false
 
