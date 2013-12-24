@@ -13,7 +13,6 @@ define ['easel',
     setup: (image, data)->
       @setData(data)
       @addImage(image)
-      Utils.centerRegistration(@, @width, @height, true)
 
     addImage: (image)->
       bitmap = new createjs.Bitmap(image)
@@ -29,14 +28,10 @@ define ['easel',
 
     handleKeyDown: (e)=>
       e.preventDefault()
-      console.log e.which
-      console.log @keyInput
       if e.which == @keyInput
         @playSound(e)
 
     playSound: (e)=>
-      console.log("You hit the", @id)
-      console.log(@soundId)
       createjs.Sound.play(@soundId)
       @animate()
 

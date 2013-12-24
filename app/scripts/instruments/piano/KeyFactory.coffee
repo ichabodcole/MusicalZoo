@@ -1,8 +1,9 @@
-define ['Drum'], (Drum)->
+define ['TopKey', 'BottomKey'], (TopKey, BottomKey)->
 
-  class DrumComponentItemFactory
+  class PianoComponentItemFactory
     @types: {
-      Drum: Drum
+      top: TopKey,
+      bottom: BottomKey
     }
 
     @create: (type, name, data, image)->

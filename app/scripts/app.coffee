@@ -34,7 +34,7 @@ define ['easel',
   app = new App();
   createjs.Ticker.addEventListener('tick', app.stage)
 
-  # console.log Utils.makePianoKeyJson()
+  # console.log Utils.makePianoKeyJson().imageJson
 
 
 

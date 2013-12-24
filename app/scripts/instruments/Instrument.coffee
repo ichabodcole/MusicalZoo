@@ -9,8 +9,12 @@ define ['easel',
       @name = name
       @cursor = "pointer"
       @visible = false
-      @components = []
       @assetManifests = null
+      @backgroundImage = new createjs.Container()
+      @components = new createjs.Container()
+
+      @addChild(@backgroundImage)
+      @addChild(@components)
 
       createjs.EventDispatcher.initialize(@)
       @setupLoadQueue()
@@ -35,9 +39,9 @@ define ['easel',
         @addComponents(components)
 
     load: ()->
-      # @queue.load()
+      @queue.load()
       @showProgressLoader()
-      @handleLoadComplete()
+      # @handleLoadComplete()
 
     addComponents: (components)->
       components.forEach (element, index)=>
@@ -49,7 +53,8 @@ define ['easel',
 
     addBackgroundImage: (image)->
       bitmap = new createjs.Bitmap(image)
-      @addChild(bitmap)
+      bitmap.name = "backgroundImage"
+      @backgroundImage.addChild(bitmap)
 
     showProgressLoader: ->
       @loader = new createjs.Shape()
@@ -100,7 +105,6 @@ define ['easel',
       if @width && @height
         @width  *= @scaleX
         @height *= @scaleY
-        console.log @width
 
     instrumentHideComplete: =>
       @show()

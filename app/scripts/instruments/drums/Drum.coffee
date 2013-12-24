@@ -4,6 +4,10 @@ define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
     constructor: (name, data, image)->
       super(name, data, image)
 
+    setup:->
+      super
+      Utils.centerRegistration(@, @width, @height, true)
+
     animate: ->
       @scaleX = .95
       @scaleY = .95

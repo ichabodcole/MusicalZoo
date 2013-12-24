@@ -1,16 +1,20 @@
-define ['PianoKey'], (PianoKey)->
+define ['Key'], (Key)->
 
-  class PianoBottomKey extends PianoKey
-    constructor: (data, keyboard)->
+  class BottomKey extends Key
+    constructor: (name, data, image)->
       @keyLine
       @keyLineLength = 8
       @keyLineStartX = 7
       @keyLineStartY = 44.5
-      super data, keyboard
+      super(name, data, image)
+      # super (name, data, image)
 
-    setup: ->
-      @addKeyLine(@coords.x, @coords.y)
-      hitArea = new createjs.Bitmap(@image)
+    setup: (image, data)->
+      @addImage(image)
+      @addKeyLine(data.x, data.y)
+
+    addImage: (image)->
+      hitArea = new createjs.Bitmap(image)
       @hitArea = hitArea
 
     animate: ->

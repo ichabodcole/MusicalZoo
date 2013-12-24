@@ -52,6 +52,7 @@ define ['easel',
       @setup()
 
     setup: ->
+      false
 
     setData: (data)->
       for key, dataItem of data

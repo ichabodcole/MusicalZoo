@@ -2,43 +2,60 @@ define [], ->
   class Utils
 
     @makePianoKeyJson: ->
-      json = ""
+      soundJson = ""
+      imageJson = ""
+      soundPath = "./sounds/piano/mp3/"
+      imagePath = "../images/piano/"
       start = 1
       end   = 88
-      topKeyStart = 53
+
       for i in [start..end]
-        ki = i
+        imageJson += @makePianoImageJson(i)
+        soundJson += @makePianoSoundJson(i)
+      return {imageJson:imageJson, soundJson:soundJson}
 
-        if ki >= topKeyStart
-          prefix = 'tk_'
-          keyType = 'top'
-          ki -= 52
-        else
-          prefix = 'bk_'
-          keyType = 'bottom'
-
-        ki = if ki < 10 then "0"+ki else ki
-
-        json += "{\n
-          \"id\":\"#{ prefix + ki }\",\n
-          \"type\": \"#{ keyType }\",\n
+    @makePianoImageJson: (i)->
+      topKeyStart = 53
+      keyIndex = i
+      if i >= topKeyStart
+        prefix = 'tk_'
+        keyType = 'top'
+        keyIndex -= 52
+      else
+        prefix = 'bk_'
+        keyType = 'bottom'
+      keyIndex = @addLeadingZero(keyIndex)
+      stringIndex = @addLeadingZero(i)
+      #
+      return "{\n
+        \"id\":\"k_#{ stringIndex }\",\n
+        \"src\": \"#{ prefix + keyIndex }.png\",\n
+        \"data\": {\n
+          \"type\": \"#{keyType}\",\n
           \"keyInput\": 80,\n
-          \"coords\": {\n
-            \"width\":8, \"height\":20,\n
-            \"x\":#{ (i-1) * 8.6 }, \"y\":45.5, \"z\":#{ i }\n
-          },\n
-          \"imgSrc\": \"#{ prefix + ki }\",\n
-          \"soundSrc\": \"k_#{ ki }\"\n
-          },"
-      return json
+          \"width\": 8.6,\n
+          \"height\": 20,\n
+          \"x\":#{ (i-1) * 8.6 },\n
+          \"y\":0,\n
+          \"z\":#{ i }\n
+        }\n
+      },"
 
+    @makePianoSoundJson: (i)->
+      prefix = "k_"
+      i = @addLeadingZero(i)
+      return "{\"id\":\"#{ prefix + i }_snd\", \"src\": \"#{ prefix + i }.mp3\"},\n"
+
+    @addLeadingZero: (num)->
+      if(num < 10)
+        num = "0" + num
+      num
 
     @centerOnStage: (stage, obj, width, height)->
       height = height || false
       obj.x = stage.canvas.width/2 - width/2
       if height
         obj.y = stage.canvas.height/2 - height/2
-
 
     @centerRegistration: (obj, width, height, adjustPos)->
       adjustPos = adjustPos || true

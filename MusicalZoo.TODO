@@ -5,14 +5,15 @@
  ✔ Add interface elements for instrument switching @done (13-12-19 06:42)
  ✔ Instruments should inherit from Container class @done (13-12-23 03:39)
    ✔ Remove references to container variable and get rid of getDisplayObj method @done (13-12-23 03:39)
- ☐ Rework instruments to take parse new data format
+ ✔ Rework instruments to take parse new data format @done (13-12-23 16:08)
    ✔ Reimplement Instrument class @done (13-12-23 03:40)
      ✔ Reimplement DrumKit class @done (13-12-23 03:40)
-       ☐ Reimplement Piano Classes
-  ☐ Implement cello
+       ✔ Reimplement Piano Classes @done (13-12-23 16:08)
   ☐ Implement loaders
-  ☐ Create and export new samples from Logic
+    ☐ Fix loading instrument when no background is available
+  ☐ Implement cello
   ☐ Add keyboard input for piano and cello
-  ☐ create ui element to show keyboard instructions for each instrument
  ☐ Remove EventListeners when an instrument is hidden
  ☐ Add case for kick drum
+  ☐ Create and export new samples from Logic
+  ☐ create ui element to show keyboard instructions for each instrument

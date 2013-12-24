@@ -9,6 +9,5 @@ define ['Instrument',
       id = component.id
       manifest = component
       drumComponent = DrumComponentFactory.create(id, manifest)
-      @addChild(drumComponent)
       drumComponent.load()
-      @components.push(drumComponent)
+      @components.addChild(drumComponent)
