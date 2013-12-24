@@ -16,5 +16,6 @@ define ['Instrument',
       id = component.id
       manifest = component
       pianoComponent = PianoComponentFactory.create(id, manifest)
+      pianoComponent.register()
       @components.addChild(pianoComponent)
       pianoComponent.load()
