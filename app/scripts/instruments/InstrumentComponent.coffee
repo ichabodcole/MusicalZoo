@@ -33,7 +33,7 @@ define ['easel',
           @queue.loadManifest(manifest.assets.images)
 
         if manifest.assets.sounds?
-           @queue.loadManifest(manifest.assets.sounds)
+          @queue.loadManifest(manifest.assets.sounds)
 
     load: ()->
       @queue.load()

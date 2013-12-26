@@ -1,12 +1,20 @@
 define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
 
-  class Key extends ComponentItem
+  class CelloString extends ComponentItem
     constructor: (name, data)->
       super(name, data)
+      @setup(data)
 
     setup: (data)->
       super(data)
-      @x = @y = 0
+      @addHitArea(data)
+
+    addHitArea: (data)->
+      hit = new createjs.Shape()
+      hit.graphics.beginFill('#00ADEE')
+         .drawEllipse(data.x, data.y, data.width, data.height)
+      # @hitArea = hit
+      @addChild(hit)
 
     register: ->
       super()

@@ -6,14 +6,15 @@ define ['Key'], (Key)->
       @keyLineLength = 8
       @keyLineStartX = 7
       @keyLineStartY = 44.5
-      super(name, data, image)
-      # super (name, data, image)
+      super(name, data)
+      @setup(data, image)
 
-    setup: (image, data)->
-      super(image, data)
+    setup: (data, image)->
+      super(data)
+      @addHitArea(image)
       @addKeyLine(data.x, data.y)
 
-    addImage: (image)->
+    addHitArea: (image)->
       hitArea = new createjs.Bitmap(image)
       @hitArea = hitArea
 

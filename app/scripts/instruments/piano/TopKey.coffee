@@ -2,11 +2,17 @@ define ['Key'], (Key)->
 
   class TopKey extends Key
     constructor: (name, data, image)->
-      super(name, data, image)
+      super(name, data)
       @startY = @y
+      @setup(data, image)
 
-    setup:(image, data)->
-      super(image, data)
+    setup:(data, image)->
+      super(data)
+      @addImage(image)
+
+    addImage: (image)->
+      bitmap = new createjs.Bitmap(image)
+      @addChild(bitmap)
 
     animate: ->
       @y += 2

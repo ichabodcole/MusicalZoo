@@ -8,7 +8,6 @@ define ['easel',
     constructor: (name, @manifest)->
       @initialize()
       @name               = name
-      @cursor             = "pointer"
       @visible            = false
       @scaleStart         = 1
       @assetManifests     = null

@@ -4,19 +4,13 @@ define ['easel',
         'Utils'], (createjs, Preload, Sound, Utils)->
 
   class ComponentItem extends createjs.Container
-    constructor: (name, data, image)->
+    constructor: (name, data)->
       @initialize()
       @name  = name
       @soundId = @name + "_snd"
-      @setup(image, data)
 
-    setup: (image, data)->
+    setup: (data)->
       @setData(data)
-      @addImage(image)
-
-    addImage: (image)->
-      bitmap = new createjs.Bitmap(image)
-      @addChild(bitmap)
 
     register: ->
       document.addEventListener 'keydown', @handleKeyDown, false

@@ -219,6 +219,14 @@
         }
       ]
     },
+
+
+
+
+
+
+
+
     {
       "id": "piano",
       "data": {
@@ -1396,6 +1404,119 @@
                 {"id":"k_86_snd", "src": "k_86.mp3"},
                 {"id":"k_87_snd", "src": "k_87.mp3"},
                 {"id":"k_88_snd", "src": "k_88.mp3"}
+              ]
+            }
+          }
+        }
+      ]
+    },
+
+
+
+
+
+
+    {
+      "id": "cello",
+      "data": {
+        "width": 177,
+        "height": 543,
+        "scaleX": 0.9,
+        "scaleY": 0.9,
+        "x": 6,
+        "y": 30
+      },
+      "backgroundImage": {
+        "path": "./images/cello/",
+        "src": "cello_body.png"
+      },
+      "components": [
+        {
+          "id": "bow",
+          "data": {
+            "width":    15,
+            "height":   296,
+            "keyInput": 80,
+            "x":210,
+            "y":400
+          },
+          "assets": {
+            "images": {
+              "path":"./images/cello/",
+              "manifest": [
+                {
+                  "id": "bow",
+                  "src": "bow.png",
+                  "data": {
+                    "width":    15,
+                    "height":   296,
+                    "keyInput": 70,
+                    "x":0,
+                    "y":0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id":"strings",
+          "data": {
+            "width": 20,
+            "height": 296,
+            "x": 74,
+            "y": 0
+          },
+          "hitAreas": [
+            {
+              "id": "c",
+              "data": {
+                "width":    5,
+                "height":   31,
+                "keyInput": 32,
+                "x":0,
+                "y":136
+              }
+            },
+            {
+              "id": "g",
+              "data": {
+                "width":    5,
+                "height":   31,
+                "keyInput": 65,
+                "x":3.5,
+                "y":136
+              }
+            },
+            {
+              "id": "d",
+              "data": {
+                "width":    5,
+                "height":   31,
+                "keyInput": 70,
+                "x":7,
+                "y":136
+              }
+            },
+            {
+              "id": "a",
+              "data": {
+                "width":    5,
+                "height":   31,
+                "keyInput": 70,
+                "x":10,
+                "y":136
+              }
+            }
+          ],
+          "assets": {
+            "sounds": {
+              "path":"./sounds/piano/mp3/",
+              "manifest": [
+                { "id": "c_snd", "src": "k_01.mp3" },
+                { "id": "g_snd", "src": "k_20.mp3" },
+                { "id": "d_snd", "src": "k_40.mp3" },
+                { "id": "a_snd", "src": "k_60.mp3" }
               ]
             }
           }
