@@ -6,7 +6,7 @@ define ['Key'], (Key)->
       @startY = @y
 
     setup:(image, data)->
-      @addImage(image)
+      super(image, data)
 
     animate: ->
       @y += 2

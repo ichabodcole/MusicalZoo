@@ -10,7 +10,7 @@ define ['Key'], (Key)->
       # super (name, data, image)
 
     setup: (image, data)->
-      @addImage(image)
+      super(image, data)
       @addKeyLine(data.x, data.y)
 
     addImage: (image)->

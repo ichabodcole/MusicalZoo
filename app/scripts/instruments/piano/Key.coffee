@@ -4,21 +4,23 @@ define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
     constructor: (name, data, image)->
       super(name, data, image)
 
+    setup: (image, data)->
+      super(image, data)
+      @x = @y = 0
 
     register: ->
-      console.log @parent
-      @on 'mouseover', @playSoundOnMouseOver
-      @on 'mousedown', @playSoundOnMouseDown
-      document.addEventListener 'keydown', @handleKeyDown, false
+      super()
+      @on 'mouseover', @handleOnMouseOver
+      @on 'mousedown', @handleOnMouseDown
 
     deregister: ->
-      @off 'mouseover', @playSoundOnMouseOver
-      @off 'mousedown', @playSoundOnMouseDown
-      document.removeEventListener 'keydown', @handleKeyDown, false
+      super()
+      @off 'mouseover', @handleOnMouseOver
+      @off 'mousedown', @handleOnMouseDown
 
-    playSoundOnMouseOver: (e)=>
+    handleOnMouseOver: (e)=>
       if @parent.mouseDown == true
         @playSound()
 
-    playSoundOnMouseDown: (e)=>
+    handleOnMouseDown: (e)=>
       @playSound()

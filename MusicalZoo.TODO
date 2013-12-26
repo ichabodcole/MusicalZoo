@@ -9,11 +9,15 @@
    ✔ Reimplement Instrument class @done (13-12-23 03:40)
      ✔ Reimplement DrumKit class @done (13-12-23 03:40)
        ✔ Reimplement Piano Classes @done (13-12-23 16:08)
-  ☐ Implement loaders
-    ☐ Fix loading instrument when no background is available
-  ☐ Implement cello
-  ☐ Add keyboard input for piano and cello
- ☐ Remove EventListeners when an instrument is hidden
+  ✔ Implement BASIC loaders @done (13-12-24 00:39)
+    ✔ Fix loading instrument when no background is available @done (13-12-24 00:39)
+ ✔ Fix showing instrument second time not scaling in correctly @done (13-12-24 00:45)
+ ✔ Instruments should show after previous instrument is hidden @done (13-12-24 02:10)
+ ✔ Disable currently selected instrument icon (close enough for now) @done (13-12-25 15:36)
+ ✔ Remove EventListeners when an instrument is hidden / deregister @done (13-12-25 18:39)
+ ☐ Implement cello
+ ☐ Add keyboard input for piano and cello
  ☐ Add case for kick drum
-  ☐ Create and export new samples from Logic
-  ☐ create ui element to show keyboard instructions for each instrument
+ ☐ Create and export new samples from Logic
+ ☐ create ui element to show keyboard instructions for each instrument
+ ☐ Opening an instrument while another is loading should cancel loading the first instrument

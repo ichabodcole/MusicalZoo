@@ -7,13 +7,14 @@ define ['easel',
   class InstrumentComponent extends createjs.Container
     constructor: (name, @manifest)->
       @initialize()
-      @name = name
-      @cursor = "pointer"
-      # @visible = false
-      @items = []
+      @name    = name
+      @cursor  = "pointer"
+      @visible = false
+      @items   = []
       @assetManifests = null
 
       createjs.EventDispatcher.initialize(@)
+      @componentLoadedEvent = new createjs.Event('componentLoaded', true)
       @setupLoadQueue()
       @parseManifest(@manifest)
 
@@ -38,8 +39,16 @@ define ['easel',
       @queue.load()
 
     addItem: (name, data, image)=>
-      # Institut on child class
+      # Institute on child class
       false
+
+    register: ->
+      @items.forEach (item, index)->
+        item.register()
+
+    deregister: ->
+      @items.forEach (item, index)->
+        item.deregister()
 
     handleFileLoad: (e)=>
       if e.item.type == "image"
@@ -50,6 +59,8 @@ define ['easel',
 
     handleLoadComplete: (e)=>
       @setup()
+      @visible = true
+      @dispatchEvent(@componentLoadedEvent)
 
     setup: ->
       false

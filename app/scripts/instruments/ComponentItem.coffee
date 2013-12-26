@@ -19,11 +19,9 @@ define ['easel',
       @addChild(bitmap)
 
     register: ->
-      @on 'click', @playSound
       document.addEventListener 'keydown', @handleKeyDown, false
 
     deregister: ->
-      @off 'click', @playSound
       document.removeEventListener 'keydown', @handleKeyDown, false
 
     handleKeyDown: (e)=>

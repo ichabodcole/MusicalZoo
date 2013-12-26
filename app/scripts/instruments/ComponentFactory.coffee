@@ -1,7 +1,8 @@
-define ['Keyboard'], (Keyboard)->
+define ['Keyboard', 'Drums'], (Keyboard, Drums)->
 
-  class PianoComponentFactory
+  class ComponentFactory
     @types: {
+      drums: Drums
       keyboard: Keyboard
     }
 

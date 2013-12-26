@@ -7,13 +7,14 @@ define ['InstrumentComponent',
       @mouseDown = false
 
     register:->
+      super()
       @on 'mousedown', @handleMouseDown
       @on 'pressup', @handlePressUp
 
     deregister: ->
+      super()
       @off 'mousedown', @handleMouseDown
       @off 'pressup', @handlePressUp
-
 
     handleMouseDown: (e)=>
       @mouseDown = true
@@ -21,10 +22,8 @@ define ['InstrumentComponent',
     handlePressUp: (e)=>
       @mouseDown = false
 
-
     addItem: (name, data, image)=>
       type = data.type
       key = KeyFactory.create(type, name, data, image, @)
-
       @addChild(key)
-      key.register()
+      @items.push(key)

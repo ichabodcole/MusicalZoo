@@ -1,4 +1,4 @@
-define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
+define ['easel', 'ComponentItem', 'Utils'], (createjs, ComponentItem, Utils)->
 
   class Drum extends ComponentItem
     constructor: (name, data, image)->
@@ -7,6 +7,14 @@ define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
     setup:->
       super
       Utils.centerRegistration(@, @width, @height, true)
+
+    register: ->
+      super()
+      @on 'click', @playSound
+
+    deregister: ->
+      super()
+      @off 'click', @playSound
 
     animate: ->
       @scaleX = .95

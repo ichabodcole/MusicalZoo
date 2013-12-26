@@ -51,14 +51,17 @@ define [], ->
         num = "0" + num
       num
 
-    @centerOnStage: (stage, obj, width, height)->
-      height = height || false
-      obj.x = stage.canvas.width/2 - width/2
+    @centerOnStage: (stage, obj, width, height, adjustForSize)->
+      adjustForSize = adjustForSize ? true
+      height = height ? false
+      newX = stage.canvas.width/2
+      obj.x = if adjustForSize then newX - width/2 else newX
       if height
-        obj.y = stage.canvas.height/2 - height/2
+        newY = stage.canvas.height/2
+        obj.y = if adjustForSize then newY - height/2 else newY
 
     @centerRegistration: (obj, width, height, adjustPos)->
-      adjustPos = adjustPos || true
+      adjustPos = adjustPos ? true
       obj.regX = width / 2
       obj.regY = height / 2
       if adjustPos == true
