@@ -1507,16 +1507,60 @@
                 "x":10,
                 "y":136
               }
+            },
+            {
+              "id": "z",
+              "data": {
+                "width":    5,
+                "height":   10,
+                "keyInput": 70,
+                "x":2,
+                "y":70
+              }
+            },
+            {
+              "id": "y",
+              "data": {
+                "width":    5,
+                "height":   10,
+                "keyInput": 70,
+                "x":4,
+                "y":75
+              }
+            },
+            {
+              "id": "x",
+              "data": {
+                "width":    5,
+                "height":   10,
+                "keyInput": 70,
+                "x":6,
+                "y":85
+              }
+            },
+            {
+              "id": "w",
+              "data": {
+                "width":    5,
+                "height":   10,
+                "keyInput": 70,
+                "x":8,
+                "y":80
+              }
             }
           ],
           "assets": {
             "sounds": {
-              "path":"./sounds/piano/mp3/",
+              "path":"./sounds/cello/",
               "manifest": [
-                { "id": "c_snd", "src": "k_01.mp3" },
-                { "id": "g_snd", "src": "k_20.mp3" },
-                { "id": "d_snd", "src": "k_40.mp3" },
-                { "id": "a_snd", "src": "k_60.mp3" }
+                { "id": "c_snd", "src": "cello_01.ogg" },
+                { "id": "g_snd", "src": "cello_02.ogg" },
+                { "id": "d_snd", "src": "cello_03.ogg" },
+                { "id": "a_snd", "src": "cello_04.ogg" },
+                { "id": "z_snd", "src": "cello_01.ogg" },
+                { "id": "y_snd", "src": "cello_02.ogg" },
+                { "id": "x_snd", "src": "cello_03.ogg" },
+                { "id": "w_snd", "src": "cello_03.ogg" }
               ]
             }
           }

@@ -1,9 +1,13 @@
-define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
+define ['easel', 'tween', 'ComponentItem'], (createjs, Tween, ComponentItem)->
 
   class CelloString extends ComponentItem
     constructor: (name, data)->
       super(name, data)
       @setup(data)
+      @stringSound = createjs.Sound.play(@soundId)
+      @soundTween  = null
+      # @stringSound.pause()
+
 
     setup: (data)->
       super(data)
@@ -20,6 +24,8 @@ define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
       super()
       @on 'mouseover', @handleOnMouseOver
       @on 'mousedown', @handleOnMouseDown
+      @on 'pressup', @handlePressUp
+      @on 'mouseout', @handlePressUp
 
     deregister: ->
       super()
@@ -32,3 +38,21 @@ define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
 
     handleOnMouseDown: (e)=>
       @playSound()
+
+    handlePressUp: (e)=>
+      if @stringSound?
+        transitionTime = 500
+        endVolume = 0
+        createjs.Tween.get(@stringSound, {override: true})
+          .to({volume: endVolume}, transitionTime).call(@stopSound)
+
+    stopSound: ()=>
+      @stringSound.stop()
+
+    playSound: (e)=>
+      @stringSound.setPosition(0)
+      @stringSound.play({loop: -1, volume: 0})
+      transitionTime = 300
+      endVolume = 1
+      createjs.Tween.get(@stringSound, {override: true})
+        .to({volume: endVolume}, transitionTime)

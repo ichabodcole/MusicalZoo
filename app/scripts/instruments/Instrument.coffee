@@ -98,11 +98,11 @@ define ['easel',
       @backgroundImage.addChild(bitmap)
 
     checkAllLoadsComplete:=>
-      if @backgroundImageLoaded && @componentsLoaded
-        @dispatchEvent(@instrumentLoadedEvent)
-        @loaded = true
-        return true
-      return false
+      if @backgroundImageLoaded && @componentsLoaded then true else false
+
+    dispatchLoadsComplete: ->
+      @dispatchEvent(@instrumentLoadedEvent)
+      @loaded = true
 
     setData: (data)->
       for key, dataItem of data
@@ -135,13 +135,15 @@ define ['easel',
 
     handleBgImgLoadComplete: (e)=>
       @backgroundImageLoaded = true
-      @checkAllLoadsComplete()
+      if @checkAllLoadsComplete()
+        @dispatchLoadsComplete()
 
     handleComponentLoadComplete: (e)=>
       @componentNumLoaded--
       if @componentNumLoaded == 0
         @componentsLoaded = true
-      @checkAllLoadsComplete()
+        if @checkAllLoadsComplete()
+          @dispatchLoadsComplete()
 
     handleHideComplete: ()=>
       @scaleX = @scaleY = @scaleStart
