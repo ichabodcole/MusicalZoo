@@ -4,7 +4,6 @@ define ['easel',
         'Utils'], (createjs, Preload, Sound, Utils)->
 
   class UIItem extends createjs.Container
-
     constructor: (@manifest)->
       @initialize()
       @queue  = new createjs.LoadQueue(false)

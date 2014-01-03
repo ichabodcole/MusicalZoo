@@ -24,7 +24,6 @@ define ['easel', 'tween', 'UIItem'], (createjs, Tween, UIItem)->
 
     onProgress: (e)=>
       queueNum = @queueList.length
-      console.log e.loaded, e.total
       percent = Math.round(e.progress * 100)
       @percentText.text = percent + "%"
 

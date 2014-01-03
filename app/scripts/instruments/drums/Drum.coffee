@@ -3,6 +3,7 @@ define ['easel', 'ComponentItem', 'Utils'], (createjs, ComponentItem, Utils)->
   class Drum extends ComponentItem
     constructor: (name, data, image)->
       super(name, data)
+      @bgImage = null
       @setup(data, image)
 
     setup: (data, image)->
@@ -11,8 +12,8 @@ define ['easel', 'ComponentItem', 'Utils'], (createjs, ComponentItem, Utils)->
       Utils.centerRegistration(@, @width, @height, true)
 
     addImage: (image)->
-      bitmap = new createjs.Bitmap(image)
-      @addChild(bitmap)
+      @bgImage = new createjs.Bitmap(image)
+      @addChild(@bgImage)
 
     register: ->
       super()

@@ -1,9 +1,24 @@
-define ['easel', 'sound' ,'Drum'], (createjs, Sound, Drum)->
+define ['Drum',
+        'KickPedal'], (Drum, KickPedal)->
 
-  class BassDrum extends Drum
-    constructor: ->
-      imagePath = 'images/drums/bass_drum.png'
-      soundPath = manifest[0].src
+  class KickDrum extends Drum
+    constructor: (name, data, image)->
+      @kickPedal = null
+      super(name, data, image)
 
-      super(imagePath, soundPath)
+    setup: (data, image)=>
+      super(data, image)
+      @kickPedal = new KickPedal(data.kickPedal)
+      @addChildAt(@kickPedal, 0)
+
+    animate: ->
+      @kickPedal.animate()
+      @bgImage.y -= 3
+      setTimeout =>
+        @bgImage.y += 3
+      , 100
+
+
+
+
 

@@ -190,7 +190,24 @@
                     "height":   226,
                     "keyInput": 32,
                     "x":167,
-                    "y":96
+                    "y":96,
+                    "kickPedal": {
+                      "data": {
+                        "width": 53,
+                        "height": 121,
+                        "x": 85,
+                        "y": 224
+                      },
+                      "assets":{
+                        "images": {
+                          "path": "./images/drums/",
+                          "manifest" : [
+                            {"id": "kickPedalUp", "src": "kick_pedal_up.png"},
+                            {"id": "kickPedalDown", "src": "kick_pedal_down.png"}
+                          ]
+                        }
+                      }
+                    }
                   }
                 },
                 {
