@@ -11,11 +11,14 @@ define ['easel',
       @visible            = false
       @scaleStart         = 1
       @assetManifests     = null
-      @backgroundImage    = new createjs.Container()
+      @scaleStart         = null
       @components         = []
       @componentFactory   = null
       @componentNumLoaded = 0
       @loaded             = false
+      @backgroundImage    = new createjs.Container()
+      @queue              = new createjs.LoadQueue(false)
+      @queueList          = [@queue]
 
       @backgroundImageLoaded = false
       @componentsLoaded      = false
@@ -25,21 +28,16 @@ define ['easel',
       @instrumentLoadedEvent = new createjs.Event('instrumentLoaded', true)
       @instrumentHideEvent   = new createjs.Event('instrumentHideComplete', true)
       createjs.EventDispatcher.initialize(@)
-      @setLoadQueue()
       @setEventHandlers()
       @parseManifest(@manifest)
 
     setup: =>
-      @setScale()
       stage = @getStage()
       Utils.centerOnStage(stage, @, @width)
       Utils.centerRegistration(@, @width, @height, true)
 
     setEventHandlers: ->
       @on 'componentLoaded', @handleComponentLoadComplete
-
-    setLoadQueue: ->
-      @queue = new createjs.LoadQueue(false)
       @queue.addEventListener('fileload', @handleBgImgFileLoad)
       @queue.addEventListener('complete', @handleBgImgLoadComplete)
 
@@ -83,6 +81,7 @@ define ['easel',
       @addChild(component)
       component.load()
       component.register();
+      @queueList.push(component.queue)
 
     register: ->
       @components.forEach (component, index)->
@@ -125,10 +124,8 @@ define ['easel',
       endScale = 0.01
       createjs.Tween.get(@).to({scaleX:endScale, scaleY:endScale}, transitionTime, ease).call(@handleHideComplete)
 
-    setScale:(scale)->
-      if @width && @height
-        @width  *= @scaleX
-        @height *= @scaleY
+    getQueueList: ->
+      return @queueList
 
     handleBgImgFileLoad: (e, data)=>
       @addBackgroundImage(e.result, e.item.data)

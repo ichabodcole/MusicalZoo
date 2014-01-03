@@ -25,10 +25,11 @@
    ☐ Clean up Bow animation code
    ✔ On pressup outside of cello after strings timeout, bow should not get set to ready @done (13-12-31 14:13)
    ✔ On mouse out of strings, stop bow loop animation @done (13-12-31 14:13)
- ☐ Loader
-   ☐ Create skin for loader
-   ☐ Make separate loader class
-   ☐ Move loader to UI layout
+ ✔ Loader @done (14-01-03 00:35)
+   ✔ Move preloader to UI layout @done (14-01-02 19:58)
+   ✔ Make separate loader class @done (14-01-02 19:58)
+   ✔ Create skin for loader @done (14-01-03 00:17)
+   ✔ Add percentage loader (good enough for now) @done (14-01-03 00:35)
  ☐ Add keyboard input for piano and cello
  ☐ Add case for kick drum animated element
  ☐ Create and export new samples from Logic
@@ -39,10 +40,12 @@
 
 
 FOR LATER
+ ☐ Replace png hitarea of piano keys with svg or easeljs internal drawing
+
  ☐ Reimplement with MVC architecture and possibly redesign data structure
    ☐ Investigate flattening json manifest to make loading easier and more centralized
    ☐ Search for online code examples of MVC pattern being used with createjs/easel.
    ☐ Investigate use of backbone
-     ☐ How would inheritance work for createjs objects?
+     ☐ How would inheritance work for createjs classes like Containers?
 
  ☐ Reimplment using decorator pattern for instruments / components

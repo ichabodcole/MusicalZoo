@@ -1,9 +1,10 @@
 define ['easel',
         'preload',
+        'Preloader'
         'Icons',
         'Title',
         'Instruments',
-        'Utils'], (createjs, Preload, Icons, Title, Instruments, Utils)->
+        'Utils'], (createjs, Preload, Preloader, Icons, Title, Instruments, Utils)->
 
   class UILayout extends createjs.Container
     constructor: (@manifest)->
@@ -15,26 +16,35 @@ define ['easel',
 
       @title = null
       @icons = null
+      @preloader = null
 
       @components = manifest.ui.components
 
       @addComponents()
       createjs.EventDispatcher.initialize(@)
-      @addEventListener("iconClick", @handleIconClick)
+      @setEventListeners()
+
+    setEventListeners: ->
+      @on 'iconClick', @onIconClick
+      @on 'showPreloader', @onShowPreloader
+      @on 'hidePreloader', @onHidePreloader
 
     addComponents: ()->
       titleManifest = @getComponentById('title')
       iconsManifest = @getComponentById('icons')
+      preloaderManifest = @getComponentById('preloader')
 
       @title = new Title(titleManifest)
       @icons = new Icons(iconsManifest)
+      @preloader = new Preloader(preloaderManifest)
 
       instrumentsManifest = @manifest.instruments
-      @instruments = new Instruments(instrumentsManifest)
+      @instruments = new Instruments(instrumentsManifest, @preloader)
 
       @addChild(@title)
       @addChild(@icons)
       @addChild(@instruments)
+      @addChild(@preloader)
 
     getComponentById: (id)->
       filtered = @components.filter (element)->
@@ -51,14 +61,6 @@ define ['easel',
 
       @stage.addChild(@title)
       @stage.addChild(@icons)
-
-    handleIconClick: (e)=>
-      @instruments.setInstrument(e.target.link)
-      if @UIState == 0
-        @transitionUIToState1()
-        @UIState = 1
-      else
-        @instruments.open()
 
     transitionUIToState1: ->
       transitionTime = 1000
@@ -81,3 +83,17 @@ define ['easel',
 
     UITransitionComplete: (e)=>
       @instruments.open()
+
+    onIconClick: (e)=>
+      @instruments.setInstrument(e.target.link)
+      if @UIState == 0
+        @transitionUIToState1()
+        @UIState = 1
+      else
+        @instruments.open()
+
+    onShowPreloader: =>
+      @preloader.show()
+
+    onHidePreloader: =>
+      @preloader.hide()

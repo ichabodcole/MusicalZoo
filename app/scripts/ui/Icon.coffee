@@ -7,14 +7,10 @@ define ['easel',
   class Icon extends createjs.Container
     constructor: (id, image, data)->
       @initialize()
-      @id = id
+      @id           = id
       @soundClickId = @id + "Click_snd"
       @soundOverId  = @id + "Over_snd"
-
-      @width    = data.width
-      @height   = data.height
-      @coords   = data.coords
-      @link     = data.link
+      @data         = data
 
       @bgBitmap = new createjs.Bitmap(image)
 
@@ -22,8 +18,8 @@ define ['easel',
       @setup()
 
     setup: ->
+      @setData(@data)
       createjs.EventDispatcher.initialize(@)
-      @x = @coords.x
       Utils.centerRegistration(@, @width, @height)
       @on "mouseover", @onMouseOver
       @on "click", @onClick
@@ -65,3 +61,7 @@ define ['easel',
       }, 1000, ease)
       # play the over sound
       createjs.Sound.play(@soundOverId)
+
+    setData: (data)->
+        for key, dataItem of data
+          @[key] = dataItem

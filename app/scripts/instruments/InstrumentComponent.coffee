@@ -11,6 +11,7 @@ define ['easel',
       @cursor  = "pointer"
       @visible = false
       @items   = []
+      @queue = new createjs.LoadQueue(false)
       @assetManifests = null
 
       createjs.EventDispatcher.initialize(@)
@@ -19,7 +20,6 @@ define ['easel',
       @parseManifest(@manifest)
 
     setupLoadQueue: ->
-      @queue = new createjs.LoadQueue(false)
       @queue.installPlugin(createjs.Sound)
       @queue.addEventListener('fileload', @handleFileLoad)
       @queue.addEventListener('complete', @handleLoadComplete)

@@ -2,7 +2,79 @@
   "ui":{
     "components": [
       {
+        "id": "musicNotes",
+        "assets": {
+          "images": {
+            "path": "./images/ui/",
+            "manifest": [
+              {
+                "id": "musicNote1",
+                "src": "music_note_01.png",
+                "data": {
+                  "width": 12,
+                  "height": 36,
+                  "x": 0,
+                  "y" : 0
+                }
+              },
+              {
+                "id": "musicNote2",
+                "src": "music_note_02.png",
+                "data": {
+                  "width": 29,
+                  "height": 36,
+                  "x": 0,
+                  "y" : 0
+                }
+              },
+              {
+                "id": "musicNote3",
+                "src": "music_note_03.png",
+                "data": {
+                  "width": 31,
+                  "height": 42,
+                  "x": 0,
+                  "y" : 0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "preloader",
+        "data": {
+          "width": 148,
+          "height": 148,
+          "x": 0,
+          "y" : 200
+        },
+        "assets": {
+          "images": {
+            "path": "./images/ui/",
+            "manifest": [
+              {
+                "id": "bgImage",
+                "src": "preloader.png",
+                "data": {
+                  "width": 148,
+                  "height": 148,
+                  "x": 0,
+                  "y" : 0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
         "id": "icons",
+        "data": {
+          "width": 603,
+          "height": 212,
+          "x": 0,
+          "y" : 150
+        },
         "assets": {
           "images": {
             "path": "./images/ui/",
@@ -13,10 +85,8 @@
                 "data": {
                   "width": 151,
                   "height": 206,
-                  "coords" : {
-                    "x": 0,
-                    "y": 0
-                  },
+                  "x": 0,
+                  "y": 0,
                   "link": "drumKit"
                 }
               },
@@ -26,10 +96,8 @@
                 "data": {
                   "width": 166,
                   "height": 173,
-                  "coords" : {
-                    "x": 250,
-                    "y": 0
-                  },
+                  "x": 250,
+                  "y": 0,
                   "link": "piano"
                 }
               },
@@ -39,10 +107,8 @@
                 "data": {
                   "width": 201,
                   "height": 159,
-                  "coords" : {
-                    "x": 450,
-                    "y": 0
-                  },
+                  "x": 450,
+                  "y": 0,
                   "link": "cello"
                 }
               }
@@ -64,6 +130,12 @@
 
       {
         "id": "title",
+        "data": {
+          "width": 218,
+          "height": 61,
+          "x": 0,
+          "y": 50
+        },
         "assets": {
           "images": {
             "path": "./images/ui/",
@@ -74,10 +146,8 @@
                 "data": {
                   "width": 218,
                   "height": 61,
-                  "coords": {
-                    "x": 0,
-                    "y": 50
-                  }
+                  "x": 0,
+                  "y": 50
                 }
               }
             ]
@@ -235,7 +305,7 @@
         "scaleX": 0.75,
         "scaleY": 0.75,
         "x": 0,
-        "y": 15
+        "y": 10
       },
       "backgroundImage": {
         "path": "./images/piano/",
@@ -245,7 +315,7 @@
         {
           "id": "keyboard",
           "data": {
-            "width": 550,
+            "width": 520,
             "height": 550,
             "x": 37,
             "y": 418

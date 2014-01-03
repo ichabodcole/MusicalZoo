@@ -6,14 +6,8 @@ define ['easel',
     constructor: (@manifest)->
       super(@manifest)
       data    = @manifest.assets.images.manifest[0].data
-      @width  = data.width
-      @height = data.width
-      @y      = data.coords.y
 
     setup: ->
-      super
-      @setupTitle()
-
-    setupTitle: ->
+      super()
       @title = @createBitmapFromResult(@queue, 'musicalZooTitle')
       @addChild(@title)

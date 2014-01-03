@@ -8,6 +8,7 @@ define ['easel',
     constructor: (@manifest)->
       @initialize()
       @queue  = new createjs.LoadQueue(false)
+      @data   = @manifest.data ? null
       @assets = @manifest.assets
       @loadManifest(@manifest)
 
@@ -24,11 +25,18 @@ define ['easel',
 
     setup: ->
       stage = @getStage()
-      Utils.centerOnStage(stage, @, @width)
-      Utils.centerRegistration(@, @width, @height)
+      if (@data?)
+        @setData(@data)
+      if (stage? && @width? && @height?)
+        Utils.centerOnStage(stage, @, @width)
+        Utils.centerRegistration(@, @width, @height)
 
     createBitmapFromResult: (q, id)->
       result = q.getResult(id)
       bitmap = new createjs.Bitmap(result)
       bitmap.id = id
       return bitmap
+
+    setData: (data)->
+      for key, dataItem of data
+        @[key] = dataItem
