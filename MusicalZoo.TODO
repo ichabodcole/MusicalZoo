@@ -5,8 +5,11 @@ MISC
    ✔ Reimplement Instrument class @done (13-12-23 03:40)
      ✔ Reimplement DrumKit class @done (13-12-23 03:40)
        ✔ Reimplement Piano Classes @done (13-12-23 16:08)
+ ✔ Intrument listeners not being removed on deregister...(removeEventListener not working for some reason, used removeAllEventListeners instead) @done (14-01-05 16:44)
+☐ Create and export new samples from Logic
 
 UI
+ ☐ create ui element to show keyboard instructions for each instrument
  ✔ Remove EventListeners when an instrument is hidden by calling deregister @done (13-12-25 18:39)
  ✔ Disable currently selected instrument icon (close enough for now) @done (13-12-25 15:36)
  ✔ Instruments should show only after previous instrument is hidden @done (13-12-24 02:10)
@@ -17,9 +20,12 @@ DRUMS
  ✔ Get a drum on the stage @done (13-12-19 06:42)
  ✔ Move drum parser / loader to drumkit class @done (13-12-17 03:13)
  ✔ Add keyboard input for drums @done (13-12-18 01:05)
+ ✔ Add case for kick drum animated element @done (14-01-03 15:55)
 
 PIANO
- ✔ Implement piano @done (13-12-19 06:42)
+ ✔ Implement basic piano @done (13-12-19 06:42)
+ ✔ Add keyboard input @done (14-01-06 15:36)
+ ☐ Bottom key animation on piano is slightly off (only on build?)
 
 CELLO
    ✔ Fix weird secondary scaling issue on cello @done (13-12-30 17:40)
@@ -34,38 +40,29 @@ CELLO
    ☐ Add keyboard input
 
 LOADER
-   ✔ Fix loading instrument when no background image is available @done (13-12-24 00:39)
-   ✔ Move preloader to UI layout @done (14-01-02 19:58)
-   ✔ Make separate loader class @done (14-01-02 19:58)
-   ✔ Create skin for loader @done (14-01-03 00:17)
-   ✔ Add percentage loader (good enough for now) @done (14-01-03 00:35)
+  ✔ Fix loading instrument when no background image is available @done (13-12-24 00:39)
+  ✔ Move preloader to UI layout @done (14-01-02 19:58)
+  ✔ Make separate loader class @done (14-01-02 19:58)
+  ✔ Create skin for loader @done (14-01-03 00:17)
+  ✔ Add percentage loader (good enough for now) @done (14-01-03 00:35)
+  ☐ Opening an instrument while another is loading should cancel loading the first instrument
 
- ✔ Add case for kick drum animated element @done (14-01-03 15:55)
- ✔ Intrument listeners not being removed on deregister...(removeEventListener not working for some reason, used removeAllEventListeners instead) @done (14-01-05 16:44)
 
 TRUMPHET
    ✔ Sounds should fade in and out @done (14-01-05 17:00)
    ✔ Fill in gaps in trumphet icon for better hit detection @done (14-01-05 17:43)
-   ☐ Add keyboard input
+   ✔ Add keyboard input @done (14-01-05 18:54)
+     ✔ Holding down key should not make additional calls to play sound @done (14-01-05 18:54)
    ☐ Add mouth piece component
-
- ☐ Add keyboard input for piano and cello
- ☐ Create and export new samples from Logic
- ☐ create ui element to show keyboard instructions for each instrument
- ☐ Opening an instrument while another is loading should cancel loading the first instrument
- ☐ Bottom key animation on piano is slightly off (only on build?)
-
 
 
 POST LAUNCH
+ ☐ Investigate removeEventListener not working
  ☐ Replace png hitarea of piano keys with svg or easeljs internal drawing
-
  ☐ Investigate loading piano keys as one sound with time-position data for playing individual keys
-
  ☐ Reimplement with MVC architecture and possibly redesign data structure
    ☐ Investigate flattening json manifest to make loading easier and more centralized
    ☐ Search for online code examples of MVC pattern being used with createjs/easel.
    ☐ Investigate use of backbone
      ☐ How would inheritance work for createjs classes like Containers?
-
- ☐ Reimplment using decorator pattern for instruments / components
+ ☐ Consider using decorator pattern for adding behavior to instruments / components

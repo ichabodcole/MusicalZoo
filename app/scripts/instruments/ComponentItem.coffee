@@ -7,24 +7,35 @@ define ['easel',
     constructor: (name, data)->
       @initialize()
       @name    = name
-      @sound   = null
       @soundId = @name + "_snd"
+      @sound #set in playSound method
+      @keyDownFired #set in register method
 
     setup: (data)->
       @setData(data)
 
     register: ->
-      document.addEventListener 'keydown', @handleKeyDown, false
+      @keyDownFired = false
+      document.addEventListener 'keydown', @onKeyDown, false
+      document.addEventListener 'keyup', @onKeyUp, false
 
     deregister: ->
-      document.removeEventListener 'keydown', @handleKeyDown, false
+      document.removeEventListener 'keydown', @onKeyDown, false
+      document.removeEventListener 'keyup', @onKeyUp, false
 
-    handleKeyDown: (e)=>
+    onKeyDown: (e)=>
+      console.log "You pressed the key:", e.which
       e.preventDefault()
-      if e.which == @keyInput
-        @playSound(e)
+      unless @keyDownFired
+        if e.which == @keyInput
+          @playSound(e)
+          @keyDownFired = true
 
-    playSound: (e)=>
+    onKeyUp: (e)=>
+      if e.which == @keyInput
+        @keyDownFired = false
+
+    playSound: ()->
       @sound = createjs.Sound.play(@soundId)
       @animate()
 

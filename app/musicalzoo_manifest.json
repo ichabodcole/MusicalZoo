@@ -354,1063 +354,1151 @@
             "images": {
               "path": "./images/piano/",
               "manifest": [
-                {
-                  "id":"k_01",
-                  "src": "bk_01.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":0,
-                    "y":0,
-                    "z":1
-                  }
-                },{
-                  "id":"k_02",
-                  "src": "bk_02.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":8.6,
-                    "y":0,
-                    "z":2
-                  }
-                },{
-                  "id":"k_03",
-                  "src": "bk_03.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":17.2,
-                    "y":0,
-                    "z":3
-                  }
-                },{
-                  "id":"k_04",
-                  "src": "bk_04.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":25.799999999999997,
-                    "y":0,
-                    "z":4
-                  }
-                },{
-                  "id":"k_05",
-                  "src": "bk_05.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":34.4,
-                    "y":0,
-                    "z":5
-                  }
-                },{
-                  "id":"k_06",
-                  "src": "bk_06.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":43,
-                    "y":0,
-                    "z":6
-                  }
-                },{
-                  "id":"k_07",
-                  "src": "bk_07.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":51.599999999999994,
-                    "y":0,
-                    "z":7
-                  }
-                },{
-                  "id":"k_08",
-                  "src": "bk_08.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":60.199999999999996,
-                    "y":0,
-                    "z":8
-                  }
-                },{
-                  "id":"k_09",
-                  "src": "bk_09.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":68.8,
-                    "y":0,
-                    "z":9
-                  }
-                },{
-                  "id":"k_10",
-                  "src": "bk_10.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":77.39999999999999,
-                    "y":0,
-                    "z":10
-                  }
-                },{
-                  "id":"k_11",
-                  "src": "bk_11.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":86,
-                    "y":0,
-                    "z":11
-                  }
-                },{
-                  "id":"k_12",
-                  "src": "bk_12.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":94.6,
-                    "y":0,
-                    "z":12
-                  }
-                },{
-                  "id":"k_13",
-                  "src": "bk_13.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":103.19999999999999,
-                    "y":0,
-                    "z":13
-                  }
-                },{
-                  "id":"k_14",
-                  "src": "bk_14.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":111.8,
-                    "y":0,
-                    "z":14
-                  }
-                },{
-                  "id":"k_15",
-                  "src": "bk_15.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":120.39999999999999,
-                    "y":0,
-                    "z":15
-                  }
-                },{
-                  "id":"k_16",
-                  "src": "bk_16.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":129,
-                    "y":0,
-                    "z":16
-                  }
-                },{
-                  "id":"k_17",
-                  "src": "bk_17.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":137.6,
-                    "y":0,
-                    "z":17
-                  }
-                },{
-                  "id":"k_18",
-                  "src": "bk_18.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":146.2,
-                    "y":0,
-                    "z":18
-                  }
-                },{
-                  "id":"k_19",
-                  "src": "bk_19.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":154.79999999999998,
-                    "y":0,
-                    "z":19
-                  }
-                },{
-                  "id":"k_20",
-                  "src": "bk_20.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":163.4,
-                    "y":0,
-                    "z":20
-                  }
-                },{
-                  "id":"k_21",
-                  "src": "bk_21.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":172,
-                    "y":0,
-                    "z":21
-                  }
-                },{
-                  "id":"k_22",
-                  "src": "bk_22.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":180.6,
-                    "y":0,
-                    "z":22
-                  }
-                },{
-                  "id":"k_23",
-                  "src": "bk_23.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":189.2,
-                    "y":0,
-                    "z":23
-                  }
-                },{
-                  "id":"k_24",
-                  "src": "bk_24.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":197.79999999999998,
-                    "y":0,
-                    "z":24
-                  }
-                },{
-                  "id":"k_25",
-                  "src": "bk_25.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":206.39999999999998,
-                    "y":0,
-                    "z":25
-                  }
-                },{
-                  "id":"k_26",
-                  "src": "bk_26.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":215,
-                    "y":0,
-                    "z":26
-                  }
-                },{
-                  "id":"k_27",
-                  "src": "bk_27.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":223.6,
-                    "y":0,
-                    "z":27
-                  }
-                },{
-                  "id":"k_28",
-                  "src": "bk_28.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":232.2,
-                    "y":0,
-                    "z":28
-                  }
-                },{
-                  "id":"k_29",
-                  "src": "bk_29.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":240.79999999999998,
-                    "y":0,
-                    "z":29
-                  }
-                },{
-                  "id":"k_30",
-                  "src": "bk_30.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":249.39999999999998,
-                    "y":0,
-                    "z":30
-                  }
-                },{
-                  "id":"k_31",
-                  "src": "bk_31.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":258,
-                    "y":0,
-                    "z":31
-                  }
-                },{
-                  "id":"k_32",
-                  "src": "bk_32.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":266.59999999999997,
-                    "y":0,
-                    "z":32
-                  }
-                },{
-                  "id":"k_33",
-                  "src": "bk_33.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":275.2,
-                    "y":0,
-                    "z":33
-                  }
-                },{
-                  "id":"k_34",
-                  "src": "bk_34.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":283.8,
-                    "y":0,
-                    "z":34
-                  }
-                },{
-                  "id":"k_35",
-                  "src": "bk_35.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":292.4,
-                    "y":0,
-                    "z":35
-                  }
-                },{
-                  "id":"k_36",
-                  "src": "bk_36.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":301,
-                    "y":0,
-                    "z":36
-                  }
-                },{
-                  "id":"k_37",
-                  "src": "bk_37.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":309.59999999999997,
-                    "y":0,
-                    "z":37
-                  }
-                },{
-                  "id":"k_38",
-                  "src": "bk_38.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":318.2,
-                    "y":0,
-                    "z":38
-                  }
-                },{
-                  "id":"k_39",
-                  "src": "bk_39.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":326.8,
-                    "y":0,
-                    "z":39
-                  }
-                },{
-                  "id":"k_40",
-                  "src": "bk_40.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":335.4,
-                    "y":0,
-                    "z":40
-                  }
-                },{
-                  "id":"k_41",
-                  "src": "bk_41.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":344,
-                    "y":0,
-                    "z":41
-                  }
-                },{
-                  "id":"k_42",
-                  "src": "bk_42.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":352.59999999999997,
-                    "y":0,
-                    "z":42
-                  }
-                },{
-                  "id":"k_43",
-                  "src": "bk_43.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":361.2,
-                    "y":0,
-                    "z":43
-                  }
-                },{
-                  "id":"k_44",
-                  "src": "bk_44.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":369.8,
-                    "y":0,
-                    "z":44
-                  }
-                },{
-                  "id":"k_45",
-                  "src": "bk_45.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":378.4,
-                    "y":0,
-                    "z":45
-                  }
-                },{
-                  "id":"k_46",
-                  "src": "bk_46.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":387,
-                    "y":0,
-                    "z":46
-                  }
-                },{
-                  "id":"k_47",
-                  "src": "bk_47.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":395.59999999999997,
-                    "y":0,
-                    "z":47
-                  }
-                },{
-                  "id":"k_48",
-                  "src": "bk_48.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":404.2,
-                    "y":0,
-                    "z":48
-                  }
-                },{
-                  "id":"k_49",
-                  "src": "bk_49.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":412.79999999999995,
-                    "y":0,
-                    "z":49
-                  }
-                },{
-                  "id":"k_50",
-                  "src": "bk_50.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":421.4,
-                    "y":0,
-                    "z":50
-                  }
-                },{
-                  "id":"k_51",
-                  "src": "bk_51.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":430,
-                    "y":0,
-                    "z":51
-                  }
-                },{
-                  "id":"k_52",
-                  "src": "bk_52.png",
-                  "data": {
-                    "type": "bottom",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":438.59999999999997,
-                    "y":0,
-                    "z":52
-                  }
-                },{
-                  "id":"k_53",
-                  "src": "tk_01.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":447.2,
-                    "y":0,
-                    "z":53
-                  }
-                },{
-                  "id":"k_54",
-                  "src": "tk_02.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":455.79999999999995,
-                    "y":0,
-                    "z":54
-                  }
-                },{
-                  "id":"k_55",
-                  "src": "tk_03.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":464.4,
-                    "y":0,
-                    "z":55
-                  }
-                },{
-                  "id":"k_56",
-                  "src": "tk_04.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":473,
-                    "y":0,
-                    "z":56
-                  }
-                },{
-                  "id":"k_57",
-                  "src": "tk_05.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":481.59999999999997,
-                    "y":0,
-                    "z":57
-                  }
-                },{
-                  "id":"k_58",
-                  "src": "tk_06.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":490.2,
-                    "y":0,
-                    "z":58
-                  }
-                },{
-                  "id":"k_59",
-                  "src": "tk_07.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":498.79999999999995,
-                    "y":0,
-                    "z":59
-                  }
-                },{
-                  "id":"k_60",
-                  "src": "tk_08.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":507.4,
-                    "y":0,
-                    "z":60
-                  }
-                },{
-                  "id":"k_61",
-                  "src": "tk_09.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":516,
-                    "y":0,
-                    "z":61
-                  }
-                },{
-                  "id":"k_62",
-                  "src": "tk_10.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":524.6,
-                    "y":0,
-                    "z":62
-                  }
-                },{
-                  "id":"k_63",
-                  "src": "tk_11.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":533.1999999999999,
-                    "y":0,
-                    "z":63
-                  }
-                },{
-                  "id":"k_64",
-                  "src": "tk_12.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":541.8,
-                    "y":0,
-                    "z":64
-                  }
-                },{
-                  "id":"k_65",
-                  "src": "tk_13.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":550.4,
-                    "y":0,
-                    "z":65
-                  }
-                },{
-                  "id":"k_66",
-                  "src": "tk_14.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":559,
-                    "y":0,
-                    "z":66
-                  }
-                },{
-                  "id":"k_67",
-                  "src": "tk_15.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":567.6,
-                    "y":0,
-                    "z":67
-                  }
-                },{
-                  "id":"k_68",
-                  "src": "tk_16.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":576.1999999999999,
-                    "y":0,
-                    "z":68
-                  }
-                },{
-                  "id":"k_69",
-                  "src": "tk_17.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":584.8,
-                    "y":0,
-                    "z":69
-                  }
-                },{
-                  "id":"k_70",
-                  "src": "tk_18.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":593.4,
-                    "y":0,
-                    "z":70
-                  }
-                },{
-                  "id":"k_71",
-                  "src": "tk_19.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":602,
-                    "y":0,
-                    "z":71
-                  }
-                },{
-                  "id":"k_72",
-                  "src": "tk_20.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":610.6,
-                    "y":0,
-                    "z":72
-                  }
-                },{
-                  "id":"k_73",
-                  "src": "tk_21.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":619.1999999999999,
-                    "y":0,
-                    "z":73
-                  }
-                },{
-                  "id":"k_74",
-                  "src": "tk_22.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":627.8,
-                    "y":0,
-                    "z":74
-                  }
-                },{
-                  "id":"k_75",
-                  "src": "tk_23.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":636.4,
-                    "y":0,
-                    "z":75
-                  }
-                },{
-                  "id":"k_76",
-                  "src": "tk_24.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":645,
-                    "y":0,
-                    "z":76
-                  }
-                },{
-                  "id":"k_77",
-                  "src": "tk_25.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":653.6,
-                    "y":0,
-                    "z":77
-                  }
-                },{
-                  "id":"k_78",
-                  "src": "tk_26.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":662.1999999999999,
-                    "y":0,
-                    "z":78
-                  }
-                },{
-                  "id":"k_79",
-                  "src": "tk_27.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":670.8,
-                    "y":0,
-                    "z":79
-                  }
-                },{
-                  "id":"k_80",
-                  "src": "tk_28.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":679.4,
-                    "y":0,
-                    "z":80
-                  }
-                },{
-                  "id":"k_81",
-                  "src": "tk_29.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":688,
-                    "y":0,
-                    "z":81
-                  }
-                },{
-                  "id":"k_82",
-                  "src": "tk_30.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":696.6,
-                    "y":0,
-                    "z":82
-                  }
-                },{
-                  "id":"k_83",
-                  "src": "tk_31.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":705.1999999999999,
-                    "y":0,
-                    "z":83
-                  }
-                },{
-                  "id":"k_84",
-                  "src": "tk_32.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":713.8,
-                    "y":0,
-                    "z":84
-                  }
-                },{
-                  "id":"k_85",
-                  "src": "tk_33.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":722.4,
-                    "y":0,
-                    "z":85
-                  }
-                },{
-                  "id":"k_86",
-                  "src": "tk_34.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":731,
-                    "y":0,
-                    "z":86
-                  }
-                },{
-                  "id":"k_87",
-                  "src": "tk_35.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":739.6,
-                    "y":0,
-                    "z":87
-                  }
-                },{
-                  "id":"k_88",
-                  "src": "tk_36.png",
-                  "data": {
-                    "type": "top",
-                    "keyInput": 80,
-                    "width": 8.6,
-                    "height": 20,
-                    "x":748.1999999999999,
-                    "y":0,
-                    "z":88
-                  }
-                }
+{
+        "id":"k_01",
+        "src": "bk_01.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 65,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":1
+        }
+      },{
+        "id":"k_02",
+        "src": "bk_02.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 83,
+          "width": 8.6,
+          "height": 20,
+          "x":8.6,
+          "y":0,
+          "z":2
+        }
+      },{
+        "id":"k_03",
+        "src": "bk_03.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 68,
+          "width": 8.6,
+          "height": 20,
+          "x":17.2,
+          "y":0,
+          "z":3
+        }
+      },{
+        "id":"k_04",
+        "src": "bk_04.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 70,
+          "width": 8.6,
+          "height": 20,
+          "x":25.8,
+          "y":0,
+          "z":4
+        }
+      },{
+        "id":"k_05",
+        "src": "bk_05.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 71,
+          "width": 8.6,
+          "height": 20,
+          "x":34.4,
+          "y":0,
+          "z":5
+        }
+      },{
+        "id":"k_06",
+        "src": "bk_06.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 72,
+          "width": 8.6,
+          "height": 20,
+          "x":43,
+          "y":0,
+          "z":6
+        }
+      },{
+        "id":"k_07",
+        "src": "bk_07.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 74,
+          "width": 8.6,
+          "height": 20,
+          "x":51.6,
+          "y":0,
+          "z":7
+        }
+      },{
+        "id":"k_08",
+        "src": "bk_08.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 75,
+          "width": 8.6,
+          "height": 20,
+          "x":60.2,
+          "y":0,
+          "z":8
+        }
+      },{
+        "id":"k_09",
+        "src": "bk_09.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 76,
+          "width": 8.6,
+          "height": 20,
+          "x":68.8,
+          "y":0,
+          "z":9
+        }
+      },{
+        "id":"k_10",
+        "src": "bk_10.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 186,
+          "width": 8.6,
+          "height": 20,
+          "x":77.4,
+          "y":0,
+          "z":10
+        }
+      },{
+        "id":"k_11",
+        "src": "bk_11.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 1,
+          "keyInput": 222,
+          "width": 8.6,
+          "height": 20,
+          "x":86,
+          "y":0,
+          "z":11
+        }
+      },{
+        "id":"k_12",
+        "src": "bk_12.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 65,
+          "width": 8.6,
+          "height": 20,
+          "x":94.6,
+          "y":0,
+          "z":12
+        }
+      },{
+        "id":"k_13",
+        "src": "bk_13.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 83,
+          "width": 8.6,
+          "height": 20,
+          "x":103.2,
+          "y":0,
+          "z":13
+        }
+      },{
+        "id":"k_14",
+        "src": "bk_14.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 68,
+          "width": 8.6,
+          "height": 20,
+          "x":111.8,
+          "y":0,
+          "z":14
+        }
+      },{
+        "id":"k_15",
+        "src": "bk_15.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 70,
+          "width": 8.6,
+          "height": 20,
+          "x":120.4,
+          "y":0,
+          "z":15
+        }
+      },{
+        "id":"k_16",
+        "src": "bk_16.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 71,
+          "width": 8.6,
+          "height": 20,
+          "x":129,
+          "y":0,
+          "z":16
+        }
+      },{
+        "id":"k_17",
+        "src": "bk_17.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 72,
+          "width": 8.6,
+          "height": 20,
+          "x":137.6,
+          "y":0,
+          "z":17
+        }
+      },{
+        "id":"k_18",
+        "src": "bk_18.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 74,
+          "width": 8.6,
+          "height": 20,
+          "x":146.2,
+          "y":0,
+          "z":18
+        }
+      },{
+        "id":"k_19",
+        "src": "bk_19.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 75,
+          "width": 8.6,
+          "height": 20,
+          "x":154.8,
+          "y":0,
+          "z":19
+        }
+      },{
+        "id":"k_20",
+        "src": "bk_20.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 76,
+          "width": 8.6,
+          "height": 20,
+          "x":163.4,
+          "y":0,
+          "z":20
+        }
+      },{
+        "id":"k_21",
+        "src": "bk_21.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 186,
+          "width": 8.6,
+          "height": 20,
+          "x":172,
+          "y":0,
+          "z":21
+        }
+      },{
+        "id":"k_22",
+        "src": "bk_22.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 2,
+          "keyInput": 222,
+          "width": 8.6,
+          "height": 20,
+          "x":180.6,
+          "y":0,
+          "z":22
+        }
+      },{
+        "id":"k_23",
+        "src": "bk_23.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 65,
+          "width": 8.6,
+          "height": 20,
+          "x":189.2,
+          "y":0,
+          "z":23
+        }
+      },{
+        "id":"k_24",
+        "src": "bk_24.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 83,
+          "width": 8.6,
+          "height": 20,
+          "x":197.8,
+          "y":0,
+          "z":24
+        }
+      },{
+        "id":"k_25",
+        "src": "bk_25.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 68,
+          "width": 8.6,
+          "height": 20,
+          "x":206.4,
+          "y":0,
+          "z":25
+        }
+      },{
+        "id":"k_26",
+        "src": "bk_26.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 70,
+          "width": 8.6,
+          "height": 20,
+          "x":215,
+          "y":0,
+          "z":26
+        }
+      },{
+        "id":"k_27",
+        "src": "bk_27.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 71,
+          "width": 8.6,
+          "height": 20,
+          "x":223.6,
+          "y":0,
+          "z":27
+        }
+      },{
+        "id":"k_28",
+        "src": "bk_28.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 72,
+          "width": 8.6,
+          "height": 20,
+          "x":232.2,
+          "y":0,
+          "z":28
+        }
+      },{
+        "id":"k_29",
+        "src": "bk_29.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 74,
+          "width": 8.6,
+          "height": 20,
+          "x":240.8,
+          "y":0,
+          "z":29
+        }
+      },{
+        "id":"k_30",
+        "src": "bk_30.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 75,
+          "width": 8.6,
+          "height": 20,
+          "x":249.4,
+          "y":0,
+          "z":30
+        }
+      },{
+        "id":"k_31",
+        "src": "bk_31.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 76,
+          "width": 8.6,
+          "height": 20,
+          "x":258,
+          "y":0,
+          "z":31
+        }
+      },{
+        "id":"k_32",
+        "src": "bk_32.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 186,
+          "width": 8.6,
+          "height": 20,
+          "x":266.6,
+          "y":0,
+          "z":32
+        }
+      },{
+        "id":"k_33",
+        "src": "bk_33.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 3,
+          "keyInput": 222,
+          "width": 8.6,
+          "height": 20,
+          "x":275.2,
+          "y":0,
+          "z":33
+        }
+      },{
+        "id":"k_34",
+        "src": "bk_34.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 65,
+          "width": 8.6,
+          "height": 20,
+          "x":283.8,
+          "y":0,
+          "z":34
+        }
+      },{
+        "id":"k_35",
+        "src": "bk_35.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 83,
+          "width": 8.6,
+          "height": 20,
+          "x":292.4,
+          "y":0,
+          "z":35
+        }
+      },{
+        "id":"k_36",
+        "src": "bk_36.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 68,
+          "width": 8.6,
+          "height": 20,
+          "x":301,
+          "y":0,
+          "z":36
+        }
+      },{
+        "id":"k_37",
+        "src": "bk_37.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 70,
+          "width": 8.6,
+          "height": 20,
+          "x":309.6,
+          "y":0,
+          "z":37
+        }
+      },{
+        "id":"k_38",
+        "src": "bk_38.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 71,
+          "width": 8.6,
+          "height": 20,
+          "x":318.2,
+          "y":0,
+          "z":38
+        }
+      },{
+        "id":"k_39",
+        "src": "bk_39.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 72,
+          "width": 8.6,
+          "height": 20,
+          "x":326.8,
+          "y":0,
+          "z":39
+        }
+      },{
+        "id":"k_40",
+        "src": "bk_40.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 74,
+          "width": 8.6,
+          "height": 20,
+          "x":335.4,
+          "y":0,
+          "z":40
+        }
+      },{
+        "id":"k_41",
+        "src": "bk_41.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 75,
+          "width": 8.6,
+          "height": 20,
+          "x":344,
+          "y":0,
+          "z":41
+        }
+      },{
+        "id":"k_42",
+        "src": "bk_42.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 76,
+          "width": 8.6,
+          "height": 20,
+          "x":352.6,
+          "y":0,
+          "z":42
+        }
+      },{
+        "id":"k_43",
+        "src": "bk_43.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 186,
+          "width": 8.6,
+          "height": 20,
+          "x":361.2,
+          "y":0,
+          "z":43
+        }
+      },{
+        "id":"k_44",
+        "src": "bk_44.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 4,
+          "keyInput": 222,
+          "width": 8.6,
+          "height": 20,
+          "x":369.8,
+          "y":0,
+          "z":44
+        }
+      },{
+        "id":"k_45",
+        "src": "bk_45.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 5,
+          "keyInput": 65,
+          "width": 8.6,
+          "height": 20,
+          "x":378.4,
+          "y":0,
+          "z":45
+        }
+      },{
+        "id":"k_46",
+        "src": "bk_46.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 5,
+          "keyInput": 83,
+          "width": 8.6,
+          "height": 20,
+          "x":387,
+          "y":0,
+          "z":46
+        }
+      },{
+        "id":"k_47",
+        "src": "bk_47.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 5,
+          "keyInput": 68,
+          "width": 8.6,
+          "height": 20,
+          "x":395.6,
+          "y":0,
+          "z":47
+        }
+      },{
+        "id":"k_48",
+        "src": "bk_48.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 5,
+          "keyInput": 70,
+          "width": 8.6,
+          "height": 20,
+          "x":404.2,
+          "y":0,
+          "z":48
+        }
+      },{
+        "id":"k_49",
+        "src": "bk_49.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 5,
+          "keyInput": 71,
+          "width": 8.6,
+          "height": 20,
+          "x":412.8,
+          "y":0,
+          "z":49
+        }
+      },{
+        "id":"k_50",
+        "src": "bk_50.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 5,
+          "keyInput": 72,
+          "width": 8.6,
+          "height": 20,
+          "x":421.4,
+          "y":0,
+          "z":50
+        }
+      },{
+        "id":"k_51",
+        "src": "bk_51.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 5,
+          "keyInput": 74,
+          "width": 8.6,
+          "height": 20,
+          "x":430,
+          "y":0,
+          "z":51
+        }
+      },{
+        "id":"k_52",
+        "src": "bk_52.png",
+        "data": {
+          "type": "bottom",
+          "keySet": 5,
+          "keyInput": 75,
+          "width": 8.6,
+          "height": 20,
+          "x":438.6,
+          "y":0,
+          "z":52
+        }
+      },{
+        "id":"k_53",
+        "src": "tk_01.png",
+        "data": {
+          "type": "top",
+          "keySet": 1,
+          "keyInput": 81,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":53
+        }
+      },{
+        "id":"k_54",
+        "src": "tk_02.png",
+        "data": {
+          "type": "top",
+          "keySet": 1,
+          "keyInput": 87,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":54
+        }
+      },{
+        "id":"k_55",
+        "src": "tk_03.png",
+        "data": {
+          "type": "top",
+          "keySet": 1,
+          "keyInput": 69,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":55
+        }
+      },{
+        "id":"k_56",
+        "src": "tk_04.png",
+        "data": {
+          "type": "top",
+          "keySet": 1,
+          "keyInput": 84,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":56
+        }
+      },{
+        "id":"k_57",
+        "src": "tk_05.png",
+        "data": {
+          "type": "top",
+          "keySet": 1,
+          "keyInput": 89,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":57
+        }
+      },{
+        "id":"k_58",
+        "src": "tk_06.png",
+        "data": {
+          "type": "top",
+          "keySet": 1,
+          "keyInput": 85,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":58
+        }
+      },{
+        "id":"k_59",
+        "src": "tk_07.png",
+        "data": {
+          "type": "top",
+          "keySet": 1,
+          "keyInput": 79,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":59
+        }
+      },{
+        "id":"k_60",
+        "src": "tk_08.png",
+        "data": {
+          "type": "top",
+          "keySet": 1,
+          "keyInput": 80,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":60
+        }
+      },{
+        "id":"k_61",
+        "src": "tk_09.png",
+        "data": {
+          "type": "top",
+          "keySet": 2,
+          "keyInput": 81,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":61
+        }
+      },{
+        "id":"k_62",
+        "src": "tk_10.png",
+        "data": {
+          "type": "top",
+          "keySet": 2,
+          "keyInput": 87,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":62
+        }
+      },{
+        "id":"k_63",
+        "src": "tk_11.png",
+        "data": {
+          "type": "top",
+          "keySet": 2,
+          "keyInput": 69,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":63
+        }
+      },{
+        "id":"k_64",
+        "src": "tk_12.png",
+        "data": {
+          "type": "top",
+          "keySet": 2,
+          "keyInput": 84,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":64
+        }
+      },{
+        "id":"k_65",
+        "src": "tk_13.png",
+        "data": {
+          "type": "top",
+          "keySet": 2,
+          "keyInput": 89,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":65
+        }
+      },{
+        "id":"k_66",
+        "src": "tk_14.png",
+        "data": {
+          "type": "top",
+          "keySet": 2,
+          "keyInput": 85,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":66
+        }
+      },{
+        "id":"k_67",
+        "src": "tk_15.png",
+        "data": {
+          "type": "top",
+          "keySet": 2,
+          "keyInput": 79,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":67
+        }
+      },{
+        "id":"k_68",
+        "src": "tk_16.png",
+        "data": {
+          "type": "top",
+          "keySet": 2,
+          "keyInput": 80,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":68
+        }
+      },{
+        "id":"k_69",
+        "src": "tk_17.png",
+        "data": {
+          "type": "top",
+          "keySet": 3,
+          "keyInput": 81,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":69
+        }
+      },{
+        "id":"k_70",
+        "src": "tk_18.png",
+        "data": {
+          "type": "top",
+          "keySet": 3,
+          "keyInput": 87,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":70
+        }
+      },{
+        "id":"k_71",
+        "src": "tk_19.png",
+        "data": {
+          "type": "top",
+          "keySet": 3,
+          "keyInput": 69,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":71
+        }
+      },{
+        "id":"k_72",
+        "src": "tk_20.png",
+        "data": {
+          "type": "top",
+          "keySet": 3,
+          "keyInput": 84,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":72
+        }
+      },{
+        "id":"k_73",
+        "src": "tk_21.png",
+        "data": {
+          "type": "top",
+          "keySet": 3,
+          "keyInput": 89,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":73
+        }
+      },{
+        "id":"k_74",
+        "src": "tk_22.png",
+        "data": {
+          "type": "top",
+          "keySet": 3,
+          "keyInput": 85,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":74
+        }
+      },{
+        "id":"k_75",
+        "src": "tk_23.png",
+        "data": {
+          "type": "top",
+          "keySet": 3,
+          "keyInput": 79,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":75
+        }
+      },{
+        "id":"k_76",
+        "src": "tk_24.png",
+        "data": {
+          "type": "top",
+          "keySet": 3,
+          "keyInput": 80,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":76
+        }
+      },{
+        "id":"k_77",
+        "src": "tk_25.png",
+        "data": {
+          "type": "top",
+          "keySet": 4,
+          "keyInput": 81,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":77
+        }
+      },{
+        "id":"k_78",
+        "src": "tk_26.png",
+        "data": {
+          "type": "top",
+          "keySet": 4,
+          "keyInput": 87,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":78
+        }
+      },{
+        "id":"k_79",
+        "src": "tk_27.png",
+        "data": {
+          "type": "top",
+          "keySet": 4,
+          "keyInput": 69,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":79
+        }
+      },{
+        "id":"k_80",
+        "src": "tk_28.png",
+        "data": {
+          "type": "top",
+          "keySet": 4,
+          "keyInput": 84,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":80
+        }
+      },{
+        "id":"k_81",
+        "src": "tk_29.png",
+        "data": {
+          "type": "top",
+          "keySet": 4,
+          "keyInput": 89,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":81
+        }
+      },{
+        "id":"k_82",
+        "src": "tk_30.png",
+        "data": {
+          "type": "top",
+          "keySet": 4,
+          "keyInput": 85,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":82
+        }
+      },{
+        "id":"k_83",
+        "src": "tk_31.png",
+        "data": {
+          "type": "top",
+          "keySet": 4,
+          "keyInput": 79,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":83
+        }
+      },{
+        "id":"k_84",
+        "src": "tk_32.png",
+        "data": {
+          "type": "top",
+          "keySet": 4,
+          "keyInput": 80,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":84
+        }
+      },{
+        "id":"k_85",
+        "src": "tk_33.png",
+        "data": {
+          "type": "top",
+          "keySet": 5,
+          "keyInput": 81,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":85
+        }
+      },{
+        "id":"k_86",
+        "src": "tk_34.png",
+        "data": {
+          "type": "top",
+          "keySet": 5,
+          "keyInput": 87,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":86
+        }
+      },{
+        "id":"k_87",
+        "src": "tk_35.png",
+        "data": {
+          "type": "top",
+          "keySet": 5,
+          "keyInput": 69,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":87
+        }
+      },{
+        "id":"k_88",
+        "src": "tk_36.png",
+        "data": {
+          "type": "top",
+          "keySet": 5,
+          "keyInput": 84,
+          "width": 8.6,
+          "height": 20,
+          "x":0,
+          "y":0,
+          "z":88
+        }
+      }
               ]
             },
             "sounds":{
@@ -1704,7 +1792,7 @@
                   "id":"valve_01",
                   "src": "valve_01.png",
                   "data": {
-                    "keyInput": 80,
+                    "keyInput": 83,
                     "width": 26,
                     "height": 66,
                     "x":0,
@@ -1715,7 +1803,7 @@
                   "id":"valve_02",
                   "src": "valve_02.png",
                   "data": {
-                    "keyInput": 80,
+                    "keyInput": 68,
                     "width": 26,
                     "height": 66,
                     "x":29,
@@ -1726,7 +1814,7 @@
                   "id":"valve_03",
                   "src": "valve_03.png",
                   "data": {
-                    "keyInput": 80,
+                    "keyInput": 70,
                     "width": 26,
                     "height": 66,
                     "x":63,

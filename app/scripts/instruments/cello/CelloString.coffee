@@ -42,6 +42,14 @@ define ['easel', 'tween', 'ComponentItem'], (createjs, Tween, ComponentItem)->
       @playSound()
 
     handlePressUp: (e)=>
+      @fadeOutSound()
+
+    onKeyUp: (e)=>
+      super(e)
+      if e.which == @keyInput
+        @fadeOutSound()
+
+    fadeOutSound: ->
       if @sound?
         transitionTime = 500
         endVolume = 0

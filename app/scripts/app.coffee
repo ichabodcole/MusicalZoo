@@ -1,7 +1,8 @@
 define ['easel',
         'preload',
         'UILayout',
-        'Utils'], (createjs, Preload, UILayout, Utils)->
+        'Utils',
+        'JsonExport'], (createjs, Preload, UILayout, Utils, JsonExport)->
 
   class App
     constructor: ->
@@ -34,7 +35,7 @@ define ['easel',
   app = new App();
   createjs.Ticker.addEventListener('tick', app.stage)
 
-  # console.log Utils.makePianoKeyJson().imageJson
+  # console.log JsonExport.makePianoKeyJson().imageJson
 
 
 

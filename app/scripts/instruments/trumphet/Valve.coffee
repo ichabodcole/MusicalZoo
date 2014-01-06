@@ -17,40 +17,38 @@ define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
       super()
       @on('mousedown', @onMouseDown)
       @on('pressup', @onPressUp)
-      document.addEventListener('keyup', @onKeyUp, false)
 
     deregister: ->
       super()
       @removeAllEventListeners('mousedown')
       @removeAllEventListeners('pressup')
-      document.removeEventListener('keyup', @onKeyUp, false)
 
     onKeyUp: (e)=>
-      e.preventDefault()
+      super(e)
       if e.which == @keyInput
         @fadeOutSound()
 
-    onMouseDown: (e)->
+    onMouseDown: (e)=>
       @playSound()
-      @animate()
 
     onPressUp: (e)=>
       @fadeOutSound()
-      @animate(false)
 
-    playSound: (e)=>
+    playSound: ()->
       @sound = createjs.Sound.play(@soundId, {loop: -1, volume: 0})
       transitionTime = 300
       endVolume = 1
       createjs.Tween.get(@sound, {override: true})
         .to({volume: endVolume}, transitionTime)
+      @animate()
 
-    fadeOutSound: (e)->
+    fadeOutSound: ()->
       if @sound?
         transitionTime = 400
         endVolume = 0
         createjs.Tween.get(@sound, {override: true})
           .to({volume: endVolume}, transitionTime).call(@stopSound)
+      @animate(false)
 
     animate: (state)->
       if state == false

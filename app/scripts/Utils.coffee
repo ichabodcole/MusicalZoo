@@ -1,56 +1,5 @@
-define [], ->
+define ->
   class Utils
-
-    @makePianoKeyJson: ->
-      soundJson = ""
-      imageJson = ""
-      soundPath = "./sounds/piano/mp3/"
-      imagePath = "../images/piano/"
-      start = 1
-      end   = 88
-
-      for i in [start..end]
-        imageJson += @makePianoImageJson(i)
-        soundJson += @makePianoSoundJson(i)
-      return {imageJson:imageJson, soundJson:soundJson}
-
-    @makePianoImageJson: (i)->
-      topKeyStart = 53
-      keyIndex = i
-      if i >= topKeyStart
-        prefix = 'tk_'
-        keyType = 'top'
-        keyIndex -= 52
-      else
-        prefix = 'bk_'
-        keyType = 'bottom'
-      keyIndex = @addLeadingZero(keyIndex)
-      stringIndex = @addLeadingZero(i)
-      #
-      return "{\n
-        \"id\":\"k_#{ stringIndex }\",\n
-        \"src\": \"#{ prefix + keyIndex }.png\",\n
-        \"data\": {\n
-          \"type\": \"#{keyType}\",\n
-          \"keyInput\": 80,\n
-          \"width\": 8.6,\n
-          \"height\": 20,\n
-          \"x\":#{ (i-1) * 8.6 },\n
-          \"y\":0,\n
-          \"z\":#{ i }\n
-        }\n
-      },"
-
-    @makePianoSoundJson: (i)->
-      prefix = "k_"
-      i = @addLeadingZero(i)
-      return "{\"id\":\"#{ prefix + i }_snd\", \"src\": \"#{ prefix + i }.mp3\"},\n"
-
-    @addLeadingZero: (num)->
-      if(num < 10)
-        num = "0" + num
-      num
-
     @centerOnStage: (stage, obj, width, height, adjustForSize)->
       adjustForSize = adjustForSize ? true
       height = height ? false
