@@ -1,11 +1,16 @@
-define ['Keyboard', 'Drums', 'CelloStrings', 'Bow'], (Keyboard, Drums, CelloStrings, Bow)->
+define ['Keyboard',
+        'Drums',
+        'CelloStrings',
+        'Bow',
+        'Valves'], (Keyboard, Drums, CelloStrings, Bow, Valves)->
 
   class ComponentFactory
     @types: {
       drums: Drums
       keyboard: Keyboard
       strings: CelloStrings
-      bow: Bow
+      bow: Bow,
+      valves: Valves
     }
 
     @create: (type, manifest)->

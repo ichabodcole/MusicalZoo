@@ -19,7 +19,8 @@ define ['easel',
       @loadedInstruments = {
         drumKit: false,
         piano: false,
-        cello: false
+        cello: false,
+        trumphet: false
       }
       @setEventListeners()
 

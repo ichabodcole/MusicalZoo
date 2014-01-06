@@ -17,11 +17,11 @@ define ['easel', 'ComponentItem', 'Utils'], (createjs, ComponentItem, Utils)->
 
     register: ->
       super()
-      @on 'click', @playSound
+      @on 'mousedown', @playSound
 
     deregister: ->
       super()
-      @off 'click', @playSound
+      @removeAllEventListeners('mousedown')
 
     animate: ->
       @scaleX = .95

@@ -80,7 +80,6 @@ define ['easel',
       @components.push(component)
       @addChild(component)
       component.load()
-      component.register();
       @queueList.push(component.queue)
 
     register: ->

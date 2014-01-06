@@ -4,7 +4,6 @@ define ['easel', 'tween', 'ComponentItem'], (createjs, Tween, ComponentItem)->
     constructor: (name, data)->
       super(name, data)
       @setup(data)
-      @stringSound = createjs.Sound.play(@soundId)
       @soundTween  = null
       # @stringSound.pause()
 
@@ -27,10 +26,13 @@ define ['easel', 'tween', 'ComponentItem'], (createjs, Tween, ComponentItem)->
       @on 'pressup', @handlePressUp
       @on 'mouseout', @handlePressUp
 
+
     deregister: ->
       super()
-      @off 'mouseover', @handleOnMouseOver
-      @off 'mousedown', @handleOnMouseDown
+      @removeAllEventListeners('mouseover')
+      @removeAllEventListeners('mousedown')
+      @removeAllEventListeners('pressup')
+      @removeAllEventListeners('mouseout')
 
     handleOnMouseOver: (e)=>
       if @parent.mouseDown == true
@@ -40,19 +42,15 @@ define ['easel', 'tween', 'ComponentItem'], (createjs, Tween, ComponentItem)->
       @playSound()
 
     handlePressUp: (e)=>
-      if @stringSound?
+      if @sound?
         transitionTime = 500
         endVolume = 0
-        createjs.Tween.get(@stringSound, {override: true})
+        createjs.Tween.get(@sound, {override: true})
           .to({volume: endVolume}, transitionTime).call(@stopSound)
 
-    stopSound: ()=>
-      @stringSound.stop()
-
     playSound: (e)=>
-      @stringSound.setPosition(0)
-      @stringSound.play({loop: -1, volume: 0})
+      @sound = createjs.Sound.play(@soundId, {loop: -1, volume: 0})
       transitionTime = 300
       endVolume = 1
-      createjs.Tween.get(@stringSound, {override: true})
+      createjs.Tween.get(@sound, {override: true})
         .to({volume: endVolume}, transitionTime)

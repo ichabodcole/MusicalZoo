@@ -36,10 +36,10 @@ define ['InstrumentComponent', 'CelloString'], (InstrumentComponent, CelloString
 
     deregister: ->
       super()
-      @off 'mousedown', @handleMouseDown
-      @off 'pressup', @handlePressUp
-      @off 'mouseover', @handleMouseOver
-      @off 'mouseout', @handleMouseOut
+      @removeAllEventListeners('mousedown')
+      @removeAllEventListeners('pressup')
+      @removeAllEventListeners('mouseover')
+      @removeAllEventListeners('mouseout')
 
     handleMouseDown: (e)=>
       @mouseDown = true

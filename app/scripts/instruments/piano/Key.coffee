@@ -15,8 +15,8 @@ define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
 
     deregister: ->
       super()
-      @off 'mouseover', @handleOnMouseOver
-      @off 'mousedown', @handleOnMouseDown
+      @removeAllEventListeners('mouseover')
+      @removeAllEventListeners('mousedown')
 
     handleOnMouseOver: (e)=>
       if @parent.mouseDown == true

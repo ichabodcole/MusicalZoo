@@ -70,7 +70,7 @@
       {
         "id": "icons",
         "data": {
-          "width": 603,
+          "width": 811,
           "height": 212,
           "x": 0,
           "y" : 150
@@ -102,12 +102,23 @@
                 }
               },
               {
+                "id":"trumphetIcon",
+                "src":"trumphet_icon.png",
+                "data": {
+                  "width": 206,
+                  "height": 160,
+                  "x": 450,
+                  "y": 0,
+                  "link": "trumphet"
+                }
+              },
+              {
                 "id":"celloIcon",
                 "src":"cello_icon.png",
                 "data": {
                   "width": 201,
                   "height": 159,
-                  "x": 450,
+                  "x": 680,
                   "y": 0,
                   "link": "cello"
                 }
@@ -120,9 +131,11 @@
               { "id": "drumsIconClick_snd", "src": "drums_click.mp3" },
               { "id": "pianoIconClick_snd", "src": "piano_click.mp3" },
               { "id": "celloIconClick_snd", "src": "cello_click.mp3" },
+              { "id": "trumphetIconClick_snd", "src": "cello_click.mp3" },
               { "id": "drumsIconOver_snd", "src": "drums_over.mp3" },
               { "id": "pianoIconOver_snd", "src": "piano_over.mp3" },
-              { "id": "celloIconOver_snd", "src": "cello_over.mp3" }
+              { "id": "celloIconOver_snd", "src": "cello_over.mp3" },
+              { "id": "trumphetIconOver_snd", "src": "cello_over.mp3" }
             ]
           }
         }
@@ -196,7 +209,7 @@
                         "width": 53,
                         "height": 121,
                         "x": 85,
-                        "y": 224
+                        "y": 222
                       },
                       "assets":{
                         "images": {
@@ -1648,6 +1661,86 @@
                 { "id": "y_snd", "src": "cello_02.ogg" },
                 { "id": "x_snd", "src": "cello_03.ogg" },
                 { "id": "w_snd", "src": "cello_03.ogg" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+
+
+
+
+
+
+    {
+      "id": "trumphet",
+      "data": {
+        "width": 694,
+        "height": 231,
+        "scaleX": 1,
+        "scaleY": 1,
+        "x": 6,
+        "y": 120
+      },
+      "backgroundImage": {
+        "path": "./images/trumphet/",
+        "src": "trumphet_body.png"
+      },
+      "components": [
+        {
+          "id":"valves",
+          "data": {
+            "width": 84,
+            "height": 64,
+            "x": 253,
+            "y": 35
+          },
+          "assets": {
+            "images": {
+              "path": "./images/trumphet/",
+              "manifest": [
+                {
+                  "id":"valve_01",
+                  "src": "valve_01.png",
+                  "data": {
+                    "keyInput": 80,
+                    "width": 26,
+                    "height": 66,
+                    "x":0,
+                    "y":0
+                  }
+                },
+                {
+                  "id":"valve_02",
+                  "src": "valve_02.png",
+                  "data": {
+                    "keyInput": 80,
+                    "width": 26,
+                    "height": 66,
+                    "x":29,
+                    "y":0
+                  }
+                },
+                {
+                  "id":"valve_03",
+                  "src": "valve_03.png",
+                  "data": {
+                    "keyInput": 80,
+                    "width": 26,
+                    "height": 66,
+                    "x":63,
+                    "y":0
+                  }
+                }
+              ]
+            },
+            "sounds": {
+              "path":"./sounds/cello/",
+              "manifest": [
+                { "id": "valve_01_snd", "src": "cello_01.ogg" },
+                { "id": "valve_02_snd", "src": "cello_02.ogg" },
+                { "id": "valve_03_snd", "src": "cello_03.ogg" }
               ]
             }
           }

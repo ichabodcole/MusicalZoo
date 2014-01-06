@@ -7,6 +7,7 @@ define ['easel',
   class Icon extends createjs.Container
     constructor: (id, image, data)->
       @initialize()
+      @cursor       = 'pointer'
       @id           = id
       @soundClickId = @id + "Click_snd"
       @soundOverId  = @id + "Over_snd"

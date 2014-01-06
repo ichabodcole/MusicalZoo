@@ -13,8 +13,8 @@ define ['InstrumentComponent',
 
     deregister: ->
       super()
-      @off 'mousedown', @handleMouseDown
-      @off 'pressup', @handlePressUp
+      @removeAllEventListeners('mousedown')
+      @removeAllEventListeners('pressup')
 
     handleMouseDown: (e)=>
       @mouseDown = true

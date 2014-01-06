@@ -43,11 +43,11 @@ define ['easel',
       false
 
     register: ->
-      @items.forEach (item, index)->
+      for item in @items
         item.register()
 
     deregister: ->
-      @items.forEach (item, index)->
+      for item in @items
         item.deregister()
 
     handleFileLoad: (e)=>

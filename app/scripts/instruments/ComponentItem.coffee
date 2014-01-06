@@ -6,7 +6,8 @@ define ['easel',
   class ComponentItem extends createjs.Container
     constructor: (name, data)->
       @initialize()
-      @name  = name
+      @name    = name
+      @sound   = null
       @soundId = @name + "_snd"
 
     setup: (data)->
@@ -24,8 +25,12 @@ define ['easel',
         @playSound(e)
 
     playSound: (e)=>
-      createjs.Sound.play(@soundId)
+      @sound = createjs.Sound.play(@soundId)
       @animate()
+
+    stopSound: ()->
+      if @sound?
+        @sound.stop()
 
     animate: ->
       # Implement in child classes

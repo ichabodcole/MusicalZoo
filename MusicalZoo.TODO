@@ -1,22 +1,27 @@
- ✔ Get a drum on the stage @done (13-12-19 06:42)
- ✔ Move drum parser / loader to drumkit class @done (13-12-17 03:13)
- ✔ Add keyboard input for drums @done (13-12-18 01:05)
- ✔ Implement piano @done (13-12-19 06:42)
- ✔ Add interface elements for instrument switching @done (13-12-19 06:42)
+MISC
  ✔ Instruments should inherit from Container class @done (13-12-23 03:39)
    ✔ Remove references to container variable and get rid of getDisplayObj method @done (13-12-23 03:39)
  ✔ Rework instruments parseManifest method to parse new data format @done (13-12-23 16:08)
    ✔ Reimplement Instrument class @done (13-12-23 03:40)
      ✔ Reimplement DrumKit class @done (13-12-23 03:40)
        ✔ Reimplement Piano Classes @done (13-12-23 16:08)
-  ✔ Implement "basic" loaders @done (13-12-24 00:39)
-    ✔ Fix loading instrument when no background image is available @done (13-12-24 00:39)
- ✔ Fix showing instrument second time not scaling-in correctly @done (13-12-24 00:45)
- ✔ Instruments should show only after previous instrument is hidden @done (13-12-24 02:10)
- ✔ Disable currently selected instrument icon (close enough for now) @done (13-12-25 15:36)
- ✔ Remove EventListeners when an instrument is hidden by calling deregister @done (13-12-25 18:39)
 
- ☐ Cello
+UI
+ ✔ Remove EventListeners when an instrument is hidden by calling deregister @done (13-12-25 18:39)
+ ✔ Disable currently selected instrument icon (close enough for now) @done (13-12-25 15:36)
+ ✔ Instruments should show only after previous instrument is hidden @done (13-12-24 02:10)
+ ✔ Fix showing instrument second time not scaling-in correctly @done (13-12-24 00:45)
+ ✔ Add interface elements for instrument switching @done (13-12-19 06:42)
+
+DRUMS
+ ✔ Get a drum on the stage @done (13-12-19 06:42)
+ ✔ Move drum parser / loader to drumkit class @done (13-12-17 03:13)
+ ✔ Add keyboard input for drums @done (13-12-18 01:05)
+
+PIANO
+ ✔ Implement piano @done (13-12-19 06:42)
+
+CELLO
    ✔ Fix weird secondary scaling issue on cello @done (13-12-30 17:40)
    ✔ Fade in and out string sounds @done (13-12-30 19:41)
    ✔ Investigate use of TweenTimeline in Bow animation(not necessary, use override instead) @done (13-12-30 19:41)
@@ -26,15 +31,24 @@
    ✔ On mouse out of strings, stop bow loop animation @done (13-12-31 14:13)
    ☐ Add top string keys
    ☐ Clean up Bow animation code
+   ☐ Add keyboard input
 
- ✔ Loader @done (14-01-03 00:35)
+LOADER
+   ✔ Fix loading instrument when no background image is available @done (13-12-24 00:39)
    ✔ Move preloader to UI layout @done (14-01-02 19:58)
    ✔ Make separate loader class @done (14-01-02 19:58)
    ✔ Create skin for loader @done (14-01-03 00:17)
    ✔ Add percentage loader (good enough for now) @done (14-01-03 00:35)
 
  ✔ Add case for kick drum animated element @done (14-01-03 15:55)
- ☐ Trumphet
+ ✔ Intrument listeners not being removed on deregister...(removeEventListener not working for some reason, used removeAllEventListeners instead) @done (14-01-05 16:44)
+
+TRUMPHET
+   ✔ Sounds should fade in and out @done (14-01-05 17:00)
+   ✔ Fill in gaps in trumphet icon for better hit detection @done (14-01-05 17:43)
+   ☐ Add keyboard input
+   ☐ Add mouth piece component
+
  ☐ Add keyboard input for piano and cello
  ☐ Create and export new samples from Logic
  ☐ create ui element to show keyboard instructions for each instrument
@@ -43,8 +57,10 @@
 
 
 
-FOR LATER
+POST LAUNCH
  ☐ Replace png hitarea of piano keys with svg or easeljs internal drawing
+
+ ☐ Investigate loading piano keys as one sound with time-position data for playing individual keys
 
  ☐ Reimplement with MVC architecture and possibly redesign data structure
    ☐ Investigate flattening json manifest to make loading easier and more centralized
