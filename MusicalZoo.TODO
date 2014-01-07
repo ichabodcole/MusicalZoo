@@ -15,6 +15,7 @@ UI
  ✔ Instruments should show only after previous instrument is hidden @done (13-12-24 02:10)
  ✔ Fix showing instrument second time not scaling-in correctly @done (13-12-24 00:45)
  ✔ Add interface elements for instrument switching @done (13-12-19 06:42)
+ ☐ Icons seem to be fuzzy, possible slightly upscaled for some reason?
 
 DRUMS
  ✔ Get a drum on the stage @done (13-12-19 06:42)
@@ -35,6 +36,7 @@ CELLO
      ✔ See if object can be undetected by mouse, would help with getting bow out of way (mouseEnabled=false) @done (13-12-26 02:10)
    ✔ On pressup outside of cello after strings timeout, bow should not get set to ready @done (13-12-31 14:13)
    ✔ On mouse out of strings, stop bow loop animation @done (13-12-31 14:13)
+   ☐ Decide which top string keys to include
    ☐ Add top string keys
    ☐ Clean up Bow animation code
    ☐ Add keyboard input
@@ -45,7 +47,8 @@ LOADER
   ✔ Make separate loader class @done (14-01-02 19:58)
   ✔ Create skin for loader @done (14-01-03 00:17)
   ✔ Add percentage loader (good enough for now) @done (14-01-03 00:35)
-  ☐ Opening an instrument while another is loading should cancel loading the first instrument
+  ✔ Opening an instrument while another is loading should cancel loading the first instrument @done (14-01-06 19:27)
+     This is a confusing area of code, needs design help at some point I-T-F
 
 
 TRUMPHET
@@ -54,10 +57,11 @@ TRUMPHET
    ✔ Add keyboard input @done (14-01-05 18:54)
      ✔ Holding down key should not make additional calls to play sound @done (14-01-05 18:54)
    ☐ Add mouth piece component
+   ☐ Using key input in addtion to mouse input creates a looping sound that does not stop
 
 
 POST LAUNCH
- ☐ Investigate removeEventListener not working
+ ☐ Investigate removeEventListener/off not working in deregister methods
  ☐ Replace png hitarea of piano keys with svg or easeljs internal drawing
  ☐ Investigate loading piano keys as one sound with time-position data for playing individual keys
  ☐ Reimplement with MVC architecture and possibly redesign data structure

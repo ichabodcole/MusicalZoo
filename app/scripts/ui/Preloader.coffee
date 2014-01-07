@@ -29,8 +29,9 @@ define ['easel', 'tween', 'UIItem'], (createjs, Tween, UIItem)->
 
     reset: ->
       for q in @queueList
-        q.off 'progress', @onProgress
-      @queueList   = []
+        q.removeAll()
+        q.removeAllEventListeners('progress')
+      @queueList = []
       @percentText.text = "..."
 
     show: =>

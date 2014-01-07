@@ -7,19 +7,15 @@ define ['easel',
   class Instrument extends createjs.Container
     constructor: (name, @manifest)->
       @initialize()
+      @scaleStart # set in setData
       @name               = name
       @visible            = false
-      @scaleStart         = 1
-      @assetManifests     = null
-      @scaleStart         = null
       @components         = []
-      @componentFactory   = null
       @componentNumLoaded = 0
-      @loaded             = false
       @backgroundImage    = new createjs.Container()
       @queue              = new createjs.LoadQueue(false)
       @queueList          = [@queue]
-
+      @loaded                = false
       @backgroundImageLoaded = false
       @componentsLoaded      = false
 
@@ -62,11 +58,17 @@ define ['easel',
         @setup()
 
     cancelLoad: ->
+      qList = @getQueueList
+      for q in qList
+        q.removeAll()
+      @loaded = @componentsLoaded = @backgroundImageLoaded = false
+      @removeAllEventListeners('componentLoaded')
+      @queue.removeAllEventListeners('fileload')
+      @queue.removeAllEventListeners('complete')
       # not yet implemented
       # Should cancel any loading componets and clear any timers.
       # May need to remove this object from the loadedInstruments
       # object in the Instruments class.
-      return false
 
     addComponents: (componentsData)->
       componentsData.forEach (componentData, index)=>
