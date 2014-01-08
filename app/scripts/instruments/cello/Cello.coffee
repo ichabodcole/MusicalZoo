@@ -14,22 +14,27 @@ define ['Instrument', 'tween'], (Instrument, Tween)->
 
     setEventHandlers: ->
       super()
-      @on 'rollover', @handleMouseOver
-      @on 'rollout', @handleMouseOut
-      @on 'stringsPlaying', @handleStringPlaying
-      @on 'stringsReady', @handleMouseOver
+      @on 'rollover', @onMouseOver
+      @on 'rollout', @onMouseOut
+      @on 'stringsPlaying', @onStringPlaying
+      @on 'stringsReady', @onMouseOver
+      @on 'stringsDefault', @onStringsDefault
 
-    handleMouseOver: (e)=>
+    onMouseOver: (e)=>
       @strings.mouseOverCello = true
-      unless @bow.state == @bow.READY
+      unless @bow.state == @bow.READY || @strings.keyCount > 0
         @bow.gotoReadyState()
 
-    handleMouseOut: (e)=>
+    onMouseOut: (e)=>
       @strings.mouseOverCello = false
       @strings.clearTimer()
-      unless @bow.state == @bow.DEFAULT
+      unless @bow.state == @bow.DEFAULT || @strings.keyCount > 0
         @bow.gotoDefaultState()
 
-    handleStringPlaying: (e)=>
+    onStringPlaying: (e)=>
       unless @bow.state == @bow.PLAYING
         @bow.gotoPlayState()
+
+    onStringsDefault: (e)=>
+      unless @bow.state == @bow.DEFAULT
+        @bow.gotoDefaultState()

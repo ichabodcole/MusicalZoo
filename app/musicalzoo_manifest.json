@@ -1657,83 +1657,163 @@
           },
           "hitAreas": [
             {
-              "id": "c",
+              "id": "cc",
               "data": {
-                "width":    5,
+                "width":    4,
                 "height":   31,
-                "keyInput": 32,
+                "keyInput": 49,
                 "x":0,
                 "y":136
               }
             },
             {
-              "id": "g",
+              "id": "gg",
               "data": {
-                "width":    5,
+                "width":    4,
                 "height":   31,
-                "keyInput": 65,
+                "keyInput": 50,
                 "x":3.5,
                 "y":136
               }
             },
             {
-              "id": "d",
+              "id": "dd",
               "data": {
-                "width":    5,
+                "width":    4,
                 "height":   31,
-                "keyInput": 70,
+                "keyInput": 51,
                 "x":7,
                 "y":136
               }
             },
             {
-              "id": "a",
+              "id": "aa",
               "data": {
-                "width":    5,
+                "width":    4,
                 "height":   31,
-                "keyInput": 70,
+                "keyInput": 52,
                 "x":10,
                 "y":136
               }
             },
             {
-              "id": "z",
+              "id": "cd",
               "data": {
-                "width":    5,
-                "height":   10,
-                "keyInput": 70,
-                "x":2,
-                "y":70
+                "width":    4,
+                "height":   13,
+                "keyInput": 81,
+                "x":1,
+                "y":62
               }
             },
             {
-              "id": "y",
+              "id": "ce",
               "data": {
-                "width":    5,
-                "height":   10,
-                "keyInput": 70,
+                "width":    4,
+                "height":   13,
+                "keyInput": 65,
+                "x":1,
+                "y":74
+              }
+            },
+            {
+              "id": "cf",
+              "data": {
+                "width":    4,
+                "height":   13,
+                "keyInput": 90,
+                "x":1,
+                "y":86
+              }
+            },
+            {
+              "id": "ga",
+              "data": {
+                "width":    4,
+                "height":   13,
+                "keyInput": 87,
                 "x":4,
-                "y":75
+                "y":62
               }
             },
             {
-              "id": "x",
+              "id": "gb",
               "data": {
-                "width":    5,
-                "height":   10,
-                "keyInput": 70,
-                "x":6,
-                "y":85
+                "width":    4,
+                "height":   13,
+                "keyInput": 83,
+                "x":4,
+                "y":74
               }
             },
             {
-              "id": "w",
+              "id": "gc",
               "data": {
-                "width":    5,
-                "height":   10,
+                "width":    4,
+                "height":   13,
+                "keyInput": 88,
+                "x":4,
+                "y":86
+              }
+            },
+            {
+              "id": "de",
+              "data": {
+                "width":    4,
+                "height":   13,
+                "keyInput": 69,
+                "x":7,
+                "y":62
+              }
+            },
+            {
+              "id": "df",
+              "data": {
+                "width":    4,
+                "height":   13,
+                "keyInput": 68,
+                "x":7,
+                "y":74
+              }
+            },
+            {
+              "id": "dg",
+              "data": {
+                "width":    4,
+                "height":   13,
+                "keyInput": 67,
+                "x":7,
+                "y":86
+              }
+            },
+            {
+              "id": "ab",
+              "data": {
+                "width":    4,
+                "height":   13,
+                "keyInput": 82,
+                "x":10,
+                "y":62
+              }
+            },
+            {
+              "id": "ac",
+              "data": {
+                "width":    4,
+                "height":   13,
                 "keyInput": 70,
-                "x":8,
-                "y":80
+                "x":10,
+                "y":74
+              }
+            },
+            {
+              "id": "ad",
+              "data": {
+                "width":    4,
+                "height":   13,
+                "keyInput": 86,
+                "x":10,
+                "y":86
               }
             }
           ],
@@ -1741,14 +1821,22 @@
             "sounds": {
               "path":"./sounds/cello/",
               "manifest": [
-                { "id": "c_snd", "src": "cello_01.ogg" },
-                { "id": "g_snd", "src": "cello_02.ogg" },
-                { "id": "d_snd", "src": "cello_03.ogg" },
-                { "id": "a_snd", "src": "cello_04.ogg" },
-                { "id": "z_snd", "src": "cello_01.ogg" },
-                { "id": "y_snd", "src": "cello_02.ogg" },
-                { "id": "x_snd", "src": "cello_03.ogg" },
-                { "id": "w_snd", "src": "cello_03.ogg" }
+                { "id": "cc_snd", "src": "cc.ogg" },
+                { "id": "cd_snd", "src": "cd.ogg" },
+                { "id": "ce_snd", "src": "ce.ogg" },
+                { "id": "cf_snd", "src": "cf.ogg" },
+                { "id": "gg_snd", "src": "gg.ogg" },
+                { "id": "ga_snd", "src": "ga.ogg" },
+                { "id": "gb_snd", "src": "gb.ogg" },
+                { "id": "gc_snd", "src": "gc.ogg" },
+                { "id": "dd_snd", "src": "dd.ogg" },
+                { "id": "de_snd", "src": "de.ogg" },
+                { "id": "df_snd", "src": "df.ogg" },
+                { "id": "dg_snd", "src": "dg.ogg" },
+                { "id": "aa_snd", "src": "aa.ogg" },
+                { "id": "ab_snd", "src": "ab.ogg" },
+                { "id": "ac_snd", "src": "ac.ogg" },
+                { "id": "ad_snd", "src": "ad.ogg" }
               ]
             }
           }
@@ -1824,7 +1912,7 @@
               ]
             },
             "sounds": {
-              "path":"./sounds/cello/",
+              "path":"./sounds/trumphet/",
               "manifest": [
                 { "id": "valve_01_snd", "src": "cello_01.ogg" },
                 { "id": "valve_02_snd", "src": "cello_02.ogg" },

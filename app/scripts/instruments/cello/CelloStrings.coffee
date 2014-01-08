@@ -3,6 +3,7 @@ define ['InstrumentComponent', 'CelloString'], (InstrumentComponent, CelloString
   class CelloStrings extends InstrumentComponent
     constructor: (name, manifest)->
       super(name, manifest)
+      @keyCount  = 0
       @mouseDown = false
       @mouseOver = false
       @mouseOverCello = false
@@ -29,10 +30,10 @@ define ['InstrumentComponent', 'CelloString'], (InstrumentComponent, CelloString
 
     register:->
       super()
-      @on 'mousedown', @handleMouseDown
-      @on 'pressup', @handlePressUp
-      @on 'mouseover', @handleMouseOver
-      @on 'mouseout', @handleMouseOut
+      @on 'mousedown', @onMouseDown
+      @on 'pressup', @onPressUp
+      @on 'mouseover', @onMouseOver
+      @on 'mouseout', @onMouseOut
 
     deregister: ->
       super()
@@ -41,22 +42,23 @@ define ['InstrumentComponent', 'CelloString'], (InstrumentComponent, CelloString
       @removeAllEventListeners('mouseover')
       @removeAllEventListeners('mouseout')
 
-    handleMouseDown: (e)=>
+    onMouseDown: (e)=>
       @mouseDown = true
       @dispatchEvent(@stringsPlayingEvent)
 
-    handlePressUp: (e)=>
+    onPressUp: (e)=>
       @mouseDown = false
+      console.log @mouseOver , @mouseOverCello
       if @mouseOver == true && @mouseOverCello == true
         @dispatchEvent(@stringsReadyEvent)
 
-    handleMouseOver: (e)=>
+    onMouseOver: (e)=>
       @mouseOver = true
       if @mouseDown == true
         @dispatchEvent(@stringsPlayingEvent)
       @clearTimer()
 
-    handleMouseOut: (e)=>
+    onMouseOut: (e)=>
       @mouseOver = false
       if @to then window.clearTimeout(@to)
       @to = setTimeout =>

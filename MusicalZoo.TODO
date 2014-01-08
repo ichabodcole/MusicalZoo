@@ -9,12 +9,13 @@ MISC
 ☐ Create and export new samples from Logic
 
 UI
- ☐ create ui element to show keyboard instructions for each instrument
  ✔ Remove EventListeners when an instrument is hidden by calling deregister @done (13-12-25 18:39)
  ✔ Disable currently selected instrument icon (close enough for now) @done (13-12-25 15:36)
  ✔ Instruments should show only after previous instrument is hidden @done (13-12-24 02:10)
  ✔ Fix showing instrument second time not scaling-in correctly @done (13-12-24 00:45)
  ✔ Add interface elements for instrument switching @done (13-12-19 06:42)
+ ☐ Create ui element to show keyboard instructions for each instrument
+ ☐ Icons should be smaller with less space inbetween to better fit on page
  ☐ Icons seem to be fuzzy, possible slightly upscaled for some reason?
 
 DRUMS
@@ -36,10 +37,10 @@ CELLO
      ✔ See if object can be undetected by mouse, would help with getting bow out of way (mouseEnabled=false) @done (13-12-26 02:10)
    ✔ On pressup outside of cello after strings timeout, bow should not get set to ready @done (13-12-31 14:13)
    ✔ On mouse out of strings, stop bow loop animation @done (13-12-31 14:13)
-   ☐ Decide which top string keys to include
-   ☐ Add top string keys
+   ✔ Decide which top string keys to include @done (14-01-07 14:56)
+   ✔ Add top string keys @done (14-01-07 14:56)
+   ✔ Add keyboard input @done (14-01-07 15:15)
    ☐ Clean up Bow animation code
-   ☐ Add keyboard input
 
 LOADER
   ✔ Fix loading instrument when no background image is available @done (13-12-24 00:39)
@@ -48,7 +49,7 @@ LOADER
   ✔ Create skin for loader @done (14-01-03 00:17)
   ✔ Add percentage loader (good enough for now) @done (14-01-03 00:35)
   ✔ Opening an instrument while another is loading should cancel loading the first instrument @done (14-01-06 19:27)
-     This is a confusing area of code, needs design help at some point I-T-F
+     !!!This is a confusing area of code, needs design help at some point I-T-F
 
 
 TRUMPHET
@@ -61,11 +62,14 @@ TRUMPHET
 
 
 POST LAUNCH
+ ☐ Consider separating cello strings into top and bottom components
  ☐ Investigate removeEventListener/off not working in deregister methods
- ☐ Replace png hitarea of piano keys with svg or easeljs internal drawing
+ ☐ Replace png hitarea of piano keys with svg, easeljs internal drawing, or possibly sprite sheet
  ☐ Investigate loading piano keys as one sound with time-position data for playing individual keys
- ☐ Reimplement with MVC architecture and possibly redesign data structure
+ ☐ Use one queue per instrument instead of multiple
+ ☐ Redesign data structure
    ☐ Investigate flattening json manifest to make loading easier and more centralized
+ ☐ Reimplement with MVC architecture
    ☐ Search for online code examples of MVC pattern being used with createjs/easel.
    ☐ Investigate use of backbone
      ☐ How would inheritance work for createjs classes like Containers?

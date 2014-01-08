@@ -14,17 +14,17 @@ define ['easel', 'tween', 'ComponentItem'], (createjs, Tween, ComponentItem)->
 
     addHitArea: (data)->
       hit = new createjs.Shape()
-      hit.graphics.beginFill('#00ADEE')
+      hit.graphics.beginFill('#ffffff')
          .drawEllipse(data.x, data.y, data.width, data.height)
       # @hitArea = hit
       @addChild(hit)
 
     register: ->
       super()
-      @on 'mouseover', @handleOnMouseOver
-      @on 'mousedown', @handleOnMouseDown
-      @on 'pressup', @handlePressUp
-      @on 'mouseout', @handlePressUp
+      @on 'mouseover', @onMouseOver
+      @on 'mousedown', @onMouseDown
+      @on 'pressup', @onPressUp
+      @on 'mouseout', @onPressUp
 
 
     deregister: ->
@@ -34,20 +34,33 @@ define ['easel', 'tween', 'ComponentItem'], (createjs, Tween, ComponentItem)->
       @removeAllEventListeners('pressup')
       @removeAllEventListeners('mouseout')
 
-    handleOnMouseOver: (e)=>
+    onMouseOver: (e)=>
       if @parent.mouseDown == true
         @playSound()
 
-    handleOnMouseDown: (e)=>
+    onMouseDown: (e)=>
       @playSound()
 
-    handlePressUp: (e)=>
+    onPressUp: (e)=>
       @fadeOutSound()
+
+    onKeyDown: (e)=>
+      console.log "You pressed the key:", e.which
+      e.preventDefault()
+      unless @keyDownFired
+        if e.which == @keyInput
+          @parent.keyCount++
+          @playSound(e)
+          @keyDownFired = true
+          @parent.dispatchEvent(@parent.stringsPlayingEvent)
 
     onKeyUp: (e)=>
       super(e)
       if e.which == @keyInput
         @fadeOutSound()
+        @parent.keyCount--
+        if @parent.mouseDown == false && @parent.keyCount == 0
+          @parent.dispatchEvent(@parent.stringsDefaultEvent)
 
     fadeOutSound: ->
       if @sound?
