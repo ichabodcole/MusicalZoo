@@ -303,16 +303,16 @@
               ]
             },
             "sounds": {
-              "path":"./sounds/drums/kit_01/mp3/",
+              "path":"./sounds/drums/kit_01/ogg/",
               "manifest": [
-                { "id": "kickDrum_snd", "src": "kick_drum.mp3" },
-                { "id": "snareDrum_snd", "src": "sample_2.mp3" },
-                { "id": "floorTomTom_snd", "src": "floor_tom.mp3" },
-                { "id": "middleTomTom_snd", "src": "mid_tom.mp3" },
-                { "id": "highTomTom_snd", "src": "sample_1.mp3" },
-                { "id": "hiHatCymbal_snd", "src": "open_hat_1.mp3" },
-                { "id": "crashCymbal_snd", "src": "crash_cymbal.mp3" },
-                { "id": "rideCymbal_snd", "src": "ride_cymbal.mp3" }
+                { "id": "kickDrum_snd", "src": "kick_drum.ogg" },
+                { "id": "snareDrum_snd", "src": "sample_2.ogg" },
+                { "id": "floorTomTom_snd", "src": "floor_tom.ogg" },
+                { "id": "middleTomTom_snd", "src": "mid_tom.ogg" },
+                { "id": "highTomTom_snd", "src": "sample_1.ogg" },
+                { "id": "hiHatCymbal_snd", "src": "open_hat_1.ogg" },
+                { "id": "crashCymbal_snd", "src": "crash_cymbal.ogg" },
+                { "id": "rideCymbal_snd", "src": "ride_cymbal.ogg" }
               ]
             }
           }
