@@ -1,14 +1,14 @@
 define ['DrumKit',
         'Piano',
         'Cello',
-        'Trumphet'], (DrumKit, Piano, Cello, Trumphet)->
+        'Trumpet'], (DrumKit, Piano, Cello, Trumpet)->
 
   class InstrumentFactory
     @types: {
       drumKit: DrumKit,
       piano: Piano,
       cello: Cello,
-      trumphet: Trumphet
+      trumpet: Trumpet
     }
 
     @create: (type, manifest)->

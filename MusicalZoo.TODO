@@ -6,7 +6,6 @@ MISC
      ✔ Reimplement DrumKit class @done (13-12-23 03:40)
        ✔ Reimplement Piano Classes @done (13-12-23 16:08)
  ✔ Intrument listeners not being removed on deregister...(removeEventListener not working for some reason, used removeAllEventListeners instead) @done (14-01-05 16:44)
-☐ Create and export new samples from Logic
 
 UI
  ✔ Remove EventListeners when an instrument is hidden by calling deregister @done (13-12-25 18:39)
@@ -23,10 +22,12 @@ DRUMS
  ✔ Move drum parser / loader to drumkit class @done (13-12-17 03:13)
  ✔ Add keyboard input for drums @done (13-12-18 01:05)
  ✔ Add case for kick drum animated element @done (14-01-03 15:55)
+ ☐ Export samples from logic
 
 PIANO
  ✔ Implement basic piano @done (13-12-19 06:42)
  ✔ Add keyboard input @done (14-01-06 15:36)
+ ✔ Export new samples from logic @done (14-01-08 03:31)
  ☐ Bottom key animation on piano is slightly off (only on build?)
 
 CELLO
@@ -40,7 +41,18 @@ CELLO
    ✔ Decide which top string keys to include @done (14-01-07 14:56)
    ✔ Add top string keys @done (14-01-07 14:56)
    ✔ Add keyboard input @done (14-01-07 15:15)
+   ☐ Add wait time bewteen keyup and bow state change. This is to stop the bow from flying back and forth between shortly spaced keyup and key down effects.
    ☐ Clean up Bow animation code
+
+TRUMPET
+   ✔ Sounds should fade in and out @done (14-01-05 17:00)
+   ✔ Fill in gaps in trumpet icon for better hit detection @done (14-01-05 17:43)
+   ✔ Add keyboard input @done (14-01-09 14:58)
+     ✔ Add support for holding multiple keys to make single notes @done (14-01-09 14:58)
+     ✔ Holding down key should not make additional calls to play sound @done (14-01-05 18:54)
+   ✔ Export samples from logic @done (14-01-08 15:55)
+   ☐ Add mouth piece component
+   ✔ Using key input in addtion to mouse input creates a looping sound that does not stop @done (14-01-09 14:58)
 
 LOADER
   ✔ Fix loading instrument when no background image is available @done (13-12-24 00:39)
@@ -52,13 +64,6 @@ LOADER
      !!!This is a confusing area of code, needs design help at some point I-T-F
 
 
-TRUMPHET
-   ✔ Sounds should fade in and out @done (14-01-05 17:00)
-   ✔ Fill in gaps in trumphet icon for better hit detection @done (14-01-05 17:43)
-   ✔ Add keyboard input @done (14-01-05 18:54)
-     ✔ Holding down key should not make additional calls to play sound @done (14-01-05 18:54)
-   ☐ Add mouth piece component
-   ☐ Using key input in addtion to mouse input creates a looping sound that does not stop
 
 
 POST LAUNCH

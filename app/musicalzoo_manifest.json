@@ -102,14 +102,14 @@
                 }
               },
               {
-                "id":"trumphetIcon",
-                "src":"trumphet_icon.png",
+                "id":"trumpetIcon",
+                "src":"trumpet_icon.png",
                 "data": {
                   "width": 206,
                   "height": 160,
                   "x": 450,
                   "y": 0,
-                  "link": "trumphet"
+                  "link": "trumpet"
                 }
               },
               {
@@ -128,14 +128,14 @@
           "sounds": {
             "path": "./sounds/ui/",
             "manifest": [
-              { "id": "drumsIconClick_snd", "src": "drums_click.mp3" },
-              { "id": "pianoIconClick_snd", "src": "piano_click.mp3" },
-              { "id": "celloIconClick_snd", "src": "cello_click.mp3" },
-              { "id": "trumphetIconClick_snd", "src": "cello_click.mp3" },
-              { "id": "drumsIconOver_snd", "src": "drums_over.mp3" },
-              { "id": "pianoIconOver_snd", "src": "piano_over.mp3" },
-              { "id": "celloIconOver_snd", "src": "cello_over.mp3" },
-              { "id": "trumphetIconOver_snd", "src": "cello_over.mp3" }
+              { "id": "drumsIconClick_snd", "src": "drums_click.ogg" },
+              { "id": "pianoIconClick_snd", "src": "piano_click.ogg" },
+              { "id": "celloIconClick_snd", "src": "cello_click.ogg" },
+              { "id": "trumpetIconClick_snd", "src": "trumpet_click.ogg" },
+              { "id": "drumsIconOver_snd", "src": "drums_over.ogg" },
+              { "id": "pianoIconOver_snd", "src": "piano_over.ogg" },
+              { "id": "celloIconOver_snd", "src": "cello_over.ogg" },
+              { "id": "trumpetIconOver_snd", "src": "trumpet_over.ogg" }
             ]
           }
         }
@@ -1502,96 +1502,96 @@
               ]
             },
             "sounds":{
-              "path": "./sounds/piano/mp3/",
+              "path": "./sounds/piano/",
               "manifest": [
-                {"id":"k_01_snd", "src": "k_01.mp3"},
-                {"id":"k_02_snd", "src": "k_02.mp3"},
-                {"id":"k_03_snd", "src": "k_03.mp3"},
-                {"id":"k_04_snd", "src": "k_04.mp3"},
-                {"id":"k_05_snd", "src": "k_05.mp3"},
-                {"id":"k_06_snd", "src": "k_06.mp3"},
-                {"id":"k_07_snd", "src": "k_07.mp3"},
-                {"id":"k_08_snd", "src": "k_08.mp3"},
-                {"id":"k_09_snd", "src": "k_09.mp3"},
-                {"id":"k_10_snd", "src": "k_10.mp3"},
-                {"id":"k_11_snd", "src": "k_11.mp3"},
-                {"id":"k_12_snd", "src": "k_12.mp3"},
-                {"id":"k_13_snd", "src": "k_13.mp3"},
-                {"id":"k_14_snd", "src": "k_14.mp3"},
-                {"id":"k_15_snd", "src": "k_15.mp3"},
-                {"id":"k_16_snd", "src": "k_16.mp3"},
-                {"id":"k_17_snd", "src": "k_17.mp3"},
-                {"id":"k_18_snd", "src": "k_18.mp3"},
-                {"id":"k_19_snd", "src": "k_19.mp3"},
-                {"id":"k_20_snd", "src": "k_20.mp3"},
-                {"id":"k_21_snd", "src": "k_21.mp3"},
-                {"id":"k_22_snd", "src": "k_22.mp3"},
-                {"id":"k_23_snd", "src": "k_23.mp3"},
-                {"id":"k_24_snd", "src": "k_24.mp3"},
-                {"id":"k_25_snd", "src": "k_25.mp3"},
-                {"id":"k_26_snd", "src": "k_26.mp3"},
-                {"id":"k_27_snd", "src": "k_27.mp3"},
-                {"id":"k_28_snd", "src": "k_28.mp3"},
-                {"id":"k_29_snd", "src": "k_29.mp3"},
-                {"id":"k_30_snd", "src": "k_30.mp3"},
-                {"id":"k_31_snd", "src": "k_31.mp3"},
-                {"id":"k_32_snd", "src": "k_32.mp3"},
-                {"id":"k_33_snd", "src": "k_33.mp3"},
-                {"id":"k_34_snd", "src": "k_34.mp3"},
-                {"id":"k_35_snd", "src": "k_35.mp3"},
-                {"id":"k_36_snd", "src": "k_36.mp3"},
-                {"id":"k_37_snd", "src": "k_37.mp3"},
-                {"id":"k_38_snd", "src": "k_38.mp3"},
-                {"id":"k_39_snd", "src": "k_39.mp3"},
-                {"id":"k_40_snd", "src": "k_40.mp3"},
-                {"id":"k_41_snd", "src": "k_41.mp3"},
-                {"id":"k_42_snd", "src": "k_42.mp3"},
-                {"id":"k_43_snd", "src": "k_43.mp3"},
-                {"id":"k_44_snd", "src": "k_44.mp3"},
-                {"id":"k_45_snd", "src": "k_45.mp3"},
-                {"id":"k_46_snd", "src": "k_46.mp3"},
-                {"id":"k_47_snd", "src": "k_47.mp3"},
-                {"id":"k_48_snd", "src": "k_48.mp3"},
-                {"id":"k_49_snd", "src": "k_49.mp3"},
-                {"id":"k_50_snd", "src": "k_50.mp3"},
-                {"id":"k_51_snd", "src": "k_51.mp3"},
-                {"id":"k_52_snd", "src": "k_52.mp3"},
-                {"id":"k_53_snd", "src": "k_53.mp3"},
-                {"id":"k_54_snd", "src": "k_54.mp3"},
-                {"id":"k_55_snd", "src": "k_55.mp3"},
-                {"id":"k_56_snd", "src": "k_56.mp3"},
-                {"id":"k_57_snd", "src": "k_57.mp3"},
-                {"id":"k_58_snd", "src": "k_58.mp3"},
-                {"id":"k_59_snd", "src": "k_59.mp3"},
-                {"id":"k_60_snd", "src": "k_60.mp3"},
-                {"id":"k_61_snd", "src": "k_61.mp3"},
-                {"id":"k_62_snd", "src": "k_62.mp3"},
-                {"id":"k_63_snd", "src": "k_63.mp3"},
-                {"id":"k_64_snd", "src": "k_64.mp3"},
-                {"id":"k_65_snd", "src": "k_65.mp3"},
-                {"id":"k_66_snd", "src": "k_66.mp3"},
-                {"id":"k_67_snd", "src": "k_67.mp3"},
-                {"id":"k_68_snd", "src": "k_68.mp3"},
-                {"id":"k_69_snd", "src": "k_69.mp3"},
-                {"id":"k_70_snd", "src": "k_70.mp3"},
-                {"id":"k_71_snd", "src": "k_71.mp3"},
-                {"id":"k_72_snd", "src": "k_72.mp3"},
-                {"id":"k_73_snd", "src": "k_73.mp3"},
-                {"id":"k_74_snd", "src": "k_74.mp3"},
-                {"id":"k_75_snd", "src": "k_75.mp3"},
-                {"id":"k_76_snd", "src": "k_76.mp3"},
-                {"id":"k_77_snd", "src": "k_77.mp3"},
-                {"id":"k_78_snd", "src": "k_78.mp3"},
-                {"id":"k_79_snd", "src": "k_79.mp3"},
-                {"id":"k_80_snd", "src": "k_80.mp3"},
-                {"id":"k_81_snd", "src": "k_81.mp3"},
-                {"id":"k_82_snd", "src": "k_82.mp3"},
-                {"id":"k_83_snd", "src": "k_83.mp3"},
-                {"id":"k_84_snd", "src": "k_84.mp3"},
-                {"id":"k_85_snd", "src": "k_85.mp3"},
-                {"id":"k_86_snd", "src": "k_86.mp3"},
-                {"id":"k_87_snd", "src": "k_87.mp3"},
-                {"id":"k_88_snd", "src": "k_88.mp3"}
+                {"id":"k_01_snd", "src": "ogg/bk/bk_01.ogg"},
+                {"id":"k_02_snd", "src": "ogg/bk/bk_02.ogg"},
+                {"id":"k_03_snd", "src": "ogg/bk/bk_03.ogg"},
+                {"id":"k_04_snd", "src": "ogg/bk/bk_04.ogg"},
+                {"id":"k_05_snd", "src": "ogg/bk/bk_05.ogg"},
+                {"id":"k_06_snd", "src": "ogg/bk/bk_06.ogg"},
+                {"id":"k_07_snd", "src": "ogg/bk/bk_07.ogg"},
+                {"id":"k_08_snd", "src": "ogg/bk/bk_08.ogg"},
+                {"id":"k_09_snd", "src": "ogg/bk/bk_09.ogg"},
+                {"id":"k_10_snd", "src": "ogg/bk/bk_10.ogg"},
+                {"id":"k_11_snd", "src": "ogg/bk/bk_11.ogg"},
+                {"id":"k_12_snd", "src": "ogg/bk/bk_12.ogg"},
+                {"id":"k_13_snd", "src": "ogg/bk/bk_13.ogg"},
+                {"id":"k_14_snd", "src": "ogg/bk/bk_14.ogg"},
+                {"id":"k_15_snd", "src": "ogg/bk/bk_15.ogg"},
+                {"id":"k_16_snd", "src": "ogg/bk/bk_16.ogg"},
+                {"id":"k_17_snd", "src": "ogg/bk/bk_17.ogg"},
+                {"id":"k_18_snd", "src": "ogg/bk/bk_18.ogg"},
+                {"id":"k_19_snd", "src": "ogg/bk/bk_19.ogg"},
+                {"id":"k_20_snd", "src": "ogg/bk/bk_20.ogg"},
+                {"id":"k_21_snd", "src": "ogg/bk/bk_21.ogg"},
+                {"id":"k_22_snd", "src": "ogg/bk/bk_22.ogg"},
+                {"id":"k_23_snd", "src": "ogg/bk/bk_23.ogg"},
+                {"id":"k_24_snd", "src": "ogg/bk/bk_24.ogg"},
+                {"id":"k_25_snd", "src": "ogg/bk/bk_25.ogg"},
+                {"id":"k_26_snd", "src": "ogg/bk/bk_26.ogg"},
+                {"id":"k_27_snd", "src": "ogg/bk/bk_27.ogg"},
+                {"id":"k_28_snd", "src": "ogg/bk/bk_28.ogg"},
+                {"id":"k_29_snd", "src": "ogg/bk/bk_29.ogg"},
+                {"id":"k_30_snd", "src": "ogg/bk/bk_30.ogg"},
+                {"id":"k_31_snd", "src": "ogg/bk/bk_31.ogg"},
+                {"id":"k_32_snd", "src": "ogg/bk/bk_32.ogg"},
+                {"id":"k_33_snd", "src": "ogg/bk/bk_33.ogg"},
+                {"id":"k_34_snd", "src": "ogg/bk/bk_34.ogg"},
+                {"id":"k_35_snd", "src": "ogg/bk/bk_35.ogg"},
+                {"id":"k_36_snd", "src": "ogg/bk/bk_36.ogg"},
+                {"id":"k_37_snd", "src": "ogg/bk/bk_37.ogg"},
+                {"id":"k_38_snd", "src": "ogg/bk/bk_38.ogg"},
+                {"id":"k_39_snd", "src": "ogg/bk/bk_39.ogg"},
+                {"id":"k_40_snd", "src": "ogg/bk/bk_40.ogg"},
+                {"id":"k_41_snd", "src": "ogg/bk/bk_41.ogg"},
+                {"id":"k_42_snd", "src": "ogg/bk/bk_42.ogg"},
+                {"id":"k_43_snd", "src": "ogg/bk/bk_43.ogg"},
+                {"id":"k_44_snd", "src": "ogg/bk/bk_44.ogg"},
+                {"id":"k_45_snd", "src": "ogg/bk/bk_45.ogg"},
+                {"id":"k_46_snd", "src": "ogg/bk/bk_46.ogg"},
+                {"id":"k_47_snd", "src": "ogg/bk/bk_47.ogg"},
+                {"id":"k_48_snd", "src": "ogg/bk/bk_48.ogg"},
+                {"id":"k_49_snd", "src": "ogg/bk/bk_49.ogg"},
+                {"id":"k_50_snd", "src": "ogg/bk/bk_50.ogg"},
+                {"id":"k_51_snd", "src": "ogg/bk/bk_51.ogg"},
+                {"id":"k_52_snd", "src": "ogg/bk/bk_52.ogg"},
+                {"id":"k_53_snd", "src": "ogg/tk/tk_01.ogg"},
+                {"id":"k_54_snd", "src": "ogg/tk/tk_02.ogg"},
+                {"id":"k_55_snd", "src": "ogg/tk/tk_03.ogg"},
+                {"id":"k_56_snd", "src": "ogg/tk/tk_04.ogg"},
+                {"id":"k_57_snd", "src": "ogg/tk/tk_05.ogg"},
+                {"id":"k_58_snd", "src": "ogg/tk/tk_06.ogg"},
+                {"id":"k_59_snd", "src": "ogg/tk/tk_07.ogg"},
+                {"id":"k_60_snd", "src": "ogg/tk/tk_08.ogg"},
+                {"id":"k_61_snd", "src": "ogg/tk/tk_09.ogg"},
+                {"id":"k_62_snd", "src": "ogg/tk/tk_10.ogg"},
+                {"id":"k_63_snd", "src": "ogg/tk/tk_11.ogg"},
+                {"id":"k_64_snd", "src": "ogg/tk/tk_12.ogg"},
+                {"id":"k_65_snd", "src": "ogg/tk/tk_13.ogg"},
+                {"id":"k_66_snd", "src": "ogg/tk/tk_14.ogg"},
+                {"id":"k_67_snd", "src": "ogg/tk/tk_15.ogg"},
+                {"id":"k_68_snd", "src": "ogg/tk/tk_16.ogg"},
+                {"id":"k_69_snd", "src": "ogg/tk/tk_17.ogg"},
+                {"id":"k_70_snd", "src": "ogg/tk/tk_18.ogg"},
+                {"id":"k_71_snd", "src": "ogg/tk/tk_19.ogg"},
+                {"id":"k_72_snd", "src": "ogg/tk/tk_20.ogg"},
+                {"id":"k_73_snd", "src": "ogg/tk/tk_21.ogg"},
+                {"id":"k_74_snd", "src": "ogg/tk/tk_22.ogg"},
+                {"id":"k_75_snd", "src": "ogg/tk/tk_23.ogg"},
+                {"id":"k_76_snd", "src": "ogg/tk/tk_24.ogg"},
+                {"id":"k_77_snd", "src": "ogg/tk/tk_25.ogg"},
+                {"id":"k_78_snd", "src": "ogg/tk/tk_26.ogg"},
+                {"id":"k_79_snd", "src": "ogg/tk/tk_27.ogg"},
+                {"id":"k_80_snd", "src": "ogg/tk/tk_28.ogg"},
+                {"id":"k_81_snd", "src": "ogg/tk/tk_29.ogg"},
+                {"id":"k_82_snd", "src": "ogg/tk/tk_30.ogg"},
+                {"id":"k_83_snd", "src": "ogg/tk/tk_31.ogg"},
+                {"id":"k_84_snd", "src": "ogg/tk/tk_32.ogg"},
+                {"id":"k_85_snd", "src": "ogg/tk/tk_33.ogg"},
+                {"id":"k_86_snd", "src": "ogg/tk/tk_34.ogg"},
+                {"id":"k_87_snd", "src": "ogg/tk/tk_35.ogg"},
+                {"id":"k_88_snd", "src": "ogg/tk/tk_36.ogg"}
               ]
             }
           }
@@ -1850,7 +1850,7 @@
 
 
     {
-      "id": "trumphet",
+      "id": "trumpet",
       "data": {
         "width": 694,
         "height": 231,
@@ -1860,13 +1860,85 @@
         "y": 120
       },
       "backgroundImage": {
-        "path": "./images/trumphet/",
-        "src": "trumphet_body.png"
+        "path": "./images/trumpet/",
+        "src": "trumpet_body.png"
       },
       "components": [
         {
           "id":"valves",
           "data": {
+            "keys":[
+              {
+                "id": "c",
+                "keySet": 0,
+                "valveSet": [0, 0, 0]
+              },
+              {
+                "id": "c_sharp",
+                "keySet": 0,
+                "valveSet": [1, 1, 1]
+              },
+              {
+                "id": "d",
+                "keySet": 0,
+                "valveSet": [1, 0, 1]
+              },
+              {
+                "id": "d_sharp",
+                "keySet": 0,
+                "valveSet": [0, 1, 1]
+              },
+              {
+                "id": "e",
+                "keySet": 0,
+                "valveSet": [1, 1, 0]
+              },
+              {
+                "id": "e",
+                "keySet": 0,
+                "valveSet": [0, 0, 1]
+              },
+              {
+                "id": "f",
+                "keySet": 0,
+                "valveSet": [1, 0, 0]
+              },
+              {
+                "id": "f_sharp",
+                "keySet": 0,
+                "valveSet": [0, 1, 0]
+              },
+              {
+                "id": "g",
+                "keySet": 1,
+                "valveSet": [0, 0, 0]
+              },
+              {
+                "id": "g_sharp",
+                "keySet": 1,
+                "valveSet": [0, 1, 1]
+              },
+              {
+                "id": "a",
+                "keySet": 1,
+                "valveSet": [1, 1, 0]
+              },
+              {
+                "id": "a",
+                "keySet": 1,
+                "valveSet": [0, 0, 1]
+              },
+              {
+                "id": "a_sharp",
+                "keySet": 1,
+                "valveSet": [1, 0, 0]
+              },
+              {
+                "id": "b",
+                "keySet": 1,
+                "valveSet": [0, 1, 0]
+              }
+            ],
             "width": 84,
             "height": 64,
             "x": 253,
@@ -1874,7 +1946,7 @@
           },
           "assets": {
             "images": {
-              "path": "./images/trumphet/",
+              "path": "./images/trumpet/",
               "manifest": [
                 {
                   "id":"valve_01",
@@ -1912,11 +1984,20 @@
               ]
             },
             "sounds": {
-              "path":"./sounds/trumphet/",
+              "path":"./sounds/trumpet/",
               "manifest": [
-                { "id": "valve_01_snd", "src": "cello_01.ogg" },
-                { "id": "valve_02_snd", "src": "cello_02.ogg" },
-                { "id": "valve_03_snd", "src": "cello_03.ogg" }
+                { "id": "c_snd", "src": "ogg/c.ogg" },
+                { "id": "c_sharp_snd", "src": "ogg/c_sharp.ogg" },
+                { "id": "d_snd", "src": "ogg/d.ogg" },
+                { "id": "d_sharp_snd", "src": "ogg/d_sharp.ogg" },
+                { "id": "e_snd", "src": "ogg/e.ogg" },
+                { "id": "f_snd", "src": "ogg/f.ogg" },
+                { "id": "f_sharp_snd", "src": "ogg/f_sharp.ogg" },
+                { "id": "g_snd", "src": "ogg/g.ogg" },
+                { "id": "g_sharp_snd", "src": "ogg/g_sharp.ogg" },
+                { "id": "a_snd", "src": "ogg/a.ogg" },
+                { "id": "a_sharp_snd", "src": "ogg/a_sharp.ogg" },
+                { "id": "b_snd", "src": "ogg/b.ogg" }
               ]
             }
           }
