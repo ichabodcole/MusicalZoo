@@ -10,6 +10,7 @@ define ['easel',
       @soundId = @name + "_snd"
       @sound #set in playSound method
       @keyDownFired #set in register method
+      createjs.Sound.alternateExtensions = ["mp3"]
 
     setup: (data)->
       @setData(data)

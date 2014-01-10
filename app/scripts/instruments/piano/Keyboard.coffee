@@ -8,7 +8,6 @@ define ['InstrumentComponent',
     constructor: (name, manifest)->
       super(name, manifest)
       @mouseDown = false
-      @keySet    = 1
 
     register:->
       super()

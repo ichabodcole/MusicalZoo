@@ -14,21 +14,22 @@ UI
  ✔ Fix showing instrument second time not scaling-in correctly @done (13-12-24 00:45)
  ✔ Add interface elements for instrument switching @done (13-12-19 06:42)
  ☐ Create ui element to show keyboard instructions for each instrument
- ☐ Icons should be smaller with less space inbetween to better fit on page
- ☐ Icons seem to be fuzzy, possible slightly upscaled for some reason?
+ ☐ Icons should be smaller with less space inbetween to better fit on page (only in chrome when running through localhost???)
+   ☐ Icons seem to be fuzzy, possible slightly upscaled for some reason?
 
 DRUMS
  ✔ Get a drum on the stage @done (13-12-19 06:42)
  ✔ Move drum parser / loader to drumkit class @done (13-12-17 03:13)
  ✔ Add keyboard input for drums @done (13-12-18 01:05)
  ✔ Add case for kick drum animated element @done (14-01-03 15:55)
- ☐ Export samples from logic
+ ✔ Export samples from logic @done (14-01-10 01:44)
 
 PIANO
  ✔ Implement basic piano @done (13-12-19 06:42)
  ✔ Add keyboard input @done (14-01-06 15:36)
  ✔ Export new samples from logic @done (14-01-08 03:31)
- ☐ Bottom key animation on piano is slightly off (only on build?)
+ ✔ Bottom key animation on piano is slightly off (only on build?) @done (14-01-09 16:47)
+ ☐ One of the keys is off in octave 3
 
 CELLO
    ✔ Fix weird secondary scaling issue on cello @done (13-12-30 17:40)
@@ -67,6 +68,7 @@ LOADER
 
 
 POST LAUNCH
+ ☐ Consider removing class injection of createjs libraries since they are already global exports
  ☐ Consider separating cello strings into top and bottom components
  ☐ Investigate removeEventListener/off not working in deregister methods
  ☐ Replace png hitarea of piano keys with svg, easeljs internal drawing, or possibly sprite sheet

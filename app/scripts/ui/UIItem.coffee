@@ -9,6 +9,7 @@ define ['easel',
       @queue  = new createjs.LoadQueue(false)
       @data   = @manifest.data ? null
       @assets = @manifest.assets
+      createjs.Sound.alternateExtensions = ["mp3"]
       @loadManifest(@manifest)
 
     loadManifest: (manifest)->

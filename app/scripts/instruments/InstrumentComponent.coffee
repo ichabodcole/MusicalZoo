@@ -14,6 +14,7 @@ define ['easel',
       @queue = new createjs.LoadQueue(false)
       @assetManifests = null
 
+      createjs.Sound.alternateExtensions = ["mp3"]
       createjs.EventDispatcher.initialize(@)
       @componentLoadedEvent = new createjs.Event('componentLoaded', true)
       @setupLoadQueue()
