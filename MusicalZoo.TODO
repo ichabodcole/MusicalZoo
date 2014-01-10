@@ -14,8 +14,8 @@ UI
  ✔ Fix showing instrument second time not scaling-in correctly @done (13-12-24 00:45)
  ✔ Add interface elements for instrument switching @done (13-12-19 06:42)
  ☐ Create ui element to show keyboard instructions for each instrument
- ☐ Icons should be smaller with less space inbetween to better fit on page (only in chrome when running through localhost???)
-   ☐ Icons seem to be fuzzy, possible slightly upscaled for some reason?
+ ✔ Icons should be smaller with less space inbetween to better fit on page (only in chrome when running through localhost???) ... yah, I was zoomed in a level..putz. @done (14-01-10 01:53)
+   ✔ Icons seem to be fuzzy, possible slightly upscaled for some reason? @done (14-01-10 01:53)
 
 DRUMS
  ✔ Get a drum on the stage @done (13-12-19 06:42)

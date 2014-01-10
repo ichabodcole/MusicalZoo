@@ -13,6 +13,7 @@ define ['easel',
       @uiLayout         = null
 
       @stage.enableMouseOver(55)
+      createjs.Touch.enable(@stage)
       @loadManifest()
 
     loadManifest: ->
