@@ -2,6 +2,103 @@
   "ui":{
     "components": [
       {
+        "id": "instructionsNav",
+        "data": {
+          "width:": 0,
+          "height": 0,
+          "x": 730,
+          "y": 5
+        },
+        "assets": {
+          "images": {
+            "path": "./images/ui/",
+            "manifest": [
+              {
+                "id": "keyboardIcon",
+                "src": "keyboard_icon.png",
+                "data": {
+                  "width:": 96,
+                  "height": 45,
+                  "x": 0,
+                  "y": 0
+                }
+              },
+              {
+                "id": "instructionsIcon",
+                "src": "instructions_icon.png",
+                "data": {
+                  "width:": 44,
+                  "height": 44,
+                  "x": 0,
+                  "y": 0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "keyboardOverlay",
+        "assets": {
+          "images": {
+            "path": "./images/ui/keyboard/",
+            "manifest": [
+              {
+                "id": "drumKitKeys",
+                "src": "drum_keys.png",
+                "data": {
+                  "width:": 393,
+                  "height": 132,
+                  "x": -109,
+                  "y": 73
+                }
+              },
+              {
+                "id": "pianoKeys",
+                "src": "piano_keys.png",
+                "data": {
+                  "width:": 516,
+                  "height": 109,
+                  "x": -126,
+                  "y": 62
+                }
+              },
+              {
+                "id": "celloKeys",
+                "src": "cello_keys.png",
+                "data": {
+                  "width:": 319,
+                  "height": 115,
+                  "x": -126,
+                  "y": 56
+                }
+              },
+              {
+                "id": "trumpetKeys",
+                "src": "trumpet_keys.png",
+                "data": {
+                  "width:": 410,
+                  "height": 144,
+                  "x": -126,
+                  "y": 61
+                }
+              },
+              {
+                "id": "keyboard",
+                "src": "keyboard.png",
+                "data": {
+                  "alpha": 0.5,
+                  "width:": 452,
+                  "height": 212,
+                  "x": 0,
+                  "y": 0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
         "id": "musicNotes",
         "assets": {
           "images": {

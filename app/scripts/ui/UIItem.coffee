@@ -34,6 +34,7 @@ define ['easel',
     createBitmapFromResult: (q, id)->
       result = q.getResult(id)
       bitmap = new createjs.Bitmap(result)
+      bitmap.name = id
       bitmap.id = id
       return bitmap
 

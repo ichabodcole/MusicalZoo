@@ -4,13 +4,15 @@ define ['easel',
         'Utils',
         'JsonExport'], (createjs, Preload, UILayout, Utils, JsonExport)->
 
-  class App
+  class MusicalZoo
     constructor: ->
-      @stage            = new createjs.Stage('musicalzoo-stage');
-      @queue            = new createjs.LoadQueue(true)
+      @stage       = new createjs.Stage('musicalzoo-stage');
+      @stageWidth  = @stage.canvas.width
+      @stageHeight = @stage.canvas.height
+      @queue       = new createjs.LoadQueue(true)
 
-      @manifest         = null
-      @uiLayout         = null
+      @manifest    = null
+      @uiLayout    = null
 
       @stage.enableMouseOver(55)
       createjs.Touch.enable(@stage)
@@ -33,8 +35,8 @@ define ['easel',
       @uiLayout = new UILayout(manifest);
       @stage.addChild(@uiLayout)
 
-  app = new App();
-  createjs.Ticker.addEventListener('tick', app.stage)
+  window.MZ = new MusicalZoo();
+  createjs.Ticker.addEventListener('tick', MZ.stage)
 
   # console.log JsonExport.makePianoKeyJson().imageJson
 

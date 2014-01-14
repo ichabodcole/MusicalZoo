@@ -33,7 +33,7 @@ module.exports = function (grunt) {
             options: {
               remove:'script[src="bower_components/requirejs/require.js"]',
               append: {
-                selector: 'body', html:'<script src="scripts/app.min.js"></script>'
+                selector: 'body', html:'<script src="scripts/MusicalZoo.min.js"></script>'
               }
             },
             src:'<%= yeoman.dist %>/index.html',
