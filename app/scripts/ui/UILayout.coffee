@@ -2,6 +2,7 @@ define ['easel',
         'preload',
         'Preloader'
         'KeyboardOverlay',
+        'InstructionsOverlay',
         'InstructionsNav',
         'InstructionText',
         'Icons',
@@ -12,6 +13,7 @@ define ['easel',
           ,Preload
           ,Preloader
           ,KeyboardOverlay
+          ,InstructionsOverlay
           ,InstructionsNav
           ,InstructionText
           ,Icons
@@ -56,6 +58,7 @@ define ['easel',
       @icons     = new Icons(iconsManifest)
       @preloader = new Preloader(preloaderManifest)
       @keyboardOverlay = new KeyboardOverlay(keyboardOverlayManifest)
+      @instructionsOverlay = new InstructionsOverlay()
       @instructionsNav = new InstructionsNav(instructionsNavManifest)
 
       instrumentsManifest = @manifest.instruments
@@ -70,8 +73,11 @@ define ['easel',
       @addChild(@icons)
       @addChild(@preloader)
       @addChild(@keyboardOverlay)
+      @addChild(@instructionsOverlay)
       @addChild(@instructionsNav)
       @addChild(@introText)
+
+      @instructionsOverlay.setup()
 
 
     getComponentById: (id)->
@@ -133,10 +139,10 @@ define ['easel',
         @instruments.open()
 
     onInstructionsIconOver: (e)=>
-      console.log e.type
+      @instructionsOverlay.show(@instrumentId)
 
     onInstructionsIconOut: (e)=>
-      console.log e.type
+      @instructionsOverlay.hide()
 
     onKeyboardIconOver: (e)=>
       @keyboardOverlay.show(@instrumentId)

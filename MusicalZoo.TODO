@@ -71,6 +71,7 @@ LOADER
 
 
 POST LAUNCH
+  ☐ UIItem should become an AssetLoader Class that used through composition
   ☐ Consider replacing width and height values in manifest with getBounds for images.
   ☐ Consider removing class injection of createjs libraries since they are already global exports
   ☐ Consider separating cello strings into top and bottom components
