@@ -25,7 +25,7 @@ DRUMS
   ✔ Add keyboard input for drums @done (13-12-18 01:05)
   ✔ Add case for kick drum animated element @done (14-01-03 15:55)
   ✔ Export samples from logic @done (14-01-10 01:44)
-  ☐ Double play of a drum sound on mousedown on the first drumKit load.
+  ✔ Double play of a drum sound on mousedown on the first drumKit load. (Was being double registered) @done (14-01-15 17:50)
 
 PIANO
   ✔ Implement basic piano @done (13-12-19 06:42)
@@ -56,8 +56,8 @@ TRUMPET
    ✔ Holding down key should not make additional calls to play sound @done (14-01-05 18:54)
   ✔ Export samples from logic @done (14-01-08 15:55)
   ✔ Using key input in addtion to mouse input creates a looping sound that does not stop @done (14-01-09 14:58)
-  ☐ Add mouth piece component
-  ☐ Current samples aren't that great, maybe move up an octave
+  ✔ Current samples aren't that great, maybe move up an octave @done (14-01-15 17:41)
+  ☐ Code here is pretty hacked, especially concerning spacekey/shift, and mouse input vs keyboard. Needs to be redesigned I-T-F
 
 LOADER
   ✔ Fix loading instrument when no background image is available @done (13-12-24 00:39)

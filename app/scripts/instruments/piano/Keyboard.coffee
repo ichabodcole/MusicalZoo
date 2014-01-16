@@ -29,14 +29,14 @@ define ['InstrumentComponent',
 
     onKeyDown: (e)=>
       if e.which == @KEYSET_NEXT
-        @keySet++
-        if @keySet > 5
-          @keySet = 1
+        @keyset++
+        if @keyset > 5
+          @keyset = 1
 
       else if e.which == @KEYSET_PREV
-        @keySet--
-        if @keySet < 1
-          @keySet = 5
+        @keyset--
+        if @keyset < 1
+          @keyset = 5
 
     addItem: (name, data, image)=>
       type = data.type

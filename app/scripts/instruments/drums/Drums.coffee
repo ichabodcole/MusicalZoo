@@ -13,11 +13,9 @@ define ['InstrumentComponent',
       else
         drum = new Drum(name, data, image)
         @addChild(drum)
-        drum.register()
         @items.push(drum)
 
     addKickDrum: (name, data, image)->
       @kickDrum = new KickDrum(name, data, image)
       @addChild(@kickDrum)
-      @kickDrum.register()
       @items.push(@kickDrum)

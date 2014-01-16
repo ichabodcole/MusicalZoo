@@ -4,9 +4,13 @@ define ['InstrumentComponent',
   class Valves extends InstrumentComponent
     constructor: (name, manifest)->
       super(name, manifest)
-      @keySet = 0
+      @keyset = 0
+      #
+      @shiftKey = 16
+      @shiftKeyDown = false
       @spaceKey = 32
       @spaceKeyDown = false
+      #
       @valveTimeout # set in onValueDown
       @valvePositionFactory = {
         valve_01: 0,
@@ -31,25 +35,41 @@ define ['InstrumentComponent',
       document.removeEventListener 'keydown', @onKeyDown
       document.removeEventListener 'keyup', @onKeyUp
 
+    playSpaceSound: ->
+      if @keyset == 0
+        @playSound('c_snd')
+      else
+        @playSound('g_snd')
+
     onKeyDown: (e)=>
       #TODO: Refactor - hard coded key string.
       e.preventDefault()
+      if @shiftKeyDown == false
+        if e.which == @shiftKey
+          @shiftKeyDown = true
+          @keyset = 1
+
       if @spaceKeyDown == false
         if e.which == @spaceKey
           @spaceKeyDown = true
           @fadeOutSound() # fade out any already playing sounds
-          @playSound('c_snd')
+          @playSpaceSound()
 
     onKeyUp: (e)=>
       #TODO: Refactor - hard coded key string, etc.
       e.preventDefault()
+      if @shiftKeyDown == true
+        if e.which == @shiftKey
+          @shiftKeyDown = false
+          @keyset = 0
+
       if @spaceKeyDown == true
         if e.which == @spaceKey
           @spaceKeyDown = false
           @fadeOutSound()
         else if @valveState.join() == @valveOpenState
           @fadeOutSound() # fade out any already playing sounds
-          @playSound('c_snd')
+          @playSpaceSound()
 
     onValveDown: (e)=>
       @setValveState(e.valve, 1)
@@ -72,9 +92,9 @@ define ['InstrumentComponent',
       # keys are pulled from the manifest file and setup in setData method
       for key in @keys
         id       = key.id
-        keySet   = key.keySet
+        keyset   = key.keyset
         valveSet = key.valveSet
-        if keySet == @keySet
+        if keyset == @keyset
           if @valvesMatch(@valveState, valveSet) && !@valveSetOpen(valveSet)
             return id + "_snd"
       # if no match return false

@@ -442,7 +442,7 @@
         {
           "id": "keyboard",
           "data": {
-            "keySet": 3,
+            "keyset": 3,
             "width": 520,
             "height": 550,
             "x": 37,
@@ -457,7 +457,7 @@
         "src": "bk_01.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 65,
           "width": 8.6,
           "height": 20,
@@ -470,7 +470,7 @@
         "src": "bk_02.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 83,
           "width": 8.6,
           "height": 20,
@@ -483,7 +483,7 @@
         "src": "bk_03.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 68,
           "width": 8.6,
           "height": 20,
@@ -496,7 +496,7 @@
         "src": "bk_04.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 70,
           "width": 8.6,
           "height": 20,
@@ -509,7 +509,7 @@
         "src": "bk_05.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 71,
           "width": 8.6,
           "height": 20,
@@ -522,7 +522,7 @@
         "src": "bk_06.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 72,
           "width": 8.6,
           "height": 20,
@@ -535,7 +535,7 @@
         "src": "bk_07.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 74,
           "width": 8.6,
           "height": 20,
@@ -548,7 +548,7 @@
         "src": "bk_08.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 75,
           "width": 8.6,
           "height": 20,
@@ -561,7 +561,7 @@
         "src": "bk_09.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 76,
           "width": 8.6,
           "height": 20,
@@ -574,7 +574,7 @@
         "src": "bk_10.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 186,
           "width": 8.6,
           "height": 20,
@@ -587,7 +587,7 @@
         "src": "bk_11.png",
         "data": {
           "type": "bottom",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 222,
           "width": 8.6,
           "height": 20,
@@ -600,7 +600,7 @@
         "src": "bk_12.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 65,
           "width": 8.6,
           "height": 20,
@@ -613,7 +613,7 @@
         "src": "bk_13.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 83,
           "width": 8.6,
           "height": 20,
@@ -626,7 +626,7 @@
         "src": "bk_14.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 68,
           "width": 8.6,
           "height": 20,
@@ -639,7 +639,7 @@
         "src": "bk_15.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 70,
           "width": 8.6,
           "height": 20,
@@ -652,7 +652,7 @@
         "src": "bk_16.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 71,
           "width": 8.6,
           "height": 20,
@@ -665,7 +665,7 @@
         "src": "bk_17.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 72,
           "width": 8.6,
           "height": 20,
@@ -678,7 +678,7 @@
         "src": "bk_18.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 74,
           "width": 8.6,
           "height": 20,
@@ -691,7 +691,7 @@
         "src": "bk_19.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 75,
           "width": 8.6,
           "height": 20,
@@ -704,7 +704,7 @@
         "src": "bk_20.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 76,
           "width": 8.6,
           "height": 20,
@@ -717,7 +717,7 @@
         "src": "bk_21.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 186,
           "width": 8.6,
           "height": 20,
@@ -730,7 +730,7 @@
         "src": "bk_22.png",
         "data": {
           "type": "bottom",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 222,
           "width": 8.6,
           "height": 20,
@@ -743,7 +743,7 @@
         "src": "bk_23.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 65,
           "width": 8.6,
           "height": 20,
@@ -756,7 +756,7 @@
         "src": "bk_24.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 83,
           "width": 8.6,
           "height": 20,
@@ -769,7 +769,7 @@
         "src": "bk_25.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 68,
           "width": 8.6,
           "height": 20,
@@ -782,7 +782,7 @@
         "src": "bk_26.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 70,
           "width": 8.6,
           "height": 20,
@@ -795,7 +795,7 @@
         "src": "bk_27.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 71,
           "width": 8.6,
           "height": 20,
@@ -808,7 +808,7 @@
         "src": "bk_28.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 72,
           "width": 8.6,
           "height": 20,
@@ -821,7 +821,7 @@
         "src": "bk_29.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 74,
           "width": 8.6,
           "height": 20,
@@ -834,7 +834,7 @@
         "src": "bk_30.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 75,
           "width": 8.6,
           "height": 20,
@@ -847,7 +847,7 @@
         "src": "bk_31.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 76,
           "width": 8.6,
           "height": 20,
@@ -860,7 +860,7 @@
         "src": "bk_32.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 186,
           "width": 8.6,
           "height": 20,
@@ -873,7 +873,7 @@
         "src": "bk_33.png",
         "data": {
           "type": "bottom",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 222,
           "width": 8.6,
           "height": 20,
@@ -886,7 +886,7 @@
         "src": "bk_34.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 65,
           "width": 8.6,
           "height": 20,
@@ -899,7 +899,7 @@
         "src": "bk_35.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 83,
           "width": 8.6,
           "height": 20,
@@ -912,7 +912,7 @@
         "src": "bk_36.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 68,
           "width": 8.6,
           "height": 20,
@@ -925,7 +925,7 @@
         "src": "bk_37.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 70,
           "width": 8.6,
           "height": 20,
@@ -938,7 +938,7 @@
         "src": "bk_38.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 71,
           "width": 8.6,
           "height": 20,
@@ -951,7 +951,7 @@
         "src": "bk_39.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 72,
           "width": 8.6,
           "height": 20,
@@ -964,7 +964,7 @@
         "src": "bk_40.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 74,
           "width": 8.6,
           "height": 20,
@@ -977,7 +977,7 @@
         "src": "bk_41.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 75,
           "width": 8.6,
           "height": 20,
@@ -990,7 +990,7 @@
         "src": "bk_42.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 76,
           "width": 8.6,
           "height": 20,
@@ -1003,7 +1003,7 @@
         "src": "bk_43.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 186,
           "width": 8.6,
           "height": 20,
@@ -1016,7 +1016,7 @@
         "src": "bk_44.png",
         "data": {
           "type": "bottom",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 222,
           "width": 8.6,
           "height": 20,
@@ -1029,7 +1029,7 @@
         "src": "bk_45.png",
         "data": {
           "type": "bottom",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 65,
           "width": 8.6,
           "height": 20,
@@ -1042,7 +1042,7 @@
         "src": "bk_46.png",
         "data": {
           "type": "bottom",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 83,
           "width": 8.6,
           "height": 20,
@@ -1055,7 +1055,7 @@
         "src": "bk_47.png",
         "data": {
           "type": "bottom",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 68,
           "width": 8.6,
           "height": 20,
@@ -1068,7 +1068,7 @@
         "src": "bk_48.png",
         "data": {
           "type": "bottom",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 70,
           "width": 8.6,
           "height": 20,
@@ -1081,7 +1081,7 @@
         "src": "bk_49.png",
         "data": {
           "type": "bottom",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 71,
           "width": 8.6,
           "height": 20,
@@ -1094,7 +1094,7 @@
         "src": "bk_50.png",
         "data": {
           "type": "bottom",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 72,
           "width": 8.6,
           "height": 20,
@@ -1107,7 +1107,7 @@
         "src": "bk_51.png",
         "data": {
           "type": "bottom",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 74,
           "width": 8.6,
           "height": 20,
@@ -1120,7 +1120,7 @@
         "src": "bk_52.png",
         "data": {
           "type": "bottom",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 75,
           "width": 8.6,
           "height": 20,
@@ -1133,7 +1133,7 @@
         "src": "tk_01.png",
         "data": {
           "type": "top",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 81,
           "width": 8.6,
           "height": 20,
@@ -1146,7 +1146,7 @@
         "src": "tk_02.png",
         "data": {
           "type": "top",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 87,
           "width": 8.6,
           "height": 20,
@@ -1159,7 +1159,7 @@
         "src": "tk_03.png",
         "data": {
           "type": "top",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 69,
           "width": 8.6,
           "height": 20,
@@ -1172,7 +1172,7 @@
         "src": "tk_04.png",
         "data": {
           "type": "top",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 84,
           "width": 8.6,
           "height": 20,
@@ -1185,7 +1185,7 @@
         "src": "tk_05.png",
         "data": {
           "type": "top",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 89,
           "width": 8.6,
           "height": 20,
@@ -1198,7 +1198,7 @@
         "src": "tk_06.png",
         "data": {
           "type": "top",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 85,
           "width": 8.6,
           "height": 20,
@@ -1211,7 +1211,7 @@
         "src": "tk_07.png",
         "data": {
           "type": "top",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 79,
           "width": 8.6,
           "height": 20,
@@ -1224,7 +1224,7 @@
         "src": "tk_08.png",
         "data": {
           "type": "top",
-          "keySet": 1,
+          "keyset": 1,
           "keyInput": 80,
           "width": 8.6,
           "height": 20,
@@ -1237,7 +1237,7 @@
         "src": "tk_09.png",
         "data": {
           "type": "top",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 81,
           "width": 8.6,
           "height": 20,
@@ -1250,7 +1250,7 @@
         "src": "tk_10.png",
         "data": {
           "type": "top",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 87,
           "width": 8.6,
           "height": 20,
@@ -1263,7 +1263,7 @@
         "src": "tk_11.png",
         "data": {
           "type": "top",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 69,
           "width": 8.6,
           "height": 20,
@@ -1276,7 +1276,7 @@
         "src": "tk_12.png",
         "data": {
           "type": "top",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 84,
           "width": 8.6,
           "height": 20,
@@ -1289,7 +1289,7 @@
         "src": "tk_13.png",
         "data": {
           "type": "top",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 89,
           "width": 8.6,
           "height": 20,
@@ -1302,7 +1302,7 @@
         "src": "tk_14.png",
         "data": {
           "type": "top",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 85,
           "width": 8.6,
           "height": 20,
@@ -1315,7 +1315,7 @@
         "src": "tk_15.png",
         "data": {
           "type": "top",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 79,
           "width": 8.6,
           "height": 20,
@@ -1328,7 +1328,7 @@
         "src": "tk_16.png",
         "data": {
           "type": "top",
-          "keySet": 2,
+          "keyset": 2,
           "keyInput": 80,
           "width": 8.6,
           "height": 20,
@@ -1341,7 +1341,7 @@
         "src": "tk_17.png",
         "data": {
           "type": "top",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 81,
           "width": 8.6,
           "height": 20,
@@ -1354,7 +1354,7 @@
         "src": "tk_18.png",
         "data": {
           "type": "top",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 87,
           "width": 8.6,
           "height": 20,
@@ -1367,7 +1367,7 @@
         "src": "tk_19.png",
         "data": {
           "type": "top",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 69,
           "width": 8.6,
           "height": 20,
@@ -1380,7 +1380,7 @@
         "src": "tk_20.png",
         "data": {
           "type": "top",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 84,
           "width": 8.6,
           "height": 20,
@@ -1393,7 +1393,7 @@
         "src": "tk_21.png",
         "data": {
           "type": "top",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 89,
           "width": 8.6,
           "height": 20,
@@ -1406,7 +1406,7 @@
         "src": "tk_22.png",
         "data": {
           "type": "top",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 85,
           "width": 8.6,
           "height": 20,
@@ -1419,7 +1419,7 @@
         "src": "tk_23.png",
         "data": {
           "type": "top",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 79,
           "width": 8.6,
           "height": 20,
@@ -1432,7 +1432,7 @@
         "src": "tk_24.png",
         "data": {
           "type": "top",
-          "keySet": 3,
+          "keyset": 3,
           "keyInput": 80,
           "width": 8.6,
           "height": 20,
@@ -1445,7 +1445,7 @@
         "src": "tk_25.png",
         "data": {
           "type": "top",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 81,
           "width": 8.6,
           "height": 20,
@@ -1458,7 +1458,7 @@
         "src": "tk_26.png",
         "data": {
           "type": "top",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 87,
           "width": 8.6,
           "height": 20,
@@ -1471,7 +1471,7 @@
         "src": "tk_27.png",
         "data": {
           "type": "top",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 69,
           "width": 8.6,
           "height": 20,
@@ -1484,7 +1484,7 @@
         "src": "tk_28.png",
         "data": {
           "type": "top",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 84,
           "width": 8.6,
           "height": 20,
@@ -1497,7 +1497,7 @@
         "src": "tk_29.png",
         "data": {
           "type": "top",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 89,
           "width": 8.6,
           "height": 20,
@@ -1510,7 +1510,7 @@
         "src": "tk_30.png",
         "data": {
           "type": "top",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 85,
           "width": 8.6,
           "height": 20,
@@ -1523,7 +1523,7 @@
         "src": "tk_31.png",
         "data": {
           "type": "top",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 79,
           "width": 8.6,
           "height": 20,
@@ -1536,7 +1536,7 @@
         "src": "tk_32.png",
         "data": {
           "type": "top",
-          "keySet": 4,
+          "keyset": 4,
           "keyInput": 80,
           "width": 8.6,
           "height": 20,
@@ -1549,7 +1549,7 @@
         "src": "tk_33.png",
         "data": {
           "type": "top",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 81,
           "width": 8.6,
           "height": 20,
@@ -1562,7 +1562,7 @@
         "src": "tk_34.png",
         "data": {
           "type": "top",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 87,
           "width": 8.6,
           "height": 20,
@@ -1575,7 +1575,7 @@
         "src": "tk_35.png",
         "data": {
           "type": "top",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 69,
           "width": 8.6,
           "height": 20,
@@ -1588,7 +1588,7 @@
         "src": "tk_36.png",
         "data": {
           "type": "top",
-          "keySet": 5,
+          "keyset": 5,
           "keyInput": 84,
           "width": 8.6,
           "height": 20,
@@ -1963,80 +1963,77 @@
       },
       "components": [
         {
-
-        },
-        {
           "id":"valves",
           "data": {
             "keys":[
               {
                 "id": "c",
-                "keySet": 0,
+                "keyset": 0,
                 "valveSet": [0, 0, 0]
               },
               {
                 "id": "c_sharp",
-                "keySet": 0,
+                "keyset": 0,
                 "valveSet": [1, 1, 1]
               },
               {
                 "id": "d",
-                "keySet": 0,
+                "keyset": 0,
                 "valveSet": [1, 0, 1]
               },
               {
                 "id": "d_sharp",
-                "keySet": 0,
+                "keyset": 0,
                 "valveSet": [0, 1, 1]
               },
               {
                 "id": "e",
-                "keySet": 0,
+                "keyset": 0,
                 "valveSet": [1, 1, 0]
               },
               {
                 "id": "e",
-                "keySet": 0,
+                "keyset": 0,
                 "valveSet": [0, 0, 1]
               },
               {
                 "id": "f",
-                "keySet": 0,
+                "keyset": 0,
                 "valveSet": [1, 0, 0]
               },
               {
                 "id": "f_sharp",
-                "keySet": 0,
+                "keyset": 0,
                 "valveSet": [0, 1, 0]
               },
               {
                 "id": "g",
-                "keySet": 1,
+                "keyset": 1,
                 "valveSet": [0, 0, 0]
               },
               {
                 "id": "g_sharp",
-                "keySet": 1,
+                "keyset": 1,
                 "valveSet": [0, 1, 1]
               },
               {
                 "id": "a",
-                "keySet": 1,
+                "keyset": 1,
                 "valveSet": [1, 1, 0]
               },
               {
                 "id": "a",
-                "keySet": 1,
+                "keyset": 1,
                 "valveSet": [0, 0, 1]
               },
               {
                 "id": "a_sharp",
-                "keySet": 1,
+                "keyset": 1,
                 "valveSet": [1, 0, 0]
               },
               {
                 "id": "b",
-                "keySet": 1,
+                "keyset": 1,
                 "valveSet": [0, 1, 0]
               }
             ],

@@ -19,7 +19,7 @@ define ['easel', 'ComponentItem'], (createjs, ComponentItem)->
       @removeAllEventListeners('mousedown')
 
     onKeyDown: (e)=>
-      if @keySet == @parent.keySet
+      if @keyset == @parent.keyset
         super(e)
 
     handleOnMouseOver: (e)=>
