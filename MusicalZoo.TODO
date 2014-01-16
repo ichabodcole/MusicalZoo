@@ -6,7 +6,8 @@ MISC
      ✔ Reimplement DrumKit class @done (13-12-23 03:40)
        ✔ Reimplement Piano Classes @done (13-12-23 16:08)
   ✔ Intrument listeners not being removed on deregister...(removeEventListener not working for some reason, used removeAllEventListeners instead) @done (14-01-05 16:44)
-  ☐ Should be able to scroll page on an touch device if necessary
+  ✔ Should be able to scroll page on an touch device if necessary (added touch support toggle) @done (14-01-15 21:44)
+  ✔ Add enable touch icon @done (14-01-15 21:44)
 
 UI
   ✔ Remove EventListeners when an instrument is hidden by calling deregister @done (13-12-25 18:39)
@@ -46,6 +47,7 @@ CELLO
   ✔ Add top string keys @done (14-01-07 14:56)
   ✔ Add keyboard input @done (14-01-07 15:15)
   ✔ Add wait time between keyup and bow state change. This is to stop the bow from flying back and forth between shortly spaced keyup and key down effects. @done (14-01-11 23:08)
+  ☐ When using touch, bow animation can keep playing even after closing instrument
   ☐ Clean up Bow animation code
 
 TRUMPET

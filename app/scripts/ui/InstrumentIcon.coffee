@@ -4,7 +4,7 @@ define ['easel',
         'Springy',
         'Utils'], (createjs, Sound, Tween, Springy, Utils)->
 
-  class Icon extends createjs.Container
+  class InstrumentIcon extends createjs.Container
     constructor: (id, image, data)->
       @initialize()
       @cursor       = 'pointer'

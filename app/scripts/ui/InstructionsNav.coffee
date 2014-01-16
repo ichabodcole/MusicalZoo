@@ -24,10 +24,15 @@ define ["UIItem"], (UIItem)->
       @keyboardIcon.cursor = 'pointer'
       @keyboardIcon.on 'mouseover', @onKeyboardMouseOver
       @keyboardIcon.on 'mouseout', @onKeyboardMouseOut
+      @keyboardIcon.on 'mousedown', @onKeyboardMouseOver
+      @keyboardIcon.on 'pressup', @onKeyboardMouseOut
 
       @instructionsIcon.cursor = 'pointer'
       @instructionsIcon.on 'mouseover', @onInstructionsOver
       @instructionsIcon.on 'mouseout', @onInstructionsOut
+      @instructionsIcon.on 'mousedown', @onInstructionsOver
+      @instructionsIcon.on 'pressup', @onInstructionsOut
+
 
     onKeyboardMouseOver: (e)=>
       @dispatchEvent(@keyboardIconOver)

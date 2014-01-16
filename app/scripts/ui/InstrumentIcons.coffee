@@ -1,9 +1,9 @@
 define ['easel',
         'UIItem',
-        'Icon',
-        'Utils'], (createjs, UIItem, Icon, Utils)->
+        'InstrumentIcon',
+        'Utils'], (createjs, UIItem, InstrumentIcon, Utils)->
 
-  class Icons extends UIItem
+  class InstrumentIcons extends UIItem
     constructor: (@manifest)->
       @icons     = []
       @drumIcon  = null
@@ -17,6 +17,6 @@ define ['easel',
         id    = iconData.id
         image = @queue.getResult(id)
         data  = @queue.getItem(id).data
-        icon  = new Icon(id, image, data)
+        icon  = new InstrumentIcon(id, image, data)
         @addChild(icon)
 

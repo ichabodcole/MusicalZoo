@@ -5,7 +5,8 @@ define ['easel',
         'InstructionsOverlay',
         'InstructionsNav',
         'InstructionText',
-        'Icons',
+        'InstrumentIcons',
+        'TouchIcon',
         'Title',
         'Instruments',
         'Utils']
@@ -16,7 +17,8 @@ define ['easel',
           ,InstructionsOverlay
           ,InstructionsNav
           ,InstructionText
-          ,Icons
+          ,InstrumentIcons
+          ,TouchIcon
           ,Title
           ,Instruments
           ,Utils)->
@@ -55,11 +57,14 @@ define ['easel',
       instructionsNavManifest = @getComponentById('instructionsNav')
 
       @title     = new Title(titleManifest)
-      @icons     = new Icons(iconsManifest)
+      @icons     = new InstrumentIcons(iconsManifest)
       @preloader = new Preloader(preloaderManifest)
       @keyboardOverlay = new KeyboardOverlay(keyboardOverlayManifest)
       @instructionsOverlay = new InstructionsOverlay()
       @instructionsNav = new InstructionsNav(instructionsNavManifest)
+      @touchIcon = new TouchIcon()
+      @touchIcon.x = 5
+      @touchIcon.y = 5
 
       instrumentsManifest = @manifest.instruments
       @instruments = new Instruments(instrumentsManifest, @preloader)
@@ -71,6 +76,7 @@ define ['easel',
 
       @addChild(@title)
       @addChild(@icons)
+      @addChild(@touchIcon)
       @addChild(@preloader)
       @addChild(@keyboardOverlay)
       @addChild(@instructionsOverlay)

@@ -33,7 +33,7 @@ module.exports = function (grunt) {
             options: {
               remove:'script[src="bower_components/requirejs/require.js"]',
               append: {
-                selector: 'body', html:'<script src="scripts/MusicalZoo.min.js"></script>'
+                selector: 'body', html:'<script src="scripts/musical_zoo.min.js"></script>'
               }
             },
             src:'<%= yeoman.dist %>/index.html',
@@ -55,11 +55,11 @@ module.exports = function (grunt) {
         requirejs: {
           options: {
             baseUrl:'.tmp/scripts',
-            deps: ['app'],
-            insertRequire: ['app'],
+            deps: ['MusicalZoo'],
+            insertRequire: ['MusicalZoo'],
             mainConfigFile: '.tmp/config.js',
             name: '../bower_components/almond/almond',
-            out: '<%= yeoman.dist %>/scripts/app.min.js'
+            out: '<%= yeoman.dist %>/scripts/musical_zoo.min.js'
             // wrap: true
           },
 
@@ -252,7 +252,7 @@ module.exports = function (grunt) {
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
                         '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
                         '<%= yeoman.dist %>/styles/fonts/{,*/}*.*',
-                        '!<%= yeoman.dist %>/scripts/app.min.js',
+                        '!<%= yeoman.dist %>/scripts/musical_zoo.min.js',
                         '!<%= yeoman.dist %>/sounds/**/*',
                         '!<%= yeoman.dist %>/images/**/*'
 
@@ -286,7 +286,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>/images',
-                    src: '{,*/}*.{gif,jpeg,jpg,png}',
+                    src: '{,**/}*.{gif,jpeg,jpg,png}',
                     dest: '<%= yeoman.dist %>/images'
                 }]
             }

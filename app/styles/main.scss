@@ -1,13 +1,22 @@
 body {
-    background: black;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
-    text-align: center;
+  background: black;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-align: center;
 }
 
 canvas {
   position: relative;
-  top: 50px;
+  top: 2em;
   margin: 0 auto;
   // border: 1px solid #111;
+}
+
+.footer {
+  // color: #ffffff;
+  position: relative;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 3em;
 }

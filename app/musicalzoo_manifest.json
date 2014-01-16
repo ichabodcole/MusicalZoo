@@ -99,46 +99,6 @@
         }
       },
       {
-        "id": "musicNotes",
-        "assets": {
-          "images": {
-            "path": "./images/ui/",
-            "manifest": [
-              {
-                "id": "musicNote1",
-                "src": "music_note_01.png",
-                "data": {
-                  "width": 12,
-                  "height": 36,
-                  "x": 0,
-                  "y" : 0
-                }
-              },
-              {
-                "id": "musicNote2",
-                "src": "music_note_02.png",
-                "data": {
-                  "width": 29,
-                  "height": 36,
-                  "x": 0,
-                  "y" : 0
-                }
-              },
-              {
-                "id": "musicNote3",
-                "src": "music_note_03.png",
-                "data": {
-                  "width": 31,
-                  "height": 42,
-                  "x": 0,
-                  "y" : 0
-                }
-              }
-            ]
-          }
-        }
-      },
-      {
         "id": "preloader",
         "data": {
           "width": 148,

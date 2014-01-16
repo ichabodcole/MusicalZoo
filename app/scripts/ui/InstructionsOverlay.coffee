@@ -15,11 +15,11 @@ define ["easel", "InstructionText","Utils"], (createjs, InstructionText ,Utils)-
       },
       {
         id: "celloText",
-        text: "Hold your left mouse button down over the strings to play the cello."
+        text: "Click or drag over the strings with your left mouse button to play the cello."
       },
       {
         id: "trumpetText",
-        text: "Click the mouth piece or the finger valves to play the trumpet."
+        text: "Click the finger valves with your left mouse button to play the trumpet."
       }
     ]
 
