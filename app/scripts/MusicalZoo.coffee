@@ -1,15 +1,18 @@
 define ['easel',
         'preload',
+        'Font',
         'UILayout',
         'Utils',
-        'JsonExport'], (createjs, Preload, UILayout, Utils, JsonExport)->
+        'JsonExport'], (createjs, Preload, Font, UILayout, Utils, JsonExport)->
 
   class MusicalZoo
     constructor: ->
-      @stage       = new createjs.Stage('musicalzoo-stage');
+      @stage       = new createjs.Stage('musicalzoo-stage')
       @stageWidth  = @stage.canvas.width
       @stageHeight = @stage.canvas.height
       @queue       = new createjs.LoadQueue(true)
+      @mainFont    = 'rich_handwritingregular'
+
 
       @manifest    = null
       @uiLayout    = null
@@ -31,13 +34,18 @@ define ['easel',
       @queue.close()
 
     addUILayout: (manifest)->
-      @uiLayout = new UILayout(manifest);
+      @uiLayout = new UILayout(manifest)
       @stage.addChild(@uiLayout)
 
-  window.MZ = new MusicalZoo();
-  createjs.Ticker.addEventListener('tick', MZ.stage)
+  # Use the font library to make sure our custom font it loaded
+  # before kicking off the MusicalZoo app
+  font = new Font()
+  font.fontFamily = "rich_handwritingregular"
+  font.src = "rich_handwritingregular"
+  font.onload = font.onerror = ->
+    window.MZ = new MusicalZoo()
+    createjs.Ticker.addEventListener('tick', MZ.stage)
 
-  # console.log JsonExport.makePianoKeyJson().imageJson
 
 
 

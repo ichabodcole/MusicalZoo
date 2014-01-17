@@ -72,7 +72,7 @@ define ['easel',
 
       # create the intro instructional text and center it.
       @introText = new InstructionText("( Select an instrument to begin )", 0, 400)
-      @introText.x = (window.MZ.stageWidth / 2) - (@introText.getMeasuredWidth() / 2)
+      @introText.x = (window.MZ.stageWidth / 2) - (@introText.getBounds().width / 2)
 
       @addChild(@title)
       @addChild(@icons)

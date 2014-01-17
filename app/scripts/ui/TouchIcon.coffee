@@ -28,7 +28,7 @@ define ["easel"], (createjs)->
       return hit
 
     createText: (string)->
-      text = new createjs.Text(string, "17px Patrick Hand", "#ffffff")
+      text = new createjs.Text(string, "17px "+ window.MZ.mainFont, "#ffffff")
       text.x = @iconSize * 2 + @iconTextSpacing
       return text
 

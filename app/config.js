@@ -6,13 +6,17 @@ requirejs.config({
     sound:    '../bower_components/soundjs/lib/soundjs-NEXT.min',
     preload:  '../bower_components/preloadjs/lib/preloadjs-NEXT.min',
     tween:    '../bower_components/tweenjs/lib/tweenjs-NEXT.min',
-    tweenMax: '../bower_components/greensock/src/minified/TweenMax.min',
-    easing:   '../bower_components/greensock/src/minified/EasePack.min',
+    // tweenMax: '../bower_components/greensock/src/minified/TweenMax.min',
+    // easing:   '../bower_components/greensock/src/minified/EasePack.min',
     easelPlugin: '../bower_components/greensock/src/minified/EaselPlugin.min',
-    underscore : '../bower_components/underscore/underscore-min.js'
+    // underscore : '../bower_components/underscore/underscore-min',
+    Font: '../bower_components/Font.js/Font'
   },
 
   shim: {
+    Font: {
+      exports: 'Font'
+    },
     easel: {
       exports: 'createjs'
     },
@@ -28,8 +32,8 @@ requirejs.config({
       deps: ['easel'],
       exports: 'Preload'
     },
-    underscore: {
-      exports: '_'
-    }
+    // underscore: {
+    //   exports: '_'
+    // }
   }
 });

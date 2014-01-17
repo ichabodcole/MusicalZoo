@@ -39,9 +39,9 @@ define ["easel", "InstructionText","Utils"], (createjs, InstructionText ,Utils)-
         id     = obj.id
         string = obj.text
         #
-        iText = new InstructionText(string)
+        iText = new InstructionText(string, 0, 0, 500)
         iText.visible = 0
-        textWidth = iText.getMeasuredWidth()
+        textWidth = iText.getBounds().width
         iText.y = @textYOffset
         iText.x = ( window.MZ.stageWidth / 2 ) - ( textWidth / 2 )
         #

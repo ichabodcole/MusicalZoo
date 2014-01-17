@@ -8,7 +8,7 @@ define ['easel', 'tween', 'UIItem'], (createjs, Tween, UIItem)->
       @scaleX = 0
       @scaleY = 0
       @queueList   = []
-      @percentText = new createjs.Text('...', '40px Patrick Hand', '#ffffff')
+      @percentText = new createjs.Text('...', '40px ' + window.MZ.mainFont, '#ffffff')
 
     setup: ->
       super()
