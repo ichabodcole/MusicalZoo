@@ -251,11 +251,10 @@ module.exports = function (grunt) {
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
                         '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
-                        '<%= yeoman.dist %>/styles/fonts/{,*/}*.*',
+                        '!<%= yeoman.dist %>/styles/fonts/{,*/}*.*',
                         '!<%= yeoman.dist %>/scripts/musical_zoo.min.js',
                         '!<%= yeoman.dist %>/sounds/**/*',
-                        '!<%= yeoman.dist %>/images/**/*'
-
+                        '!<%= yeoman.dist %>/images/**/*',
                     ]
                 }
             }
