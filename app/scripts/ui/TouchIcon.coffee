@@ -1,4 +1,4 @@
-define ["easel"], (createjs)->
+define ['easel'], (createjs)->
 
   class TouchIcon extends createjs.Container
     TEXT_DISABLED: "enable touch support"
