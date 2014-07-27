@@ -45,7 +45,7 @@ define ['easel', 'tween', 'ComponentItem'], (createjs, Tween, ComponentItem)->
       @fadeOutSound()
 
     onKeyDown: (e)=>
-      console.log "You pressed the key:", e.which
+      # console.log "You pressed the key:", e.which
       e.preventDefault()
       unless @keyDownFired
         if e.which == @keyInput

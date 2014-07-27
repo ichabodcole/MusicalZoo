@@ -17,7 +17,7 @@ define ->
       unless @idExists(id)
         @targets.push({ id:id, target:target, attribute:attribute, endValue:endValue, value:value })
       else
-        console.log("Springy target with id: #{id} already exists")
+        # console.log("Springy target with id: #{id} already exists")
 
     idExists: (id)->
       filtered = @targets.filter (element, index, array)->

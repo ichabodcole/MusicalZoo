@@ -25,7 +25,7 @@ define ['easel',
       document.removeEventListener 'keyup', @onKeyUp, false
 
     onKeyDown: (e)=>
-      console.log "You pressed the key:", e.which
+      # console.log "You pressed the key:", e.which
       e.preventDefault()
       unless @keyDownFired
         if e.which == @keyInput

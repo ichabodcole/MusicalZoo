@@ -1,8 +1,8 @@
 define ['easel',
         'sound',
         'tween',
-        'Springy',
-        'Utils'], (createjs, Sound, Tween, Springy, Utils)->
+        'InstrumentTitle'
+        'Utils'], (createjs, Sound, Tween, InstrumentTitle, Utils)->
 
   class InstrumentIcon extends createjs.Container
     constructor: (id, image, data)->
@@ -22,11 +22,16 @@ define ['easel',
       @setData(@data)
       createjs.EventDispatcher.initialize(@)
       Utils.centerRegistration(@, @width, @height)
+      @instrumentTitle = new InstrumentTitle(@title)
+      @addChild(@instrumentTitle)
+
       @on "mouseover", @onMouseOver
+      @on "mouseout", @onMouseOut
       @on "click", @onClick
 
     tearDown: ->
       @off "mouseover", @onMouseOver
+      @off "mouseout", @onMouseOut
       @off "click", @onClick
 
     onClick: (e)=>
@@ -53,6 +58,7 @@ define ['easel',
 
 
     onMouseOver: =>
+      @instrumentTitle.show()
       ease = createjs.Ease.elasticOut
       @scaleX = .95
       @scaleY = .95
@@ -62,6 +68,9 @@ define ['easel',
       }, 1000, ease)
       # play the over sound
       createjs.Sound.play(@soundOverId)
+
+    onMouseOut: =>
+      @instrumentTitle.hide()
 
     setData: (data)->
         for key, dataItem of data
