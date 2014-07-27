@@ -59,7 +59,7 @@ define ["UIItem", "Utils"], (UIItem, Utils)->
         .to({alpha: endAlpha}, 300, ease).call(@onHideComplete)
 
     showKeyset: ()->
-      console.log @keysetId
+      # console.log @keysetId
       @keysets[@keysetId].visible = true
 
     hideKeyset: ()->

@@ -48,7 +48,6 @@ define ['InstrumentComponent', 'CelloString'], (InstrumentComponent, CelloString
 
     onPressUp: (e)=>
       @mouseDown = false
-      console.log @mouseOver , @mouseOverCello
       if @mouseOver == true && @mouseOverCello == true
         @dispatchEvent(@stringsReadyEvent)
 

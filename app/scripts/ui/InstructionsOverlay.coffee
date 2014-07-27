@@ -1,4 +1,4 @@
-define ["easel", "InstructionText","Utils"], (createjs, InstructionText ,Utils)->
+define ["easel", "InstructionText", "Utils"], (createjs, InstructionText, Utils)->
 
   #TODO: create a common parent class for this and KeyboardOverlay
   class InstructionsOverlay extends createjs.Container
