@@ -1,4 +1,5 @@
-define ['easel',
+define ['modernizr'
+        'easel',
         'preload',
         'Preloader'
         'KeyboardOverlay',
@@ -10,7 +11,8 @@ define ['easel',
         'Title',
         'Instruments',
         'Utils']
-        , (createjs
+        , (modernizr
+          ,createjs
           ,Preload
           ,Preloader
           ,KeyboardOverlay
@@ -25,6 +27,7 @@ define ['easel',
 
   class UILayout extends createjs.Container
     constructor: (@manifest)->
+      @touch = modernizr.touch;
       @initialize()
       @UIState = 0
       @title #set in addComponents
@@ -62,9 +65,8 @@ define ['easel',
       @keyboardOverlay = new KeyboardOverlay(keyboardOverlayManifest)
       @instructionsOverlay = new InstructionsOverlay()
       @instructionsNav = new InstructionsNav(instructionsNavManifest)
-      @touchIcon = new TouchIcon()
-      @touchIcon.x = 5
-      @touchIcon.y = 5
+
+      @addTouchButton();
 
       instrumentsManifest = @manifest.instruments
       @instruments = new Instruments(instrumentsManifest, @preloader)
@@ -76,7 +78,7 @@ define ['easel',
 
       @addChild(@title)
       @addChild(@icons)
-      @addChild(@touchIcon)
+
       @addChild(@preloader)
       @addChild(@keyboardOverlay)
       @addChild(@instructionsOverlay)
@@ -85,6 +87,12 @@ define ['easel',
 
       @instructionsOverlay.setup()
 
+    addTouchButton: ()=>
+      if @touch
+        @touchIcon = new TouchIcon()
+        @touchIcon.x = 5
+        @touchIcon.y = 5
+        @addChild(@touchIcon)
 
     getComponentById: (id)->
       filtered = @components.filter (element)->
