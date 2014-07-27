@@ -2,7 +2,8 @@ define ['easel',
         'preload',
         'tween',
         'ComponentFactory',
-        'Utils'], (createjs, Preload, Tween, ComponentFactory, Utils)->
+        'InstrumentTitle',
+        'Utils'], (createjs, Preload, Tween, ComponentFactory, InstrumentTitle, Utils)->
 
   class Instrument extends createjs.Container
     constructor: (name, @manifest)->
@@ -28,6 +29,8 @@ define ['easel',
       @parseManifest(@manifest)
 
     setup: =>
+      @instrumentTitle = new InstrumentTitle(@title)
+      @addChild(@instrumentTitle)
       stage = @getStage()
       Utils.centerOnStage(stage, @, @width)
       Utils.centerRegistration(@, @width, @height, true)
@@ -110,6 +113,7 @@ define ['easel',
       @scaleStart = @scaleX
 
     show: ->
+      @instrumentTitle.show()
       @register()
       @visible = true
       ease = createjs.Ease.elasticOut
@@ -119,6 +123,7 @@ define ['easel',
       createjs.Tween.get(@).to({scaleX:endScale, scaleY:endScale}, transitionTime, ease)
 
     hide: ->
+      @instrumentTitle.hide()
       @deregister()
       ease = createjs.Ease.cubicIn
       transitionTime = 500
