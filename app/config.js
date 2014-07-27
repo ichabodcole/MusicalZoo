@@ -2,10 +2,11 @@ requirejs.config({
   baseUrl: 'scripts/',
 
   paths: {
-    easel:    '../bower_components/easeljs/lib/easeljs-NEXT.min',
+    modernizr: '../bower_components/modernizr/modernizr',
+    easel:    '../bower_components/EaselJS/lib/easeljs-NEXT.min',
     sound:    '../bower_components/soundjs/lib/soundjs-NEXT.min',
-    preload:  '../bower_components/preloadjs/lib/preloadjs-NEXT.min',
-    tween:    '../bower_components/tweenjs/lib/tweenjs-NEXT.min',
+    preload:  '../bower_components/PreloadJS/lib/preloadjs-NEXT.min',
+    tween:    '../bower_components/TweenJS/lib/tweenjs-NEXT.min',
     // tweenMax: '../bower_components/greensock/src/minified/TweenMax.min',
     // easing:   '../bower_components/greensock/src/minified/EasePack.min',
     easelPlugin: '../bower_components/greensock/src/minified/EaselPlugin.min',
@@ -32,6 +33,9 @@ requirejs.config({
       deps: ['easel'],
       exports: 'Preload'
     },
+    modernizr: {
+      exports: 'Modernizr'
+    }
     // underscore: {
     //   exports: '_'
     // }

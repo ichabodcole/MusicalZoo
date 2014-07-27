@@ -4,14 +4,14 @@
   "dependencies": {
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
-    "easeljs": "*",
-    "preloadjs": "git@github.com:CreateJS/PreloadJS.git",
-    "soundjs": "git@github.com:CreateJS/SoundJS.git",
-    "tweenjs": "git@github.com:CreateJS/TweenJS.git",
     "greensock": "~1.11.2",
     "underscore": "~1.5.2",
     "Keypress": "~1.0.9",
-    "Font.js": "*"
+    "Font.js": "*",
+    "PreloadJS": "*",
+    "EaselJS": "*",
+    "SoundJS": "*",
+    "TweenJS": "*"
   },
   "devDependencies": {
     "almond": "~0.2.7",
